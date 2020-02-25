@@ -9,7 +9,6 @@ import Storage
 import Deferred
 import Data
 import SnapKit
-import BraveRewards
 
 private let log = Logger.browserLogger
 

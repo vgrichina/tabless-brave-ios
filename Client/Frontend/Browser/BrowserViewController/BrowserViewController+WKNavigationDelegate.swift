@@ -7,10 +7,8 @@ import WebKit
 import Shared
 import Data
 import BraveShared
-import BraveRewards
 
 private let log = Logger.browserLogger
-private let rewardsLog = Logger.rewardsLogger
 
 extension WKNavigationAction {
     /// Allow local requests only if the request is privileged.

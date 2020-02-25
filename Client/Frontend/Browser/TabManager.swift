@@ -12,7 +12,6 @@ import Data
 import CoreData
 
 private let log = Logger.browserLogger
-private let rewardsLog = Logger.rewardsLogger
 
 protocol TabManagerDelegate: class {
     func tabManager(_ tabManager: TabManager, didSelectedTabChange selected: Tab?, previous: Tab?)

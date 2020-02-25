@@ -11,8 +11,6 @@ import LocalAuthentication
 import SwiftyJSON
 import Data
 import WebKit
-import BraveRewards
-import BraveRewardsUI
 
 extension TabBarVisibility: RepresentableOptionType {
     public var displayString: String {
@@ -49,13 +47,11 @@ class SettingsViewController: TableViewController {
     
     private let profile: Profile
     private let tabManager: TabManager
-    private let rewards: BraveRewards?
-    
-    init(profile: Profile, tabManager: TabManager, rewards: BraveRewards? = nil) {
+
+    init(profile: Profile, tabManager: TabManager) {
         self.profile = profile
         self.tabManager = tabManager
-        self.rewards = rewards
-        
+
         super.init(style: .grouped)
     }
     
@@ -72,12 +68,6 @@ class SettingsViewController: TableViewController {
         dataSource.sections = sections
         
         applyTheme(theme)
-    }
-    
-    private func displayRewardsDebugMenu() {
-        guard let rewards = rewards else { return }
-        let settings = QASettingsViewController(rewards: rewards)
-        navigationController?.pushViewController(settings, animated: true)
     }
     
     private var theme: Theme {
@@ -459,9 +449,6 @@ class SettingsViewController: TableViewController {
                     self.navigationController?.pushViewController(UrpLogsViewController(), animated: true)
                 }, accessory: .disclosureIndicator, cellClass: MultilineValue1Cell.self),
                 Row(text: "URP Code: \(UserReferralProgram.getReferralCode() ?? "--")"),
-                Row(text: "View Rewards Debug Menu", selection: {
-                    self.displayRewardsDebugMenu()
-                }, accessory: .disclosureIndicator, cellClass: MultilineValue1Cell.self),
                 Row(text: "Load all QA Links", selection: {
                     let url = URL(string: "https://raw.githubusercontent.com/brave/qa-resources/master/testlinks.json")!
                     let string = try? String(contentsOf: url)

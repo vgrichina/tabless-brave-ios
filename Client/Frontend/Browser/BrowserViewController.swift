@@ -16,8 +16,6 @@ import Deferred
 import Data
 import BraveShared
 import SwiftKeychainWrapper
-import BraveRewardsUI
-import BraveRewards
 import StoreKit
 import SafariServices
 
@@ -134,9 +132,6 @@ class BrowserViewController: UIViewController {
     // Web filters
     
     let safeBrowsing: SafeBrowsing?
-    
-    private var notificationsHandler: AdsNotificationHandler?
-    private(set) var publisher: PublisherInfo?
 
     init(profile: Profile, tabManager: TabManager, crashedLastSession: Bool,
          safeBrowsingManager: SafeBrowsing? = SafeBrowsing()) {
@@ -145,14 +140,6 @@ class BrowserViewController: UIViewController {
         self.readerModeCache = ReaderMode.cache(for: tabManager.selectedTab)
         self.crashedLastSession = crashedLastSession
         self.safeBrowsing = safeBrowsingManager
-        
-        let configuration: BraveRewardsConfiguration
-        if AppConstants.buildChannel.isPublic {
-            configuration = .production
-        } else {
-            configuration = AppConstants.buildChannel == .developer ? .staging : .production
-        }
-        deviceCheckClient = DeviceCheckClient(environment: configuration.environment)
 
         super.init(nibName: nil, bundle: nil)
         didInit()
@@ -211,8 +198,6 @@ class BrowserViewController: UIViewController {
         contentBlockListDeferred = ContentBlockerHelper.compileBundledLists()
     }
     
-    let deviceCheckClient: DeviceCheckClient?
-
     override var preferredStatusBarStyle: UIStatusBarStyle {
         let isDark = Theme.of(tabManager.selectedTab).isDark
         if isDark {
@@ -2077,7 +2062,7 @@ extension BrowserViewController: TabManagerDelegate {
         if let url = tab.url, !url.isAboutURL && !tab.isPrivate {
             profile.recentlyClosedTabs.addTab(url as URL, title: tab.title, faviconURL: tab.displayFavicon?.url)
         }
-        updateTabsBarVisibility()        
+        updateTabsBarVisibility()
     }
 
     func tabManagerDidAddTabs(_ tabManager: TabManager) {

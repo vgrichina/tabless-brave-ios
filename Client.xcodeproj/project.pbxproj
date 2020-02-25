@@ -1735,8 +1735,6 @@
 		5E46C37B234FB9A700ACA8C1 /* self-signed.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "self-signed.cer"; sourceTree = "<group>"; };
 		5E4845BF22DE381200372022 /* WindowRenderHelper.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = WindowRenderHelper.js; sourceTree = "<group>"; };
 		5E4845C122DE3DF800372022 /* WindowRenderHelperScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowRenderHelperScript.swift; sourceTree = "<group>"; };
-		5E856FE5235E08110094E113 /* Cryptography.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = Cryptography.swift; sourceTree = "<group>"; tabWidth = 2; };
-		5E856FE7235E083B0094E113 /* DeviceCheck.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = DeviceCheck.swift; sourceTree = "<group>"; tabWidth = 2; };
 		5E8CD8E023D5E3D100548FC0 /* libarchive.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libarchive.2.tbd; path = usr/lib/libarchive.2.tbd; sourceTree = SDKROOT; };
 		5E9288C922DF864C007BE7A6 /* TabSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSessionTests.swift; sourceTree = "<group>"; };
 		5EA84389234F802C00076A91 /* expired.badssl.com-root-ca.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "expired.badssl.com-root-ca.cer"; sourceTree = "<group>"; };
@@ -3155,15 +3153,6 @@
 			path = BraveSharedTests;
 			sourceTree = "<group>";
 		};
-		5E856FE3235E08010094E113 /* DeviceCheck */ = {
-			isa = PBXGroup;
-			children = (
-				5E856FE5235E08110094E113 /* Cryptography.swift */,
-				5E856FE7235E083B0094E113 /* DeviceCheck.swift */,
-			);
-			path = DeviceCheck;
-			sourceTree = "<group>";
-		};
 		5EA84392234F803100076A91 /* Certificates */ = {
 			isa = PBXGroup;
 			children = (
@@ -3754,7 +3743,6 @@
 		F84B21C01A090F8100AAB793 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				5E856FE3235E08010094E113 /* DeviceCheck */,
 				7B2142FC1E5E055000CDD3FC /* InfoPlist.strings */,
 				F84B22431A09165600AAB793 /* Info.plist */,
 				59D41619232681080087A6E1 /* Localizable.strings */,
