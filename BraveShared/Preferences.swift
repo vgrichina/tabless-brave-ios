@@ -91,43 +91,6 @@ extension Preferences {
         /// Version of downloaded data file for adblock stats.
         public static let adblockStatsDataVersion = Option<Int?>(key: "stats.adblock-data-version", default: nil)
     }
-    
-    public final class Rewards {
-        public static let myFirstAdShown = Option<Bool>(key: "rewards.ads.my-first-ad-shown", default: false)
-        public static let hideRewardsIcon = Option<Bool>(key: "rewards.hide-rewards-icon", default: false)
-        public static let panelOpened = Option<Bool>(key: "rewards.rewards-panel-opened", default: false)
-        public static let isUsingBAP = Option<Bool?>(key: "rewards.is-using-bap", default: nil)
-        public static let checkedPreviousCycleForAdsViewing = Option<Bool>(key: "rewards.checked-previous-ads-cycle", default: false)
-        
-        public enum EnvironmentOverride: Int {
-            case none
-            case staging
-            case prod
-            case dev
-            
-            public var name: String {
-                switch self {
-                case .none: return "None"
-                case .staging: return "Staging"
-                case .prod: return "Prod"
-                case .dev: return "Dev"
-                }
-            }
-            
-            public static var sortedCases: [EnvironmentOverride] {
-                return [.none, .dev, .staging, .prod]
-            }
-        }
-        /// In debug/beta, this is the overriden environment.
-        public static let environmentOverride = Option<Int>(key: "rewards.environment-override",
-                                                            default: EnvironmentOverride.none.rawValue)
-        
-        /// In debut/beta, the number of seconds before an ad should automatically dismiss
-        public static let adsDurationOverride = Option<Int?>(key: "rewards.ads.dismissal-override", default: nil)
-        
-        /// Whether or not the user successfully enrolled before
-        public static let didEnrollDeviceCheck = Option<Bool>(key: "rewards.devicecheck.did.enroll", default: false)
-    }
 }
 
 extension Preferences {

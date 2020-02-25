@@ -57,17 +57,6 @@ extension Preferences {
         ///
         /// Currently unused.
         static let showClipboardBar = Option<Bool>(key: "general.show-clipboard-bar", default: false)
-        /// Whether or not new user onboarding has completed.
-        /// User skipping(tapping on skip) onboarding does NOT count as completed.
-        /// If user kills the app before completing onboarding, it should be treated as unfinished.
-        static let basicOnboardingCompleted = Option<Int>(key: "general.basic-onboarding-completed",
-                                                          default: OnboardingState.undetermined.rawValue)
-        /// The time until the next on-boarding shows
-        static let basicOnboardingNextOnboardingPrompt = Option<Date?>(key: "general.basic-onboarding-days",
-                                                                      default: nil)
-        
-        /// The progress the user has made with onboarding
-        static let basicOnboardingProgress = Option<Int>(key: "general.basic-onboarding-progress", default: OnboardingProgress.none.rawValue)
         /// Whether or not link preview upon long press action should be shown.
         static let enableLinkPreview = Option<Bool>(key: "general.night-mode", default: true)
     }
@@ -108,12 +97,7 @@ extension Preferences {
         /// Whether the callout to use branded image was shown.
         static let brandedImageShowed = Option<Bool>(key: "newtabpage.branded-image-callout-showed",
                                                      default: false)
-        
-        /// When true, a notification on new tab page will be shown that an ad grant can be claimed(if rewards and grant are available).
-        /// This value is reseted on each app launch,
-        /// The goal is to show the claim grant notification only once per app session if still available.
-        static let attemptToShowClaimRewardsNotification =
-            Option<Bool>(key: "newtabpage.show-grant-notification", default: true)
+
     }
 }
 

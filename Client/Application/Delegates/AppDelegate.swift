@@ -84,9 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIViewControllerRestorati
 
     @discardableResult fileprivate func startApplication(_ application: UIApplication, withLaunchOptions launchOptions: [AnyHashable: Any]?) -> Bool {
         log.info("startApplication begin")
-        
-        UNUserNotificationCenter.current().delegate = self
-        
+                
         // Set the Firefox UA for browsing.
         setUserAgent()
 
@@ -224,10 +222,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIViewControllerRestorati
         
         authenticator = AppAuthenticator(protectedWindow: window!, promptImmediately: true, isPasscodeEntryCancellable: false)
 
-        if Preferences.Rewards.isUsingBAP.value == nil {
-            Preferences.Rewards.isUsingBAP.value = Locale.current.isJapan
-        }
-        
         // Now roll logs.
         DispatchQueue.global(qos: DispatchQoS.background.qosClass).async {
             Logger.syncLogger.deleteOldLogsDownToSizeLimit()
@@ -248,10 +242,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIViewControllerRestorati
         AutocompleteTextField.appearance().semanticContentAttribute = .forceLeftToRight
         
         let isFirstLaunch = Preferences.General.isFirstLaunch.value
-        if Preferences.General.basicOnboardingCompleted.value == OnboardingState.undetermined.rawValue {
-            Preferences.General.basicOnboardingCompleted.value =
-                isFirstLaunch ? OnboardingState.unseen.rawValue : OnboardingState.completed.rawValue
-        }
         Preferences.General.isFirstLaunch.value = false
         Preferences.Review.launchCount.value += 1
         
@@ -494,21 +484,5 @@ extension AppDelegate: MFMailComposeViewControllerDelegate {
         // Dismiss the view controller and start the app up
         controller.dismiss(animated: true, completion: nil)
         startApplication(application!, withLaunchOptions: self.launchOptions)
-    }
-}
-
-extension AppDelegate: UNUserNotificationCenterDelegate {
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        if MonthlyAdsGrantReminder.isMonthlyAdsReminderNotification(response.notification) {
-            // Open the rewards panel, showing the user their grant
-            if UIApplication.shared.applicationState != .active {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    // Give the UI a chance to be put together first
-                    self.browserViewController.showBraveRewardsPanel()
-                }
-            } else {
-                browserViewController.showBraveRewardsPanel()
-            }
-        }
     }
 }

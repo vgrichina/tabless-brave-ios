@@ -17,7 +17,6 @@ protocol FavoritesDelegate: AnyObject {
     func didSelect(input: String)
     func didTapDuckDuckGoCallout()
     func didTapShowMoreFavorites()
-    func openBrandedImageCallout(state: BrandedImageCalloutState?)
 }
 
 class FavoritesViewController: UIViewController, Themeable {
@@ -50,7 +49,6 @@ class FavoritesViewController: UIViewController, Themeable {
         return view
     }()
     private let dataSource: FavoritesDataSource
-    private let backgroundDataSource: NTPBackgroundDataSource?
 
     private let braveShieldStatsView = BraveShieldStatsView(frame: CGRect.zero).then {
         $0.autoresizingMask = [.flexibleWidth]
@@ -73,37 +71,7 @@ class FavoritesViewController: UIViewController, Themeable {
         blur.snp.makeConstraints { $0.edges.equalToSuperview() }
         button.snp.makeConstraints { $0.edges.equalToSuperview() }
     }
-    
-    // Needs to be own variable in order to dynamically set title contents
-    private lazy var imageCreditInternalButton = UIButton(type: .system).then {
-        $0.appearanceTextColor = .white
-        $0.titleLabel?.font = UIFont.systemFont(ofSize: 12.0, weight: .medium)
-        $0.addTarget(self, action: #selector(showImageCredit), for: .touchUpInside)
-    }
-    
-    private lazy var imageCreditButton = UIView().then {
-        let blur = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-        blur.contentView.backgroundColor = UIColor.black.withAlphaComponent(0.4)
-        $0.clipsToBounds = true
-        $0.layer.cornerRadius = 4
-        
-        $0.addSubview(blur)
-        $0.addSubview(imageCreditInternalButton)
-        
-        blur.snp.makeConstraints { $0.edges.equalToSuperview() }
-        imageCreditInternalButton.snp.makeConstraints {
-            $0.top.bottom.equalToSuperview()
-            let padding = 10
-            $0.left.equalToSuperview().offset(padding)
-            $0.right.equalToSuperview().inset(padding)
-        }
-    }
-    
-    private lazy var imageSponsorButton = UIButton().then {
-        $0.adjustsImageWhenHighlighted = false
-        $0.addTarget(self, action: #selector(showSponsoredSite), for: .touchUpInside)
-    }
-    
+
     private let ddgLogo = UIImageView(image: #imageLiteral(resourceName: "duckduckgo"))
     
     private let ddgLabel = UILabel().then {
@@ -137,48 +105,15 @@ class FavoritesViewController: UIViewController, Themeable {
     
     // MARK: - Init/lifecycle
     
-    private var backgroundViewInfo: (imageView: UIImageView, portraitCenterConstraint: Constraint, landscapeCenterConstraint: Constraint)?
-    private var background: (wallpaper: NTPBackgroundDataSource.Background, sponsor: NTPBackgroundDataSource.Sponsor?)? {
-        didSet {
-            let noSponsor = background?.sponsor == nil
-            
-            // Image Sponsor
-            imageSponsorButton.setImage(background?.sponsor?.logo.image, for: .normal)
-            imageSponsorButton.isHidden = noSponsor
-            
-            // Image Credit
-            imageCreditButton.isHidden = true
-            if noSponsor, let name = background?.wallpaper.credit?.name {
-                let photoByText = String(format: Strings.photoBy, name)
-                imageCreditInternalButton.setTitle(photoByText, for: .normal)
-                imageCreditButton.isHidden = false
-            }
-        }
-    }
-    
     private let profile: Profile
     
     /// Whether the view was called from tapping on address bar or not.
     private let fromOverlay: Bool
-    
-    /// Different types of notifications can be presented to users.
-    enum NTPNotificationType {
-        /// Notification to inform the user about branded images program.
-        case brandedImages(state: BrandedImageCalloutState)
-        /// Informs the user that there is a grant that can be claimed.
-        case claimRewards
-    }
-    
-    private var ntpNotificationShowing = false
-    private var rewards: BraveRewards?
-    
-    init(profile: Profile, dataSource: FavoritesDataSource = FavoritesDataSource(), fromOverlay: Bool,
-         rewards: BraveRewards?, backgroundDataSource: NTPBackgroundDataSource?) {
+
+    init(profile: Profile, dataSource: FavoritesDataSource = FavoritesDataSource(), fromOverlay: Bool) {
         self.profile = profile
         self.dataSource = dataSource
         self.fromOverlay = fromOverlay
-        self.rewards = rewards
-        self.backgroundDataSource = backgroundDataSource
         
         super.init(nibName: nil, bundle: nil)
         NotificationCenter.default.do {
@@ -214,7 +149,6 @@ class FavoritesViewController: UIViewController, Themeable {
         super.viewDidLoad()
         view.clipsToBounds = true
         
-        resetBackgroundImage()
         // Setup gradient regardless of background image, can internalize to setup background image if only wanted for images.
         view.layer.addSublayer(gradientOverlay())
         
@@ -245,111 +179,19 @@ class FavoritesViewController: UIViewController, Themeable {
         collection.addSubview(braveShieldStatsView)
         collection.addSubview(favoritesOverflowButton)
         collection.addSubview(ddgButton)
-        view.addSubview(imageCreditButton)
-        view.addSubview(imageSponsorButton)
-        
+
         ddgButton.addSubview(ddgLogo)
         ddgButton.addSubview(ddgLabel)
         
         makeConstraints()
-        
-        Preferences.NewTabPage.backgroundImages.observe(from: self)
-        Preferences.NewTabPage.backgroundSponsoredImages.observe(from: self)
-        
+
         // Doens't this get called twice?
         collectionContentSizeObservation = collection.observe(\.contentSize, options: [.new, .initial]) { [weak self] _, _ in
             self?.updateDuckDuckGoButtonLayout()
         }
         updateDuckDuckGoVisibility()
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        guard let notificationType = ntpNotificationToShow else {
-            return
-        }
-        
-        showNTPNotification(for: notificationType)
-    }
-    
-    /// Returns nil if not applicable or no notification should be shown.
-    private var ntpNotificationToShow: FavoritesViewController.NTPNotificationType? {
-        if fromOverlay || PrivateBrowsingManager.shared.isPrivateBrowsing || ntpNotificationShowing {
-            return nil
-        }
-        
-        guard let rewards = (UIApplication.shared.delegate as? AppDelegate)?
-            .browserViewController.rewards else { return nil }
-        
-        let rewardsEnabled = rewards.ledger.isEnabled
-        let adsEnabled = rewards.ads.isEnabled
-        
-        let showClaimRewards = Preferences.NewTabPage.attemptToShowClaimRewardsNotification.value
-            && rewardsEnabled
-            && rewards.ledger.pendingPromotions.first?.type == .ads
-        
-        if showClaimRewards { return .claimRewards }
-        
-        let adsAvailableInRegion = BraveAds.isCurrentLocaleSupported()
-        
-        if !Preferences.NewTabPage.backgroundImages.value { return nil }
-        
-        let isSponsoredImage = background?.sponsor != nil
-        let state = BrandedImageCalloutState
-            .getState(rewardsEnabled: rewardsEnabled,
-                      adsEnabled: adsEnabled,
-                      adsAvailableInRegion: adsAvailableInRegion,
-                      isSponsoredImage: isSponsoredImage)
-        
-        return .brandedImages(state: state)
-    }
-    
-    private func showNTPNotification(for type: NTPNotificationType) {
-        var vc: UIViewController?
-        
-        guard let rewards = rewards else { return }
-        
-        switch type {
-        case .brandedImages(let state):
-            guard let notificationVC = NTPNotificationViewController(state: state, rewards: rewards) else { return }
-            
-            notificationVC.closeHandler = { [weak self] in
-                self?.ntpNotificationShowing = false
-            }
-            
-            notificationVC.learnMoreHandler = { [weak self] in
-                self?.delegate?.openBrandedImageCallout(state: state)
-            }
-            
-            vc = notificationVC
-        case .claimRewards:
-            if !Preferences.NewTabPage.attemptToShowClaimRewardsNotification.value { return }
-            
-            let claimRewardsVC = ClaimRewardsNTPNotificationViewController(rewards: rewards)
-            claimRewardsVC.closeHandler = { [weak self] in
-                Preferences.NewTabPage.attemptToShowClaimRewardsNotification.value = false
-                self?.ntpNotificationShowing = false
-            }
-            
-            vc = claimRewardsVC
-        }
-        
-        guard let viewController = vc else { return }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
-            guard let self = self else { return }
-            
-            if case .brandedImages = type {
-                Preferences.NewTabPage.atleastOneNTPNotificationWasShowed.value = true
-            }
-            
-            self.ntpNotificationShowing = true
-            self.addChild(viewController)
-            self.view.addSubview(viewController.view)
-        }
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // Need to reload data after modals are closed for potential orientation change
@@ -370,31 +212,6 @@ class FavoritesViewController: UIViewController, Themeable {
         collection.collectionViewLayout.invalidateLayout()
         favoritesOverflowButton.isHidden = !dataSource.hasOverflow
         collection.reloadSections(IndexSet(arrayLiteral: 0))
-        
-        if let backgroundImageView = backgroundViewInfo?.imageView, let image = backgroundImageView.image {
-            // Need to calculate the sizing difference between `image` and `imageView` to determine the pixel difference ratio
-            let sizeRatio = backgroundImageView.frame.size.width / image.size.width
-            let focal = background?.wallpaper.focalPoint
-            // Center as fallback
-            let x = focal?.x ?? image.size.width / 2
-            let y = focal?.y ?? image.size.height / 2
-            let portrait = view.frame.height > view.frame.width
-            
-            // Center point of image is not center point of view.
-            // Take `0` for example, if specying `0`, setting centerX to 0, it is not attempting to place the left
-            //  side of the image to the middle (e.g. left justifying), it is instead trying to move the image view's
-            //  center to `0`, shifting the image _to_ the left, and making more of the image's right side visible.
-            // Therefore specifying `0` should take the imageView's left and pinning it to view's center.
-            
-            // So basically the movement needs to be "inverted" (hence negation)
-            // In landscape, left / right are pegged to superview
-            let imageViewOffset = portrait ? sizeRatio * -x : 0
-            backgroundViewInfo?.portraitCenterConstraint.update(offset: imageViewOffset)
-            
-            // If potrait, top / bottom are just pegged to superview
-            let inset = portrait ? 0 : sizeRatio * -y
-            backgroundViewInfo?.landscapeCenterConstraint.update(offset: inset)
-        }
     }
     
     private func updateDuckDuckGoButtonLayout() {
@@ -426,36 +243,6 @@ class FavoritesViewController: UIViewController, Themeable {
         }
     }
     
-    @objc fileprivate func showImageCredit() {
-        guard let credit = background?.wallpaper.credit else {
-            // No gesture action of no credit available
-            return
-        }
-        
-        let alert = UIAlertController(title: credit.name, message: nil, preferredStyle: .actionSheet)
-        
-        if let creditWebsite = credit.url, let creditURL = URL(string: creditWebsite) {
-            let websiteTitle = String(format: Strings.viewOn, creditURL.hostSLD.capitalizeFirstLetter)
-            alert.addAction(UIAlertAction(title: websiteTitle, style: .default) { [weak self] _ in
-                self?.delegate?.didSelect(input: creditWebsite)
-            })
-        }
-        
-        alert.popoverPresentationController?.sourceView = view
-        alert.popoverPresentationController?.sourceRect = CGRect(origin: view.center, size: .zero)
-        alert.popoverPresentationController?.permittedArrowDirections = [.down, .up]
-        alert.addAction(UIAlertAction(title: Strings.close, style: .cancel, handler: nil))
-        
-        UIImpactFeedbackGenerator(style: .medium).bzzt()
-        present(alert, animated: true, completion: nil)
-    }
-    
-    @objc private func showSponsoredSite() {
-        guard let url = background?.sponsor?.logo.destinationUrl else { return }
-        UIImpactFeedbackGenerator(style: .medium).bzzt()
-        delegate?.didSelect(input: url)
-    }
-    
     // MARK: - Constraints setup
     fileprivate func makeConstraints() {
         ddgLogo.snp.makeConstraints { make in
@@ -477,21 +264,11 @@ class FavoritesViewController: UIViewController, Themeable {
             $0.height.equalTo(24)
             $0.width.equalTo(84)
         }
-        
-        imageCreditButton.snp.makeConstraints {
-            let borderPadding = 20
-            $0.bottom.equalTo(self.view.snp.bottom).inset(borderPadding)
-            $0.left.equalToSuperview().offset(borderPadding)
-            $0.height.equalTo(24)
-            // Width and therefore, right constraint is determined by the actual button inside of this view
-            //  button is resized from text content, and this superview is pinned to that width.
-        }
     }
     
     // MARK: - Private browsing mode
     @objc func privateBrowsingModeChanged() {
         updateDuckDuckGoVisibility()
-        resetBackgroundImage()
     }
     
     var themeableChildren: [Themeable?]? {
@@ -529,77 +306,6 @@ class FavoritesViewController: UIViewController, Themeable {
             make.right.equalTo(right)
             make.left.equalTo(left)
             make.top.bottom.equalTo(self.view)
-        }
-        
-        imageSponsorButton.snp.remakeConstraints {
-            $0.size.equalTo(170)
-            $0.bottom.equalTo(view.safeArea.bottom).inset(10)
-            
-            if isLandscape && isIphone {
-                $0.left.equalTo(view.safeArea.left).offset(20)
-            } else {
-                $0.centerX.equalToSuperview()
-            }
-        }
-    }
-    
-    private func resetBackgroundImage() {
-        
-        // RESET BACKGROUND
-        self.backgroundViewInfo?.imageView.removeFromSuperview()
-        self.backgroundViewInfo = nil
-        
-        self.background = backgroundDataSource?.newBackground()
-        //
-        
-        guard let image = background?.wallpaper.image else {
-            return
-        }
-        
-        let imageAspectRatio = image.size.width / image.size.height
-        let imageView = UIImageView(image: image)
-        
-        imageView.contentMode = UIImageView.ContentMode.scaleAspectFit
-        // Make sure it goes to the back
-        view.insertSubview(imageView, at: 0)
-        
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.snp.makeConstraints {
-            
-            // Determines the height of the content
-            // `999` priority is required for landscape, since top/bottom constraints no longer the most important
-            //    using `1000` / `required` would cause constraint conflicts (with `centerY` in landscape), and
-            //    using `high` is not enough either.
-            $0.bottom.equalToSuperview().priority(ConstraintPriority(999))
-            $0.top.equalToSuperview().priority(ConstraintPriority(999))
-
-            // In portrait `top`/`bottom` is enough, however, when switching to landscape, those constraints
-            //  don't force centering, so this is used as a stronger constraint to center in landscape/portrait
-            let landscapeCenterConstraint = $0.top.equalTo(view.snp.centerY).priority(ConstraintPriority.high).constraint
-            
-            // Width of the image view is determined by the forced height constraint and the literal image ratio
-            $0.width.equalTo(imageView.snp.height).multipliedBy(imageAspectRatio)
-            
-            // These are required constraints to avoid a bad center pushing the image out of view.
-            // if a center of `-100` or `100000` is specified, these override to keep entire background covered by image.
-            // The left side cannot exceed `0` (or superview's left side), otherwise whitespace will be shown on left.
-            $0.left.lessThanOrEqualToSuperview()
-            
-            // the right side cannot drop under `width` (or superview's right side), otherwise whitespace will be shown on right.
-            $0.right.greaterThanOrEqualToSuperview()
-            
-            // Same as left / right above but necessary for landscape y centering (to prevent overflow)
-            $0.top.lessThanOrEqualToSuperview()
-            $0.bottom.greaterThanOrEqualToSuperview()
-
-            // If for some reason the image cannot fill full width (e.g. not a landscape image), then these constraints
-            //  will fail. A constraint will be broken, since cannot keep both left and right side's pinned
-            //  (due to the width multiplier being < 1
-            
-            // Using `high` priority so that it will not be applied / broken  if out-of-bounds.
-            // Offset updated / calculated during view layout as views are not setup yet.
-            let portraitCenterConstraint = $0.left.equalTo(view.snp.centerX).priority(ConstraintPriority.high).constraint
-            self.backgroundViewInfo = (imageView, portraitCenterConstraint, landscapeCenterConstraint)
         }
     }
     
@@ -721,10 +427,5 @@ extension FavoritesViewController: FavoriteCellDelegate {
             }
         }
     }
-}
 
-extension FavoritesViewController: PreferencesObserver {
-    func preferencesDidChange(for key: String) {
-        self.resetBackgroundImage()
-    }
 }

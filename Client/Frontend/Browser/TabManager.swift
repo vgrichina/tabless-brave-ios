@@ -255,23 +255,7 @@ class TabManager: NSObject {
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate,
             let newSelectedTab = tab, let previousTab = previous, let newTabUrl = newSelectedTab.url, let previousTabUrl = previousTab.url else { return }
-        
-        let rewards = appDelegate.browserViewController.rewards
-        
-        if !PrivateBrowsingManager.shared.isPrivateBrowsing {
-            let previousFaviconURL = URL(string: previousTab.displayFavicon?.url ?? "")
-            if previousFaviconURL == nil {
-                rewardsLog.warning("No favicon found in \(previousTab) to report to rewards panel")
-            }
-            rewards.reportTabUpdated(Int(previousTab.rewardsId), url: previousTabUrl, faviconURL: previousFaviconURL, isSelected: false,
-                                     isPrivate: previousTab.isPrivate)
-            let faviconURL = URL(string: newSelectedTab.displayFavicon?.url ?? "")
-            if faviconURL == nil {
-                rewardsLog.warning("No favicon found in \(newSelectedTab) to report to rewards panel")
-            }
-            rewards.reportTabUpdated(Int(newSelectedTab.rewardsId), url: newTabUrl, faviconURL: faviconURL, isSelected: true,
-                                     isPrivate: newSelectedTab.isPrivate)
-        }
+
     }
 
     //Called by other classes to signal that they are entering/exiting private mode

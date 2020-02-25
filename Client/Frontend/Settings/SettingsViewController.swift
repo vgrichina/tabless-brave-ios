@@ -42,7 +42,6 @@ protocol SettingsDelegate: class {
     func settingsOpenURLInNewTab(_ url: URL)
     func settingsOpenURLs(_ urls: [URL])
     func settingsDidFinish(_ settingsViewController: SettingsViewController)
-    func settingsOpenRewardsSettings(_ settingsViewController: SettingsViewController)
 }
 
 class SettingsViewController: TableViewController {
@@ -201,19 +200,6 @@ class SettingsViewController: TableViewController {
     private lazy var otherSettingsSection: Section = {
         // BRAVE TODO: Change it once we finalize our decision how to name the section.(#385)
         var section = Section(header: .title(Strings.otherSettingsSection))
-        if BraveRewards.isAvailable {
-            if let rewards = rewards {
-                section.rows += [
-                    Row(text: Strings.braveRewardsTitle, selection: { [unowned self] in
-                        let rewardsVC = BraveRewardsSettingsViewController(rewards)
-                        rewardsVC.tappedShowRewardsSettings = { [unowned self] in
-                            self.settingsDelegate?.settingsOpenRewardsSettings(self)
-                        }
-                        self.navigationController?.pushViewController(rewardsVC, animated: true)
-                        }, accessory: .disclosureIndicator),
-                ]
-            }
-        }
         section.rows += [
             Row(text: Strings.sync, selection: { [unowned self] in
                 if Sync.shared.isInSyncGroup {

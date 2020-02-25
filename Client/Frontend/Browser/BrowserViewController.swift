@@ -57,9 +57,6 @@ class BrowserViewController: UIViewController {
     fileprivate let alertStackView = UIStackView() // All content that appears above the footer should be added to this view. (Find In Page/SnackBars)
     fileprivate var findInPageBar: FindInPageBar?
     
-    // Single data source used for all favorites vcs
-    fileprivate let backgroundDataSource = NTPBackgroundDataSource()
-    
     var loadQueue = Deferred<Void>()
 
     lazy var mailtoLinkHandler: MailtoLinkHandler = MailtoLinkHandler()
@@ -138,8 +135,6 @@ class BrowserViewController: UIViewController {
     
     let safeBrowsing: SafeBrowsing?
     
-    let rewards: BraveRewards
-    let rewardsObserver: LedgerObserver
     private var notificationsHandler: AdsNotificationHandler?
     private(set) var publisher: PublisherInfo?
 
@@ -151,34 +146,12 @@ class BrowserViewController: UIViewController {
         self.crashedLastSession = crashedLastSession
         self.safeBrowsing = safeBrowsingManager
         
-        RewardsHelper.configureRewardsLogs()
         let configuration: BraveRewardsConfiguration
         if AppConstants.buildChannel.isPublic {
             configuration = .production
         } else {
-            if let override = Preferences.Rewards.EnvironmentOverride(rawValue: Preferences.Rewards.environmentOverride.value), override != .none {
-                switch override {
-                case .dev:
-                    configuration = .default
-                case .staging:
-                    configuration = .staging
-                case .prod:
-                    configuration = .production
-                default:
-                    configuration = .staging
-                }
-            } else {
-                configuration = AppConstants.buildChannel == .developer ? .staging : .production
-            }
+            configuration = AppConstants.buildChannel == .developer ? .staging : .production
         }
-        rewards = BraveRewards(configuration: configuration)
-        if !BraveRewards.isAvailable {
-            // Disable rewards services in case previous user already enabled
-            // rewards in previous build
-            rewards.ledger.isEnabled = false
-            rewards.ads.isEnabled = false
-        }
-        rewardsObserver = LedgerObserver(ledger: rewards.ledger)
         deviceCheckClient = DeviceCheckClient(environment: configuration.environment)
 
         super.init(nibName: nil, bundle: nil)
@@ -234,86 +207,11 @@ class BrowserViewController: UIViewController {
         Preferences.General.alwaysRequestDesktopSite.observe(from: self)
         Preferences.Shields.allShields.forEach { $0.observe(from: self) }
         Preferences.Privacy.blockAllCookies.observe(from: self)
-        Preferences.Rewards.hideRewardsIcon.observe(from: self)
         // Lists need to be compiled before attempting tab restoration
         contentBlockListDeferred = ContentBlockerHelper.compileBundledLists()
-        
-        setupRewardsObservers()
-        
-        if !Preferences.Rewards.checkedPreviousCycleForAdsViewing.value {
-            Preferences.Rewards.checkedPreviousCycleForAdsViewing.value = true
-            if rewards.ads.hasViewedAdsInPreviousCycle() {
-                MonthlyAdsGrantReminder.schedule(for: .previous)
-            }
-        }
-        
-        Preferences.NewTabPage.attemptToShowClaimRewardsNotification.value = true
-        
-        notificationsHandler = AdsNotificationHandler(ads: rewards.ads, presentingController: self)
-        notificationsHandler?.canShowNotifications = { [weak self] in
-            guard let self = self else { return false }
-            return !PrivateBrowsingManager.shared.isPrivateBrowsing &&
-                !self.topToolbar.inOverlayMode
-        }
-        notificationsHandler?.actionOccured = { [weak self] notification, action in
-            guard let self = self else { return }
-            if action == .opened {
-                let request = URLRequest(url: notification.url)
-                self.tabManager.addTabAndSelect(request, isPrivate: PrivateBrowsingManager.shared.isPrivateBrowsing)
-            }
-        }
     }
     
     let deviceCheckClient: DeviceCheckClient?
-    
-    private func setupRewardsObservers() {
-        rewards.ledger.add(rewardsObserver)
-        rewardsObserver.walletInitalized = { [weak self] result in
-            guard let self = self, let client = self.deviceCheckClient else { return }
-            if result == .walletCreated {
-                self.rewards.ledger.setupDeviceCheckEnrollment(client) { }
-                
-                if self.notificationsHandler?.shouldShowNotifications() == true {
-                    self.displayMyFirstAdIfAvailable()
-                }
-            }
-        }
-        rewardsObserver.fetchedPanelPublisher = { [weak self] publisher, tabId in
-            guard let self = self, self.isViewLoaded, let tab = self.tabManager.selectedTab, tab.rewardsId == tabId else { return }
-            self.publisher = publisher
-            self.updateRewardsButtonState()
-        }
-        rewardsObserver.notificationAdded = { [weak self] _ in
-            guard let self = self, self.isViewLoaded else { return }
-            self.updateRewardsButtonState()
-        }
-        rewardsObserver.notificationsRemoved = { [weak self] _ in
-            guard let self = self, self.isViewLoaded else { return }
-            self.updateRewardsButtonState()
-        }
-        rewardsObserver.rewardsEnabledStateUpdated = { [weak self] _ in
-            self?.updateRewardsButtonState()
-        }
-    }
-    
-    // Display first ad when the user gets back to this controller if they havent seen one before
-    func displayMyFirstAdIfAvailable() {
-        if !rewards.ledger.isEnabled || !rewards.ads.isEnabled { return }
-        if Preferences.Rewards.myFirstAdShown.value { return }
-        // Check if ads are eligible
-        if BraveAds.isCurrentLocaleSupported() {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                if Preferences.Rewards.myFirstAdShown.value { return }
-                Preferences.Rewards.myFirstAdShown.value = true
-                 AdsViewController.displayFirstAd(on: self) { [weak self] action, url in
-                    if action == .opened {
-                        let request = URLRequest(url: url)
-                        self?.tabManager.addTabAndSelect(request, isPrivate: PrivateBrowsingManager.shared.isPrivateBrowsing)
-                    }
-                }
-            }
-        }
-    }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         let isDark = Theme.of(tabManager.selectedTab).isDark
@@ -471,9 +369,6 @@ class BrowserViewController: UIViewController {
                            name: UIApplication.didBecomeActiveNotification, object: nil)
             $0.addObserver(self, selector: #selector(appDidEnterBackgroundNotification),
                            name: UIApplication.didEnterBackgroundNotification, object: nil)
-            $0.addObserver(self, selector: #selector(resetNTPNotification),
-                           name: .adsOrRewardsToggledInSettings, object: nil)
-            
         }
         
         KeyboardHelper.defaultHelper.addDelegate(self)
@@ -559,8 +454,6 @@ class BrowserViewController: UIViewController {
         self.updateToolbarStateForTraitCollection(self.traitCollection)
 
         setupConstraints()
-        
-        updateRewardsButtonState()
 
         // Setup UIDropInteraction to handle dragging and dropping
         // links into the view from other apps.
@@ -678,10 +571,6 @@ class BrowserViewController: UIViewController {
         updateTabCountUsingTabManager(tabManager)
         clipboardBarDisplayHandler?.checkIfShouldDisplayBar()
         favoritesViewController?.updateDuckDuckGoVisibility()
-        
-        if let tabId = tabManager.selectedTab?.rewardsId, rewards.ledger.selectedTabId == 0 {
-            rewards.ledger.selectedTabId = tabId
-        }
     }
     
     fileprivate lazy var checkCrashRestoration: () -> Void = {
@@ -715,9 +604,7 @@ class BrowserViewController: UIViewController {
         return !TabMO.getAll().compactMap({ $0.url }).isEmpty
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        presentOnboardingIntro()
-        
+    override func viewDidAppear(_ animated: Bool) {        
         screenshotHelper.viewIsVisible = true
         screenshotHelper.takePendingScreenshots(tabManager.allTabs)
 
@@ -745,132 +632,6 @@ class BrowserViewController: UIViewController {
             }
         }
     }
-    
-    func presentOnboardingIntro() {
-        // 1. Existing user.
-        // 2. User already completed onboarding.
-        if Preferences.General.basicOnboardingCompleted.value == OnboardingState.completed.rawValue {
-            // The user has ads in their region and they completed all onboarding.
-            if BraveAds.isCurrentLocaleSupported()
-                &&
-                Preferences.General.basicOnboardingProgress.value == OnboardingProgress.ads.rawValue {
-                return
-            }
-            
-            // The user doesn't have ads in their region and they've completed rewards.
-            if !BraveAds.isCurrentLocaleSupported()
-                &&
-                Preferences.General.basicOnboardingProgress.value == OnboardingProgress.rewards.rawValue {
-                return
-            }
-        }
-        
-        // The user either skipped or didn't complete onboarding.
-        let isRewardsEnabled = rewards.ledger.isEnabled
-        let currentProgress = OnboardingProgress(rawValue: Preferences.General.basicOnboardingProgress.value) ?? .none
-        
-        // 1. Existing user.
-        // 2. The user skipped onboarding before.
-        // 3. 60 days have passed since they last saw onboarding.
-        if Preferences.General.basicOnboardingCompleted.value == OnboardingState.skipped.rawValue {
-
-            guard let daysUntilNextPrompt = Preferences.General.basicOnboardingNextOnboardingPrompt.value else {
-                return
-            }
-            
-            // 60 days has passed since the user last saw the onboarding.. it's time to show the onboarding again..
-            if daysUntilNextPrompt <= Date() {
-                guard let onboarding = OnboardingNavigationController(
-                    profile: profile,
-                    onboardingType: rewards.ledger.isEnabled ? .existingUserRewardsOn(currentProgress) : .existingUserRewardsOff(currentProgress),
-                    rewards: rewards,
-                    theme: Theme.of(tabManager.selectedTab)
-                    ) else { return }
-                
-                onboarding.onboardingDelegate = self
-                present(onboarding, animated: true)
-                
-                Preferences.General.basicOnboardingNextOnboardingPrompt.value = Date(timeIntervalSinceNow: BrowserViewController.onboardingDaysInterval)
-            }
-            
-            return
-        }
-        
-        // 1. Rewards are on/off (existing user)
-        // 2. User hasn't seen the rewards part of the onboarding yet.
-        if (Preferences.General.basicOnboardingCompleted.value == OnboardingState.completed.rawValue)
-            &&
-            (Preferences.General.basicOnboardingProgress.value == OnboardingProgress.searchEngine.rawValue) {
-            
-            guard let onboarding = OnboardingNavigationController(
-                profile: profile,
-                onboardingType: isRewardsEnabled ? .existingUserRewardsOn(currentProgress) : .existingUserRewardsOff(currentProgress),
-                rewards: rewards,
-                theme: Theme.of(tabManager.selectedTab)
-                ) else { return }
-            
-            onboarding.onboardingDelegate = self
-            present(onboarding, animated: true)
-            return
-        }
-        
-        // 1. Rewards are on/off (existing user)
-        // 2. User hasn't seen the rewards part of the onboarding yet because their version of the app is insanely OLD and somehow the progress value doesn't exist.
-        if (Preferences.General.basicOnboardingCompleted.value == OnboardingState.completed.rawValue)
-            &&
-            (Preferences.General.basicOnboardingProgress.value == OnboardingProgress.none.rawValue) {
-            
-            guard let onboarding = OnboardingNavigationController(
-                profile: profile,
-                onboardingType: isRewardsEnabled ? .existingUserRewardsOn(currentProgress) : .existingUserRewardsOff(currentProgress),
-                rewards: rewards,
-                theme: Theme.of(tabManager.selectedTab)
-                ) else { return }
-            
-            onboarding.onboardingDelegate = self
-            present(onboarding, animated: true)
-            return
-        }
-        
-        // 1. Rewards are on/off (existing user)
-        // 2. Ads are now available
-        // 3. User hasn't seen the ads part of onboarding yet
-        if BraveAds.isCurrentLocaleSupported()
-            &&
-            (Preferences.General.basicOnboardingCompleted.value == OnboardingState.completed.rawValue)
-            &&
-            (Preferences.General.basicOnboardingProgress.value != OnboardingProgress.ads.rawValue) {
-            
-            guard let onboarding = OnboardingNavigationController(
-                profile: profile,
-                onboardingType: isRewardsEnabled ? .existingUserRewardsOn(currentProgress) : .existingUserRewardsOff(currentProgress),
-                rewards: rewards,
-                theme: Theme.of(tabManager.selectedTab)
-                ) else { return }
-            
-            onboarding.onboardingDelegate = self
-            present(onboarding, animated: true)
-            return
-        }
-        
-        // 1. User is brand new
-        // 2. User hasn't completed onboarding
-        // 3. We don't care how much progress they made. Onboarding is only complete when ALL of it is complete.
-        if Preferences.General.basicOnboardingCompleted.value != OnboardingState.completed.rawValue {
-            // The user has never completed the onboarding..
-            
-            guard let onboarding = OnboardingNavigationController(
-                profile: profile,
-                onboardingType: .newUser(currentProgress),
-                rewards: rewards,
-                theme: Theme.of(tabManager.selectedTab)
-                ) else { return }
-            
-            onboarding.onboardingDelegate = self
-            present(onboarding, animated: true)
-            return
-        }
-    }
 
     // THe logic for shouldShowWhatsNewTab is as follows: If we do not have the LatestAppVersionProfileKey in
     // the profile, that means that this is a fresh install and we do not show the What's New. If we do have
@@ -896,8 +657,6 @@ class BrowserViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         screenshotHelper.viewIsVisible = false
         super.viewWillDisappear(animated)
-        
-        rewards.ledger.selectedTabId = 0
     }
 
     override func viewDidDisappear(_ animated: Bool) {
@@ -967,9 +726,7 @@ class BrowserViewController: UIViewController {
 
         if favoritesViewController == nil {
             let homePanelController = FavoritesViewController(profile: profile,
-                                                              fromOverlay: !inline,
-                                                              rewards: rewards,
-                                                              backgroundDataSource: backgroundDataSource)
+                                                              fromOverlay: !inline)
             homePanelController.delegate = self
             homePanelController.view.alpha = 0
             homePanelController.applyTheme(Theme.of(tabManager.selectedTab))
@@ -1312,17 +1069,6 @@ class BrowserViewController: UIViewController {
     /// Updates the URL bar security, text and button states.
     fileprivate func updateURLBar() {
         guard let tab = tabManager.selectedTab else { return }
-        if let url = tab.url, !url.isLocal {
-            // Notify Rewards of new page load.
-            if let rewardsURL = rewardsXHRLoadURL,
-                url.host == rewardsURL.host,
-                url.isMediaSiteURL {
-                tabManager.selectedTab?.reportPageNaviagtion(to: rewards)
-                tabManager.selectedTab?.reportPageLoad(to: rewards)
-            }
-        }
-        
-        updateRewardsButtonState()
         
         topToolbar.currentURL = tab.url?.displayURL
         
@@ -1579,12 +1325,7 @@ class BrowserViewController: UIViewController {
     // MARK: - DuckDuckGo Callout
     
     private var duckDuckGoPopup: AlertPopupView?
-    func presentDuckDuckGoCallout(force: Bool = false) {
-        // Don't show when onboarding is showing
-        if let presentedViewController = self.presentedViewController, presentedViewController.isKind(of: OnboardingNavigationController.self) {
-            return
-        }
-        
+    func presentDuckDuckGoCallout(force: Bool = false) {        
         // Don't show duplicate popups
         if duckDuckGoPopup != nil { return }
         
@@ -1668,12 +1409,6 @@ extension BrowserViewController: SettingsDelegate {
                     self.presentDuckDuckGoCallout()
                 }
             }
-        })
-    }
-    
-    func settingsOpenRewardsSettings(_ settingsViewController: SettingsViewController) {
-        settingsViewController.dismiss(animated: true, completion: {
-            self.showBraveRewardsPanel(initialPage: .settings)
         })
     }
 }
@@ -1907,10 +1642,6 @@ extension BrowserViewController: TopToolbarDelegate {
         present(nav, animated: true)
     }
     
-    func topToolbarDidTapBraveRewardsButton(_ topToolbar: TopToolbarView) {
-        showBraveRewardsPanel()
-    }
-    
     func topToolbarDidTapMenuButton(_ topToolbar: TopToolbarView) {
         tabToolbarDidPressMenu(topToolbar)
     }
@@ -2139,9 +1870,6 @@ extension BrowserViewController: TabDelegate {
         tab.addContentScript(ResourceDownloadManager(tab: tab), name: ResourceDownloadManager.name())
         
         tab.addContentScript(WindowRenderHelperScript(tab: tab), name: WindowRenderHelperScript.name())
-        
-        tab.addContentScript(RewardsReporting(rewards: rewards, tab: tab), name: RewardsReporting.name())
-        tab.addContentScript(AdsMediaReporting(rewards: rewards, tab: tab), name: AdsMediaReporting.name())
     }
 
     func tab(_ tab: Tab, willDeleteWebView webView: WKWebView) {
@@ -2349,9 +2077,7 @@ extension BrowserViewController: TabManagerDelegate {
         if let url = tab.url, !url.isAboutURL && !tab.isPrivate {
             profile.recentlyClosedTabs.addTab(url as URL, title: tab.title, faviconURL: tab.displayFavicon?.url)
         }
-        updateTabsBarVisibility()
-        
-        rewards.reportTabClosed(tabId: tab.rewardsId)
+        updateTabsBarVisibility()        
     }
 
     func tabManagerDidAddTabs(_ tabManager: TabManager) {
@@ -3357,22 +3083,6 @@ extension BrowserViewController: FavoritesDelegate {
     func didTapShowMoreFavorites() {
         topToolbarDidTapBookmarkButton(nil, favorites: true)
     }
-    
-    func openBrandedImageCallout(state: BrandedImageCalloutState?) {
-        guard let state = state, state.hasDetailViewController else { return }
-        
-        let vc = NTPLearnMoreViewController(state: state, rewards: rewards)
-        
-        vc.linkHandler = { [weak self] url in
-            self?.tabManager.selectedTab?.loadRequest(PrivilegedRequest(url: url) as URLRequest)
-        }
-
-        addChild(vc)
-        view.addSubview(vc.view)
-        vc.view.snp.remakeConstraints {
-            $0.right.top.bottom.leading.equalToSuperview()
-        }
-    }
 }
 
 extension BrowserViewController: PreferencesObserver {
@@ -3425,8 +3135,6 @@ extension BrowserViewController: PreferencesObserver {
             } else {
                 tabManager.reloadSelectedTab()
             }
-        case Preferences.Rewards.hideRewardsIcon.key:
-            updateRewardsButtonState()
         default:
             log.debug("Received a preference change for an unknown key: \(key) on \(type(of: self))")
             break
@@ -3448,62 +3156,7 @@ extension BrowserViewController {
     }
 }
 
-extension BrowserViewController: OnboardingControllerDelegate {
-    func onboardingCompleted(_ onboardingController: OnboardingNavigationController) {
-        Preferences.General.basicOnboardingCompleted.value = OnboardingState.completed.rawValue
-        Preferences.General.basicOnboardingNextOnboardingPrompt.value = nil
-        
-        if BraveRewards.isAvailable {
-            switch onboardingController.onboardingType {
-            case .newUser:
-                if BraveAds.isCurrentLocaleSupported() {
-                    Preferences.General.basicOnboardingProgress.value = OnboardingProgress.ads.rawValue
-                } else {
-                    Preferences.General.basicOnboardingProgress.value = OnboardingProgress.rewards.rawValue
-                }
-                
-            case .existingUserRewardsOff:
-                if BraveAds.isCurrentLocaleSupported() {
-                    Preferences.General.basicOnboardingProgress.value = OnboardingProgress.ads.rawValue
-                }
-                
-            case .existingUserRewardsOn:
-                if BraveAds.isCurrentLocaleSupported() {
-                    Preferences.General.basicOnboardingProgress.value = OnboardingProgress.ads.rawValue
-                }
-                
-            default:
-                break
-            }
-        } else {
-            switch onboardingController.onboardingType {
-            case .newUser:
-                Preferences.General.basicOnboardingProgress.value = OnboardingProgress.searchEngine.rawValue
-                
-            case .existingUserRewardsOff, .existingUserRewardsOn:
-                break
-                
-            default:
-                break
-            }
-        }
-        
-        // Present private browsing prompt if necessary when onboarding has been completed
-        onboardingController.dismiss(animated: true) {
-            self.presentDuckDuckGoCalloutIfNeeded()
-        }
-    }
-    
-    func onboardingSkipped(_ onboardingController: OnboardingNavigationController) {
-        Preferences.General.basicOnboardingCompleted.value = OnboardingState.skipped.rawValue
-        Preferences.General.basicOnboardingNextOnboardingPrompt.value = Date(timeIntervalSinceNow: BrowserViewController.onboardingDaysInterval)
-        
-        // Present private browsing prompt if necessary when onboarding has been skipped
-        onboardingController.dismiss(animated: true) {
-            self.presentDuckDuckGoCalloutIfNeeded()
-        }
-    }
-    
+extension BrowserViewController {
     private func presentDuckDuckGoCalloutIfNeeded() {
         if PrivateBrowsingManager.shared.isPrivateBrowsing && self.presentedViewController == nil {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
@@ -3511,7 +3164,4 @@ extension BrowserViewController: OnboardingControllerDelegate {
             }
         }
     }
-    
-    // 60 days until the next time the user sees the onboarding..
-    static let onboardingDaysInterval = TimeInterval(60.days)
 }

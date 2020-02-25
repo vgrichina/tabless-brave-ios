@@ -19,7 +19,6 @@ protocol TabLocationViewDelegate {
     func tabLocationViewDidLongPressReload(_ tabLocationView: TabLocationView, from button: UIButton)
     func tabLocationViewDidTapStop(_ tabLocationView: TabLocationView)
     func tabLocationViewDidTapShieldsButton(_ urlBar: TabLocationView)
-    func tabLocationViewDidTapRewardsButton(_ urlBar: TabLocationView)
     
     /// - returns: whether the long-press was handled by the delegate; i.e. return `false` when the conditions for even starting handling long-press were not satisfied
     @discardableResult func tabLocationViewDidLongPressReaderMode(_ tabLocationView: TabLocationView) -> Bool
@@ -181,12 +180,6 @@ class TabLocationView: UIView {
         return button
     }()
     
-    lazy var rewardsButton: RewardsButton = {
-        let button = RewardsButton()
-        button.addTarget(self, action: #selector(didClickBraveRewardsButton), for: .touchUpInside)
-        return button
-    }()
-    
     lazy var separatorLine: UIView = CustomSeparatorView(lineSize: .init(width: 1, height: 26), cornerRadius: 2)
     
     lazy var tabOptionsStackView = UIStackView()
@@ -207,9 +200,7 @@ class TabLocationView: UIView {
         
         var optionSubviews = [readerModeButton, reloadButton, separatorLine, shieldsButton]
         separatorLine.isUserInteractionEnabled = false
-        
-        optionSubviews.append(rewardsButton)
-        
+
         let buttonContentEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
         optionSubviews.forEach {
             ($0 as? CustomSeparatorView)?.layoutMargins = UIEdgeInsets(top: 0, left: 2, bottom: 0, right: 2)
@@ -305,10 +296,6 @@ class TabLocationView: UIView {
         delegate?.tabLocationViewDidTapShieldsButton(self)
     }
     
-    @objc func didClickBraveRewardsButton() {
-        delegate?.tabLocationViewDidTapRewardsButton(self)
-    }
-
     fileprivate func updateTextWithURL() {
         (urlTextField as? DisplayTextField)?.hostString = url?.host ?? ""
         urlTextField.text = url?.withoutWWW.schemelessAbsoluteString.trim("/")

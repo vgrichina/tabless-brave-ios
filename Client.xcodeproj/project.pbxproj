@@ -15,10 +15,8 @@
 		0A0D3D5021A5609600BEE65B /* SafeBrowsingError.html in Resources */ = {isa = PBXBuildFile; fileRef = 0A0D3D4821A5609500BEE65B /* SafeBrowsingError.html */; };
 		0A0D3D5221A565C300BEE65B /* SafeBrowsingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0D3D5121A565C300BEE65B /* SafeBrowsingHandler.swift */; };
 		0A0D3D6121A596BE00BEE65B /* MalwareList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0D3D6021A596BE00BEE65B /* MalwareList.swift */; };
-		0A16E2D723D4E1FB00B0BF94 /* ClaimRewardsNTPNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A16E2D623D4E1FB00B0BF94 /* ClaimRewardsNTPNotificationViewController.swift */; };
 		0A19362F234D44DB002E2B81 /* AppearanceAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A19362E234D44DB002E2B81 /* AppearanceAttributes.swift */; };
 		0A19365423508756002E2B81 /* LinkPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A19365323508756002E2B81 /* LinkPreviewViewController.swift */; };
-		0A1CBCFD23571EFA004DA73F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CBCFB23571EFA004DA73F /* Localizable.strings */; };
 		0A1E842D21909CA70042F782 /* crypto.js in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E842C21909CA70042F782 /* crypto.js */; };
 		0A1E842F21909CBC0042F782 /* bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E842E21909CBB0042F782 /* bundle.js */; };
 		0A1E843121909CC40042F782 /* fetch.js in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E843021909CC30042F782 /* fetch.js */; };
@@ -33,13 +31,8 @@
 		0A1E84452190A57F0042F782 /* SyncPairWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E843B2190A57F0042F782 /* SyncPairWordsViewController.swift */; };
 		0A1E84462190A57F0042F782 /* SyncAddDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E843C2190A57F0042F782 /* SyncAddDeviceViewController.swift */; };
 		0A24F7F0233E9136004D2F3A /* ObjcExceptionBridging.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AC0D399233E7CAF0091EFA5 /* ObjcExceptionBridging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0A27ABA123D1B9C400194921 /* BrandedImageCalloutState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27ABA023D1B9C400194921 /* BrandedImageCalloutState.swift */; };
 		0A2F921C22146B7700304249 /* FrecencyQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2F921B22146B7700304249 /* FrecencyQuery.swift */; };
 		0A39D56D21930B89008B2772 /* ScriptOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39D56C21930B89008B2772 /* ScriptOpener.swift */; };
-		0A3C789D23055C4A0022F6D8 /* OnboardingSearchEnginesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C789C23055C4A0022F6D8 /* OnboardingSearchEnginesViewController.swift */; };
-		0A3C789F23056C910022F6D8 /* OnboardingSearchEnginesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C789E23056C910022F6D8 /* OnboardingSearchEnginesView.swift */; };
-		0A3C78A1230597DA0022F6D8 /* OnboardingShieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C78A0230597DA0022F6D8 /* OnboardingShieldsViewController.swift */; };
-		0A3C78A3230597F10022F6D8 /* OnboardingShieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C78A2230597F10022F6D8 /* OnboardingShieldsView.swift */; };
 		0A4214E921A6EBCF006B8E39 /* SafeBrowsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4214E821A6EBCF006B8E39 /* SafeBrowsingTests.swift */; };
 		0A4214FF21AC0D6C006B8E39 /* TimeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4214F621AC0AFF006B8E39 /* TimeExtensions.swift */; };
 		0A42150121AC0E8E006B8E39 /* TimeExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42150021AC0E8E006B8E39 /* TimeExtensionTests.swift */; };
@@ -58,14 +51,9 @@
 		0A4BEFDA221EF3360005551A /* NetworkResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BEFD9221EF3360005551A /* NetworkResourceType.swift */; };
 		0A4BEFDE221F03C80005551A /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BEFDD221F03C80005551A /* NetworkManagerTests.swift */; };
 		0A53F3E721E6560A0086E80C /* InMemoryDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53F3E621E6560A0086E80C /* InMemoryDataController.swift */; };
-		0A5CBD3423D4677100362CC8 /* NTPLearnMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CBD3323D4677100362CC8 /* NTPLearnMoreViewController.swift */; };
-		0A5CBD3823D4905D00362CC8 /* NTPNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CBD3723D4905D00362CC8 /* NTPNotificationView.swift */; };
-		0A6112AC230B00E7001BBC45 /* OnboardingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6112AB230B00E7001BBC45 /* OnboardingNavigationController.swift */; };
-		0A6112BD230B4306001BBC45 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6112BC230B4306001BBC45 /* OnboardingViewController.swift */; };
 		0A62A355238C6F3E008902E3 /* Bookmark+Restoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A354238C6F3E008902E3 /* Bookmark+Restoration.swift */; };
 		0A66550A23E9D9750047EF2A /* UserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A66550923E9D9750047EF2A /* UserAgent.swift */; };
 		0A66550C23E9E04F0047EF2A /* UserAgentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A66550B23E9E04F0047EF2A /* UserAgentTests.swift */; };
-		0A764F31230EE5CA003A1D9B /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A764F30230EE5CA003A1D9B /* OnboardingState.swift */; };
 		0A771D35218C8FDC00336E0D /* Bookmark+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A771D34218C8FDC00336E0D /* Bookmark+Sync.swift */; };
 		0A7B5D6722689C5D00AADF22 /* AddEditHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B5D6622689C5D00AADF22 /* AddEditHeaderView.swift */; };
 		0A7B5D702269E72C00AADF22 /* BookmarkSaveLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B5D6F2269E72C00AADF22 /* BookmarkSaveLocation.swift */; };
@@ -74,7 +62,6 @@
 		0A8C69AB225CFCAF00988715 /* AddEditBookmarkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C69AA225CFCAF00988715 /* AddEditBookmarkTableViewController.swift */; };
 		0A8C69B5225DE99700988715 /* BookmarkDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C69B4225DE99700988715 /* BookmarkDetailsView.swift */; };
 		0A8C69BE225E350300988715 /* IndentedImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C69BD225E350300988715 /* IndentedImageTableViewCell.swift */; };
-		0A91598922B834CE00CCC119 /* BVC+Rewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A91598822B834CE00CCC119 /* BVC+Rewards.swift */; };
 		0A917388231D11960069A08B /* AppReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A917387231D11960069A08B /* AppReview.swift */; };
 		0A917391231D173C0069A08B /* AppReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A917390231D173C0069A08B /* AppReviewTests.swift */; };
 		0A93F1802264C2D200A3571B /* FolderDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A93F17F2264C2D200A3571B /* FolderDetailsView.swift */; };
@@ -125,7 +112,6 @@
 		0ADCD4522319640F0078CC67 /* UserAgentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCD4512319640F0078CC67 /* UserAgentBuilder.swift */; };
 		0ADCD45B231973650078CC67 /* UserAgentBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCD45A231973650078CC67 /* UserAgentBuilderTests.swift */; };
 		0ADCD45F2319799F0078CC67 /* RollingFileLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61453BD1B750A1700C3F9D7 /* RollingFileLoggerTests.swift */; };
-		0AE5C09922CAA01E00DFF3EE /* RewardsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5C09822CAA01E00DFF3EE /* RewardsButton.swift */; };
 		0AEF16C723CDE4B800158AD9 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEF16C523CDE4B800158AD9 /* BottomSheetViewController.swift */; };
 		0AEF99A922E22C5E00294C76 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEF99A822E22C5E00294C76 /* DownloadsViewController.swift */; };
 		0AEF99B222E22D2200294C76 /* DateGroupedTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEF99B122E22D2200294C76 /* DateGroupedTableData.swift */; };
@@ -144,7 +130,6 @@
 		0AF52D06237B19CB00BFAB56 /* BytesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF52D05237B19CB00BFAB56 /* BytesTests.swift */; };
 		0AF684622191D6470079EC77 /* bookmark_util.js in Resources */ = {isa = PBXBuildFile; fileRef = 0AF6845A2191D6470079EC77 /* bookmark_util.js */; };
 		0AFC8F9523D1DF6500941895 /* TranslucentBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC8F9423D1DF6500941895 /* TranslucentBottomSheet.swift */; };
-		0AFC8F9E23D3762B00941895 /* NTPNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC8F9D23D3762A00941895 /* NTPNotificationViewController.swift */; };
 		0B3E7D951B27A7CE00E2E84D /* AboutHomeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E7D931B27A7CE00E2E84D /* AboutHomeHandler.swift */; };
 		0B54BD191B698B7C004C822C /* SuggestedSites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B54BD181B698B7C004C822C /* SuggestedSites.swift */; };
 		0B62EFD21AD63CD100ACB9CD /* Clearables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62EFD11AD63CD100ACB9CD /* Clearables.swift */; };
@@ -161,122 +146,10 @@
 		0BF0DB941A8545800039F300 /* TopToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0DB931A8545800039F300 /* TopToolbarView.swift */; };
 		0BF1B7E31AC60DEA00A7B407 /* InsetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF1B7E21AC60DEA00A7B407 /* InsetButton.swift */; };
 		0BF42D4F1A7CD09600889E28 /* TestFavicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF42D4E1A7CD09600889E28 /* TestFavicons.swift */; };
-		2713AF052396EA8F00E3ACAA /* VerifyUserWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2713AF042396EA8F00E3ACAA /* VerifyUserWalletViewController.swift */; };
-		2713AF072398439E00E3ACAA /* ConnectUserWalletButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2713AF062398439E00E3ACAA /* ConnectUserWalletButton.swift */; };
-		2713AF0923984C6B00E3ACAA /* VerifiedUserWalletButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2713AF0823984C6B00E3ACAA /* VerifiedUserWalletButton.swift */; };
 		27187808216526090006036E /* AlertPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187807216526090006036E /* AlertPopupView.swift */; };
 		2718780A216526240006036E /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187809216526240006036E /* PopupView.swift */; };
-		2718B26E2391BB8E00F378BF /* DisabledSettingGraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718B26D2391BB8E00F378BF /* DisabledSettingGraphicView.swift */; };
-		271DEC2B234CC760009DAC37 /* BraveRewardsUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 271DEC1B234CC75F009DAC37 /* BraveRewardsUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		271DEC2E234CC760009DAC37 /* BraveRewardsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271DEC19234CC75F009DAC37 /* BraveRewardsUI.framework */; };
-		271DEC2F234CC760009DAC37 /* BraveRewardsUI.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 271DEC19234CC75F009DAC37 /* BraveRewardsUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		271DECC2234CC7EF009DAC37 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC3C234CC7ED009DAC37 /* WelcomeViewController.swift */; };
-		271DECC3234CC7EF009DAC37 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC3D234CC7ED009DAC37 /* WelcomeView.swift */; };
-		271DECC4234CC7EF009DAC37 /* PublisherAttentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC3F234CC7ED009DAC37 /* PublisherAttentionView.swift */; };
-		271DECC5234CC7EF009DAC37 /* PublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC40234CC7ED009DAC37 /* PublisherView.swift */; };
-		271DECC6234CC7EF009DAC37 /* PublisherSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC41234CC7ED009DAC37 /* PublisherSummaryView.swift */; };
-		271DECC7234CC7EF009DAC37 /* RewardsDisabledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC43234CC7ED009DAC37 /* RewardsDisabledView.swift */; };
-		271DECCB234CC7EF009DAC37 /* CreateWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC49234CC7ED009DAC37 /* CreateWalletViewController.swift */; };
-		271DECCC234CC7EF009DAC37 /* CreateWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC4A234CC7ED009DAC37 /* CreateWalletView.swift */; };
-		271DECCD234CC7EF009DAC37 /* RewardsUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC4B234CC7ED009DAC37 /* RewardsUIDelegate.swift */; };
-		271DECCE234CC7EF009DAC37 /* RewardsUX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC4C234CC7ED009DAC37 /* RewardsUX.swift */; };
-		271DECCF234CC7EF009DAC37 /* AdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC4E234CC7EE009DAC37 /* AdsViewController.swift */; };
-		271DECD0234CC7EF009DAC37 /* AdSwipeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC4F234CC7EE009DAC37 /* AdSwipeButton.swift */; };
-		271DECD1234CC7EF009DAC37 /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC50234CC7EE009DAC37 /* AdView.swift */; };
-		271DECD2234CC7EF009DAC37 /* AdsNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC51234CC7EE009DAC37 /* AdsNotificationHandler.swift */; };
-		271DECD3234CC7EF009DAC37 /* AdContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC52234CC7EE009DAC37 /* AdContentButton.swift */; };
-		271DECD4234CC7EF009DAC37 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC54234CC7EE009DAC37 /* Strings.swift */; };
-		271DECD5234CC7EF009DAC37 /* RewardsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC55234CC7EE009DAC37 /* RewardsDataSource.swift */; };
-		271DECD6234CC7EF009DAC37 /* QASettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC57234CC7EE009DAC37 /* QASettingsViewController.swift */; };
-		271DECD7234CC7EF009DAC37 /* TippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC59234CC7EE009DAC37 /* TippingViewController.swift */; };
-		271DECD8234CC7EF009DAC37 /* TippingConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC5A234CC7EE009DAC37 /* TippingConfirmationView.swift */; };
-		271DECD9234CC7EF009DAC37 /* InsufficientFundsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC5B234CC7EE009DAC37 /* InsufficientFundsButton.swift */; };
-		271DECDA234CC7EF009DAC37 /* TippingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC5C234CC7EE009DAC37 /* TippingView.swift */; };
-		271DECDB234CC7EF009DAC37 /* TippingOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC5D234CC7EE009DAC37 /* TippingOverviewView.swift */; };
-		271DECDC234CC7EF009DAC37 /* TippingSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC5E234CC7EE009DAC37 /* TippingSelectionView.swift */; };
-		271DECDD234CC7EF009DAC37 /* TippingSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC5F234CC7EE009DAC37 /* TippingSelectionViewController.swift */; };
-		271DECDE234CC7EF009DAC37 /* TippingOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC60234CC7EE009DAC37 /* TippingOptionView.swift */; };
-		271DECDF234CC7EF009DAC37 /* SendTipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC61234CC7EE009DAC37 /* SendTipButton.swift */; };
-		271DECE0234CC7EF009DAC37 /* WalletHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC63234CC7EE009DAC37 /* WalletHeaderView.swift */; };
-		271DECE1234CC7EF009DAC37 /* RewardsSummaryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC64234CC7EE009DAC37 /* RewardsSummaryProtocol.swift */; };
-		271DECE2234CC7EF009DAC37 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC65234CC7EE009DAC37 /* WalletViewController.swift */; };
-		271DECE3234CC7EF009DAC37 /* EmptyWalletSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC66234CC7EE009DAC37 /* EmptyWalletSummaryView.swift */; };
-		271DECE4234CC7EF009DAC37 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC67234CC7EE009DAC37 /* WalletView.swift */; };
-		271DECE5234CC7EF009DAC37 /* WalletActionNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC69234CC7EE009DAC37 /* WalletActionNotificationView.swift */; };
-		271DECE6234CC7EF009DAC37 /* WalletAlertNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC6A234CC7EE009DAC37 /* WalletAlertNotificationView.swift */; };
-		271DECE7234CC7EF009DAC37 /* WalletNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC6B234CC7EE009DAC37 /* WalletNotificationView.swift */; };
-		271DECE8234CC7EF009DAC37 /* RewardsNotificationViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC6C234CC7EE009DAC37 /* RewardsNotificationViewBuilder.swift */; };
-		271DECE9234CC7EF009DAC37 /* BATValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC6D234CC7EE009DAC37 /* BATValue.swift */; };
-		271DECEA234CC7EF009DAC37 /* GrantsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC6F234CC7EE009DAC37 /* GrantsItemView.swift */; };
-		271DECEB234CC7EF009DAC37 /* GrantsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC70234CC7EE009DAC37 /* GrantsListViewController.swift */; };
-		271DECEC234CC7EF009DAC37 /* RewardsSummaryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC72234CC7EE009DAC37 /* RewardsSummaryRowView.swift */; };
-		271DECED234CC7EF009DAC37 /* RewardsSummaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC73234CC7EE009DAC37 /* RewardsSummaryButton.swift */; };
-		271DECEE234CC7EF009DAC37 /* RewardsSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC74234CC7EE009DAC37 /* RewardsSummaryView.swift */; };
-		271DECEF234CC7EF009DAC37 /* RewardsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC75234CC7EE009DAC37 /* RewardsState.swift */; };
-		271DECF0234CC7EF009DAC37 /* SettingsAdSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC78234CC7EF009DAC37 /* SettingsAdSectionView.swift */; };
-		271DECF1234CC7EF009DAC37 /* AdsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC7A234CC7EF009DAC37 /* AdsDetailsViewController.swift */; };
-		271DECF2234CC7EF009DAC37 /* AdsUnsupportedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC7B234CC7EF009DAC37 /* AdsUnsupportedView.swift */; };
-		271DECF3234CC7EF009DAC37 /* OptionsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC7D234CC7EF009DAC37 /* OptionsSelectionViewController.swift */; };
-		271DECF4234CC7EF009DAC37 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC7E234CC7EF009DAC37 /* SettingsView.swift */; };
-		271DECF5234CC7EF009DAC37 /* SettingsGrantSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC80234CC7EF009DAC37 /* SettingsGrantSectionView.swift */; };
-		271DECF7234CC7EF009DAC37 /* SettingsViewDetailsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC82234CC7EF009DAC37 /* SettingsViewDetailsButton.swift */; };
-		271DECF8234CC7EF009DAC37 /* SettingsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC83234CC7EF009DAC37 /* SettingsSectionView.swift */; };
-		271DECF9234CC7EF009DAC37 /* TipsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC86234CC7EF009DAC37 /* TipsDetailViewController.swift */; };
-		271DECFA234CC7EF009DAC37 /* TipsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC87234CC7EF009DAC37 /* TipsTableCell.swift */; };
-		271DECFB234CC7EF009DAC37 /* TipsSummaryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC88234CC7EF009DAC37 /* TipsSummaryTableCell.swift */; };
-		271DECFC234CC7EF009DAC37 /* SettingsTipsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC89234CC7EF009DAC37 /* SettingsTipsSectionView.swift */; };
-		271DED01234CC7EF009DAC37 /* SettingsUX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC8F234CC7EF009DAC37 /* SettingsUX.swift */; };
-		271DED03234CC7EF009DAC37 /* AutoContributeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC94234CC7EF009DAC37 /* AutoContributeDetailsViewController.swift */; };
-		271DED04234CC7EF009DAC37 /* AutoContributeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC95234CC7EF009DAC37 /* AutoContributeCell.swift */; };
-		271DED05234CC7EF009DAC37 /* SettingsAutoContributeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC96234CC7EF009DAC37 /* SettingsAutoContributeSectionView.swift */; };
-		271DED06234CC7EF009DAC37 /* SettingsRewardsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC98234CC7EF009DAC37 /* SettingsRewardsSectionView.swift */; };
-		271DED07234CC7EF009DAC37 /* BraveRewardsToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC99234CC7EF009DAC37 /* BraveRewardsToggleView.swift */; };
-		271DED08234CC7EF009DAC37 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC9A234CC7EF009DAC37 /* SettingsViewController.swift */; };
-		271DED09234CC7EF009DAC37 /* RewardsPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC9B234CC7EF009DAC37 /* RewardsPanelController.swift */; };
-		271DED0A234CC7EF009DAC37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271DEC9C234CC7EF009DAC37 /* Images.xcassets */; };
-		271DED0B234CC7EF009DAC37 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC9F234CC7EF009DAC37 /* TableViewCell.swift */; };
-		271DED0C234CC7EF009DAC37 /* EmptyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECA0234CC7EF009DAC37 /* EmptyTableCell.swift */; };
-		271DED0D234CC7EF009DAC37 /* LabelAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECA1234CC7EF009DAC37 /* LabelAccessoryView.swift */; };
-		271DED0E234CC7EF009DAC37 /* TableHeaderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECA2234CC7EF009DAC37 /* TableHeaderRowView.swift */; };
-		271DED0F234CC7EF009DAC37 /* DetailActionableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECA3234CC7EF009DAC37 /* DetailActionableRow.swift */; };
-		271DED10234CC7EF009DAC37 /* CurrencyContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECA4234CC7EF009DAC37 /* CurrencyContainerView.swift */; };
-		271DED11234CC7EF009DAC37 /* PopoverNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECA5234CC7EF009DAC37 /* PopoverNavigationController.swift */; };
-		271DED12234CC7EF009DAC37 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECA6234CC7EF009DAC37 /* SeparatorView.swift */; };
-		271DED13234CC7EF009DAC37 /* LinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECA7234CC7EF009DAC37 /* LinkLabel.swift */; };
-		271DED14234CC7EF009DAC37 /* CreateWalletButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECA8234CC7EF009DAC37 /* CreateWalletButton.swift */; };
-		271DED15234CC7EF009DAC37 /* PublisherIconCircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECA9234CC7EF009DAC37 /* PublisherIconCircleImageView.swift */; };
-		271DED16234CC7EF009DAC37 /* BATUSDPairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECAA234CC7EF009DAC37 /* BATUSDPairView.swift */; };
-		271DED17234CC7EF009DAC37 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECAB234CC7EF009DAC37 /* Then.swift */; };
-		271DED18234CC7EF009DAC37 /* GrabberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECAC234CC7EF009DAC37 /* GrabberView.swift */; };
-		271DED19234CC7EF009DAC37 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECAD234CC7EF009DAC37 /* LoaderView.swift */; };
-		271DED1A234CC7EF009DAC37 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECAE234CC7EF009DAC37 /* ActionButton.swift */; };
-		271DED1B234CC7EF009DAC37 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECAF234CC7EF009DAC37 /* QRCode.swift */; };
-		271DED1C234CC7EF009DAC37 /* SwitchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECB0234CC7EF009DAC37 /* SwitchRow.swift */; };
-		271DED1D234CC7EF009DAC37 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECB1234CC7EF009DAC37 /* Colors.swift */; };
-		271DED1E234CC7EF009DAC37 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECB2234CC7EF009DAC37 /* GradientView.swift */; };
-		271DED1F234CC7EF009DAC37 /* FaviconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECB3234CC7EF009DAC37 /* FaviconData.swift */; };
-		271DED20234CC7EF009DAC37 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECB4234CC7EF009DAC37 /* Button.swift */; };
-		271DED21234CC7EF009DAC37 /* BasicAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECB5234CC7EF009DAC37 /* BasicAnimationController.swift */; };
-		271DED22234CC7EF009DAC37 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECB6234CC7EF009DAC37 /* DismissButton.swift */; };
-		271DED23234CC7EF009DAC37 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECB8234CC7EF009DAC37 /* UITableViewExtensions.swift */; };
-		271DED24234CC7EF009DAC37 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECB9234CC7EF009DAC37 /* ArrayExtensions.swift */; };
-		271DED25234CC7EF009DAC37 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECBA234CC7EF009DAC37 /* UIStackViewExtensions.swift */; };
-		271DED26234CC7EF009DAC37 /* BraveLedgerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECBB234CC7EF009DAC37 /* BraveLedgerExtensions.swift */; };
-		271DED27234CC7EF009DAC37 /* BraveRewardsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECBC234CC7EF009DAC37 /* BraveRewardsExtensions.swift */; };
-		271DED28234CC7EF009DAC37 /* POPExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECBD234CC7EF009DAC37 /* POPExtensions.swift */; };
-		271DED29234CC7EF009DAC37 /* PublisherInfoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECBE234CC7EF009DAC37 /* PublisherInfoExtensions.swift */; };
-		271DED2A234CC7EF009DAC37 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECBF234CC7EF009DAC37 /* UIImageExtensions.swift */; };
-		271DED2B234CC7EF009DAC37 /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECC0234CC7EF009DAC37 /* BundleExtensions.swift */; };
-		271DED2C234CC7EF009DAC37 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DECC1234CC7EF009DAC37 /* DateExtensions.swift */; };
-		27253973236CE6B100D06EF1 /* GrantClaimedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC81234CC7EF009DAC37 /* GrantClaimedViewController.swift */; };
 		272FCAA0225CF8F00091E645 /* OnePasswordExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FCA98225CF8F00091E645 /* OnePasswordExtension.framework */; };
-		27353FF2235F4E7300E42EBB /* WalletDisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27353FF1235F4E7300E42EBB /* WalletDisclaimerView.swift */; };
-		2744D6CB239EDB1A00A89EBB /* DisconnectedUserWalletButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2744D6CA239EDB1A00A89EBB /* DisconnectedUserWalletButton.swift */; };
-		2744D6CE239EDCBC00A89EBB /* VerifyUserWalletButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2744D6CD239EDCBC00A89EBB /* VerifyUserWalletButton.swift */; };
-		2744D6D0239EF10B00A89EBB /* UserWalletDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2744D6CF239EF10B00A89EBB /* UserWalletDetailsViewController.swift */; };
-		275218FC23E0BB7500E416B4 /* PendingContributionDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275218FB23E0BB7500E416B4 /* PendingContributionDetailController.swift */; };
 		2755AB7D23107BC600F0721F /* AdsReporting.js in Resources */ = {isa = PBXBuildFile; fileRef = 2755AB7C23107BC600F0721F /* AdsReporting.js */; };
-		2755AB8623107DBD00F0721F /* AdsMediaReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2755AB8523107DBD00F0721F /* AdsMediaReporting.swift */; };
 		2760D2BF215ACCE20068E131 /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2760D2BE215ACCE20068E131 /* BundleExtensions.swift */; };
 		2765825D2171263A00754B2F /* UserReferralProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2765825C2171263A00754B2F /* UserReferralProgram.swift */; };
 		276582692171266900754B2F /* ReferralData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276582652171266900754B2F /* ReferralData.swift */; };
@@ -286,7 +159,6 @@
 		27658271217130D900754B2F /* GlobalSign_r1.cer in Resources */ = {isa = PBXBuildFile; fileRef = 2765826E217130D900754B2F /* GlobalSign_r1.cer */; };
 		27658272217130D900754B2F /* GlobalSign_r3.cer in Resources */ = {isa = PBXBuildFile; fileRef = 2765826F217130D900754B2F /* GlobalSign_r3.cer */; };
 		27658273217130D900754B2F /* DigiCertHighAssurance.cer in Resources */ = {isa = PBXBuildFile; fileRef = 27658270217130D900754B2F /* DigiCertHighAssurance.cer */; };
-		276E7A3C22F21DBE00939424 /* RewardsReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276E7A3B22F21DBE00939424 /* RewardsReporting.swift */; };
 		2777273722EB43A100F0214C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2777273622EB43A100F0214C /* StringExtensions.swift */; };
 		2777274022EB44B300F0214C /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2777273F22EB44B300F0214C /* StringExtensionTests.swift */; };
 		2777275A22EB4C7700F0214C /* BraveShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE7688420B3456C00FF5533 /* BraveShared.framework */; };
@@ -295,32 +167,15 @@
 		279C756B219DDE3B001CD1CB /* FingerprintingProtection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C756A219DDE3B001CD1CB /* FingerprintingProtection.swift */; };
 		279C75C821A5B37D001CD1CB /* FingerprintingProtection.js in Resources */ = {isa = PBXBuildFile; fileRef = 279C75C021A5B37D001CD1CB /* FingerprintingProtection.js */; };
 		27A586E1214C0DDD000CAE3C /* PreferencesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A586E0214C0DDD000CAE3C /* PreferencesTest.swift */; };
-		27A9068923D65A10005D7609 /* PendingContributionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9068823D65A10005D7609 /* PendingContributionListController.swift */; };
-		27A9068B23D65E0E005D7609 /* PendingContributionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9068A23D65E0E005D7609 /* PendingContributionCell.swift */; };
-		27AC169323834175004BE19C /* MonthlyAdsGrantReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC168F23833A16004BE19C /* MonthlyAdsGrantReminder.swift */; };
 		27AC169823834510004BE19C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC169623834510004BE19C /* UserNotifications.framework */; };
-		27B0C7B523D24BAA00B9EA3D /* AutoContributeExclusionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B0C7B323D24BAA00B9EA3D /* AutoContributeExclusionListController.swift */; };
-		27B0C7B823D2555C00B9EA3D /* ExclusionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B0C7B623D2555C00B9EA3D /* ExclusionListCell.swift */; };
-		27B0C7BC23D604C500B9EA3D /* AutoContributeSupportedListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B0C7BA23D604C500B9EA3D /* AutoContributeSupportedListController.swift */; };
-		27B1E26D235E58190062E86F /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B1E26C235E58190062E86F /* LocaleExtensions.swift */; };
 		27C461DE211B76500088A441 /* ShieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C461DD211B76500088A441 /* ShieldsView.swift */; };
 		27C46201211CD8D20088A441 /* DeferredTestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A176323020CF2A6000126F25 /* DeferredTestUtils.swift */; };
-		27D114D42358FBBF00166534 /* BraveRewardsSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D114D32358FBBF00166534 /* BraveRewardsSettingsViewController.swift */; };
 		27D114D62358FCA400166534 /* SettingsRowViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D114D52358FCA400166534 /* SettingsRowViews.swift */; };
-		27D3155223D7A95C00219462 /* SettingsMonthlyTipsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D3155123D7A95C00219462 /* SettingsMonthlyTipsSectionView.swift */; };
-		27D3155523D8B0CE00219462 /* MonthlyTipsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D3155423D8B0CE00219462 /* MonthlyTipsDetailViewController.swift */; };
-		27D3155723D8B16200219462 /* SettingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D3155623D8B16200219462 /* SettingsTableView.swift */; };
 		27D87C2E2152B50200FB55C6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D87C2D2152B50200FB55C6 /* GradientView.swift */; };
 		27F4439F2135E11200296C58 /* BraveShareTo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27F443952135E11200296C58 /* BraveShareTo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		27F443AD2135E25300296C58 /* ShareToBraveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F443AC2135E25300296C58 /* ShareToBraveViewController.swift */; };
 		27F443F42138843400296C58 /* BraveShareToInfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27F443F22138843400296C58 /* BraveShareToInfoPlist.strings */; };
 		27F94A3A21909A5900F4FADF /* SearchSuggestionsPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F94A3921909A5900F4FADF /* SearchSuggestionsPromptView.swift */; };
-		27FA2D4A234CC95A004D5D2D /* BATValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA2D47234CC959004D5D2D /* BATValueTests.swift */; };
-		27FA2D4B234CC95A004D5D2D /* RewardsNotificationViewBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA2D48234CC95A004D5D2D /* RewardsNotificationViewBuilderTests.swift */; };
-		27FA2D4C234CC95A004D5D2D /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA2D49234CC95A004D5D2D /* DateExtensionsTests.swift */; };
-		27FA2D58234CDCEA004D5D2D /* BraveRewards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FA2D4F234CC9FB004D5D2D /* BraveRewards.framework */; };
-		27FA2D65234E3222004D5D2D /* BraveShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE7688420B3456C00FF5533 /* BraveShared.framework */; };
-		27FA2D69234E3222004D5D2D /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288A2D861AB8B3260023ABC3 /* Shared.framework */; };
 		27FD2CAB2146C31C00A5A779 /* RequestDesktopSiteActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD2CA12146C31C00A5A779 /* RequestDesktopSiteActivity.swift */; };
 		27FD2CAC2146C31C00A5A779 /* FindInPageActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD2CA92146C31C00A5A779 /* FindInPageActivity.swift */; };
 		27FD2CAD2146C31C00A5A779 /* AddToFavoritesActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD2CAA2146C31C00A5A779 /* AddToFavoritesActivity.swift */; };
@@ -613,22 +468,6 @@
 		5D24AF8221BA459000F9506A /* BlocklistName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D24AF8121BA459000F9506A /* BlocklistName.swift */; };
 		5D24AF8421BA489A00F9506A /* ContentBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D24AF8321BA489A00F9506A /* ContentBlocker.swift */; };
 		5D24AF9021BA4D7700F9506A /* ContentBlockerRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D24AF8F21BA4D7700F9506A /* ContentBlockerRegion.swift */; };
-		5D53749C23846FFC00A2B587 /* anton-repponen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53748D23846FFA00A2B587 /* anton-repponen.jpg */; };
-		5D53749D23846FFC00A2B587 /* dc-cavalleri.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53748E23846FFA00A2B587 /* dc-cavalleri.jpg */; };
-		5D53749E23846FFC00A2B587 /* louis-kim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53748F23846FFA00A2B587 /* louis-kim.jpg */; };
-		5D53749F23846FFC00A2B587 /* Svalbard_Jerol_Soibam.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53749023846FFA00A2B587 /* Svalbard_Jerol_Soibam.jpeg */; };
-		5D5374A023846FFC00A2B587 /* joe-gardner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53749123846FFB00A2B587 /* joe-gardner.jpg */; };
-		5D5374A123846FFC00A2B587 /* xavier-balderas-cejudo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53749223846FFB00A2B587 /* xavier-balderas-cejudo.jpg */; };
-		5D5374A223846FFC00A2B587 /* anders-jilden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53749323846FFB00A2B587 /* anders-jilden.jpg */; };
-		5D5374A323846FFC00A2B587 /* will_christiansen_glacier_peak.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53749423846FFB00A2B587 /* will_christiansen_glacier_peak.jpg */; };
-		5D5374A423846FFC00A2B587 /* will_christiansen_ice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53749523846FFB00A2B587 /* will_christiansen_ice.jpg */; };
-		5D5374A523846FFC00A2B587 /* ben-karpinski.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53749623846FFB00A2B587 /* ben-karpinski.jpg */; };
-		5D5374A623846FFC00A2B587 /* oliwier gesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53749723846FFB00A2B587 /* oliwier gesla.jpg */; };
-		5D5374A723846FFC00A2B587 /* andreas-gucklhorn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53749823846FFC00A2B587 /* andreas-gucklhorn.jpg */; };
-		5D5374A823846FFC00A2B587 /* annie-spratt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53749923846FFC00A2B587 /* annie-spratt.jpg */; };
-		5D5374A923846FFC00A2B587 /* matt-palmer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53749A23846FFC00A2B587 /* matt-palmer.jpg */; };
-		5D5374AA23846FFC00A2B587 /* andy-mai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D53749B23846FFC00A2B587 /* andy-mai.jpg */; };
-		5D5374BB238895B100A2B587 /* NTPBackgroundDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5374BA238895B100A2B587 /* NTPBackgroundDataSource.swift */; };
 		5D5E2361238C386B00AD6FBD /* NTPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5E2360238C386B00AD6FBD /* NTPTableViewController.swift */; };
 		5D6DDEF3214003A6001FF0AE /* DAU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DDEE6214003A6001FF0AE /* DAU.swift */; };
 		5D6DDEFE2141B6A1001FF0AE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DDEF62141B6A0001FF0AE /* Preferences.swift */; };
@@ -636,7 +475,6 @@
 		5D7001C222249F7B00E576FB /* ShortNameToFileMapping.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D7001BA22249F7A00E576FB /* ShortNameToFileMapping.json */; };
 		5D88BB7E23ED014E001096F3 /* ImpactFeedbackGeneratorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D88BB7D23ED014E001096F3 /* ImpactFeedbackGeneratorExtensions.swift */; };
 		5D8AE6AF230C76B60096C845 /* AppearanceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AE6AE230C76B60096C845 /* AppearanceExtensions.swift */; };
-		5DB474F1237F4CC9007B7652 /* ntp-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DB474F0237F4CC9007B7652 /* ntp-data.json */; };
 		5DE5250D218CE92C000DFAA6 /* block-ads.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DE52508218CE92B000DFAA6 /* block-ads.json */; };
 		5DE5250E218CE92C000DFAA6 /* block-images.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DE52509218CE92B000DFAA6 /* block-images.json */; };
 		5DE5250F218CE92C000DFAA6 /* upgrade-http.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DE5250A218CE92B000DFAA6 /* upgrade-http.json */; };
@@ -669,14 +507,6 @@
 		5E46C37C234FB9A700ACA8C1 /* self-signed.cer in Resources */ = {isa = PBXBuildFile; fileRef = 5E46C37B234FB9A700ACA8C1 /* self-signed.cer */; };
 		5E4845C022DE381200372022 /* WindowRenderHelper.js in Resources */ = {isa = PBXBuildFile; fileRef = 5E4845BF22DE381200372022 /* WindowRenderHelper.js */; };
 		5E4845C222DE3DF800372022 /* WindowRenderHelperScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4845C122DE3DF800372022 /* WindowRenderHelperScript.swift */; };
-		5E612A8C234B7FC1007D12B5 /* OnboardingAdsAvailableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1D8C66232BE43100BDE662 /* OnboardingAdsAvailableController.swift */; };
-		5E612A8E234B7FC8007D12B5 /* OnboardingAdsAvailableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1D8C68232BE47A00BDE662 /* OnboardingAdsAvailableView.swift */; };
-		5E612A8F234B7FCA007D12B5 /* OnboardingRewardsAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1D8C6A232BF95200BDE662 /* OnboardingRewardsAgreementViewController.swift */; };
-		5E612A90234B7FCD007D12B5 /* OnboardingRewardsAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1D8C6C232BF9C200BDE662 /* OnboardingRewardsAgreementView.swift */; };
-		5E6683A923D61CF7005B3A6C /* NTPDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6683A823D61CF7005B3A6C /* NTPDownloader.swift */; };
-		5E77F9A8236B362800E1649C /* DeviceCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E856FE7235E083B0094E113 /* DeviceCheck.swift */; };
-		5E77F9AA236B362E00E1649C /* Cryptography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E856FE5235E08110094E113 /* Cryptography.swift */; };
-		5E77F9DD236BB68700E1649C /* AttestationDebugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E77F9DC236BB68700E1649C /* AttestationDebugger.swift */; };
 		5E8CD8E123D5E3DA00548FC0 /* libarchive.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8CD8E023D5E3D100548FC0 /* libarchive.2.tbd */; };
 		5E9288CA22DF864C007BE7A6 /* TabSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9288C922DF864C007BE7A6 /* TabSessionTests.swift */; };
 		5EA8438E234F802C00076A91 /* expired.badssl.com-root-ca.cer in Resources */ = {isa = PBXBuildFile; fileRef = 5EA84389234F802C00076A91 /* expired.badssl.com-root-ca.cer */; };
@@ -684,12 +514,6 @@
 		5EA84390234F802C00076A91 /* expired.badssl.com-intermediate-ca-2.cer in Resources */ = {isa = PBXBuildFile; fileRef = 5EA8438C234F802C00076A91 /* expired.badssl.com-intermediate-ca-2.cer */; };
 		5EA84391234F802C00076A91 /* expired.badssl.com-leaf.cer in Resources */ = {isa = PBXBuildFile; fileRef = 5EA8438D234F802C00076A91 /* expired.badssl.com-leaf.cer */; };
 		5EAB745C230456F0006055F5 /* BookmarkValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB745B230456F0006055F5 /* BookmarkValidation.swift */; };
-		5EC1DDBC2356883800CA4028 /* onboarding-shields.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E095E230E05BC00AB3F19 /* onboarding-shields.json */; };
-		5EC1DDBD2356888000CA4028 /* onboarding-rewards.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E1D8C6E232C0BDB00BDE662 /* onboarding-rewards.json */; };
-		5EC1DDBE2356892900CA4028 /* onboarding-ads.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E11C3FF23314D970003C363 /* onboarding-ads.json */; };
-		5EC594ED232C2C8F00922111 /* OnboardingWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC594EC232C2C8F00922111 /* OnboardingWebViewController.swift */; };
-		5EC594EF232C68FC00922111 /* OnboardingAdsCountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC594EE232C68FC00922111 /* OnboardingAdsCountdownViewController.swift */; };
-		5EC594F1232C697200922111 /* OnboardingAdsCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC594F0232C697200922111 /* OnboardingAdsCountdownView.swift */; };
 		5EE5918123A290E000E8E8DE /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F926647A234D4EF400359492 /* CoreNFC.framework */; };
 		5EEB25DE234E667700279091 /* CertificatePinningTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEB25DD234E667700279091 /* CertificatePinningTest.swift */; };
 		744ED5611DBFEB8D00A2B5BE /* MailtoLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744ED5601DBFEB8D00A2B5BE /* MailtoLinkHandler.swift */; };
@@ -983,47 +807,12 @@
 			remoteGlobalIDString = D2AAC046055464E500DB518D;
 			remoteInfo = sqlcipher;
 		};
-		271DEC23234CC760009DAC37 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 271DEC18234CC75F009DAC37;
-			remoteInfo = BraveRewardsUI;
-		};
-		271DEC25234CC760009DAC37 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F84B21BD1A090F8100AAB793;
-			remoteInfo = Client;
-		};
-		271DEC2C234CC760009DAC37 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 271DEC18234CC75F009DAC37;
-			remoteInfo = BraveRewardsUI;
-		};
 		27F4439D2135E11200296C58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 27F443942135E11200296C58;
 			remoteInfo = BraveShareTo;
-		};
-		27FA2D67234E3222004D5D2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5DE7688320B3456C00FF5533;
-			remoteInfo = BraveShared;
-		};
-		27FA2D6B234E3222004D5D2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F84B21B61A090F8100AAB793 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 288A2D851AB8B3260023ABC3;
-			remoteInfo = Shared;
 		};
 		288A2D9B1AB8B3260023ABC3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1182,15 +971,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		27FA2D4E234CC9E9004D5D2D /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2F3444EC1AB2378200FD9731 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1210,7 +990,6 @@
 				5D1DC52920AC9AFB00905E5A /* Data.framework in Copy Frameworks */,
 				E60138661C89EB7D00DF9756 /* Storage.framework in Copy Frameworks */,
 				5DE7689A20B3456E00FF5533 /* BraveShared.framework in Copy Frameworks */,
-				271DEC2F234CC760009DAC37 /* BraveRewardsUI.framework in Copy Frameworks */,
 				E60138651C89EB7600DF9756 /* Shared.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -1240,10 +1019,8 @@
 		0A0D3D4821A5609500BEE65B /* SafeBrowsingError.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SafeBrowsingError.html; sourceTree = "<group>"; };
 		0A0D3D5121A565C300BEE65B /* SafeBrowsingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeBrowsingHandler.swift; sourceTree = "<group>"; };
 		0A0D3D6021A596BE00BEE65B /* MalwareList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MalwareList.swift; sourceTree = "<group>"; };
-		0A16E2D623D4E1FB00B0BF94 /* ClaimRewardsNTPNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimRewardsNTPNotificationViewController.swift; sourceTree = "<group>"; };
 		0A19362E234D44DB002E2B81 /* AppearanceAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceAttributes.swift; sourceTree = "<group>"; };
 		0A19365323508756002E2B81 /* LinkPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkPreviewViewController.swift; sourceTree = "<group>"; };
-		0A1CBCFC23571EFA004DA73F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0A1CBCFE23571EFA004DA73F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Storage.strings; sourceTree = "<group>"; };
 		0A1E841B219095410042F782 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0A1E842C21909CA70042F782 /* crypto.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = crypto.js; path = "node_modules/brave-sync/node_modules/brave-crypto/browser/crypto.js"; sourceTree = SOURCE_ROOT; };
@@ -1280,15 +1057,10 @@
 		0A24F845233EB5B5004D2F3A /* BundleId.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BundleId.xcconfig; sourceTree = "<group>"; };
 		0A24F846233EB5B5004D2F3A /* Fennec.enterprise.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Fennec.enterprise.xcconfig; sourceTree = "<group>"; };
 		0A24F847233EB5B5004D2F3A /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
-		0A27ABA023D1B9C400194921 /* BrandedImageCalloutState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandedImageCalloutState.swift; sourceTree = "<group>"; };
 		0A2D5DF623571F02001ED889 /* ko-KR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ko-KR"; path = "ko-KR.lproj/Storage.strings"; sourceTree = "<group>"; };
 		0A2F921B22146B7700304249 /* FrecencyQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrecencyQuery.swift; sourceTree = "<group>"; };
 		0A38EA7F216532DB00142710 /* CRUDProtocolsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRUDProtocolsTests.swift; sourceTree = "<group>"; };
 		0A39D56C21930B89008B2772 /* ScriptOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptOpener.swift; sourceTree = "<group>"; };
-		0A3C789C23055C4A0022F6D8 /* OnboardingSearchEnginesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSearchEnginesViewController.swift; sourceTree = "<group>"; };
-		0A3C789E23056C910022F6D8 /* OnboardingSearchEnginesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSearchEnginesView.swift; sourceTree = "<group>"; };
-		0A3C78A0230597DA0022F6D8 /* OnboardingShieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingShieldsViewController.swift; sourceTree = "<group>"; };
-		0A3C78A2230597F10022F6D8 /* OnboardingShieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingShieldsView.swift; sourceTree = "<group>"; };
 		0A4214E821A6EBCF006B8E39 /* SafeBrowsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeBrowsingTests.swift; sourceTree = "<group>"; };
 		0A4214F621AC0AFF006B8E39 /* TimeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeExtensions.swift; sourceTree = "<group>"; };
 		0A42150021AC0E8E006B8E39 /* TimeExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeExtensionTests.swift; sourceTree = "<group>"; };
@@ -1308,20 +1080,13 @@
 		0A4BEFDD221F03C80005551A /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		0A529EBB23571F1800DDAFDD /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Storage.strings; sourceTree = "<group>"; };
 		0A53F3E621E6560A0086E80C /* InMemoryDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryDataController.swift; sourceTree = "<group>"; };
-		0A5922F32357863000959DD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0A5CBD3323D4677100362CC8 /* NTPLearnMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPLearnMoreViewController.swift; sourceTree = "<group>"; };
-		0A5CBD3723D4905D00362CC8 /* NTPNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPNotificationView.swift; sourceTree = "<group>"; };
 		0A60A1882358AF9E00953CA8 /* Fennec.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = Fennec.xctestplan; path = Client.xcodeproj/Fennec.xctestplan; sourceTree = "<group>"; };
-		0A6112AB230B00E7001BBC45 /* OnboardingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationController.swift; sourceTree = "<group>"; };
-		0A6112BC230B4306001BBC45 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		0A62A354238C6F3E008902E3 /* Bookmark+Restoration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bookmark+Restoration.swift"; sourceTree = "<group>"; };
 		0A66550923E9D9750047EF2A /* UserAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgent.swift; sourceTree = "<group>"; };
 		0A66550B23E9E04F0047EF2A /* UserAgentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgentTests.swift; sourceTree = "<group>"; };
 		0A66550D23E9EA540047EF2A /* Brave_iPad.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Brave_iPad.xctestplan; sourceTree = "<group>"; };
 		0A67500A23571F21006A6D00 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Storage.strings; sourceTree = "<group>"; };
-		0A6E095E230E05BC00AB3F19 /* onboarding-shields.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "onboarding-shields.json"; sourceTree = "<group>"; };
 		0A75A3BD23571F2B00013540 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Storage.strings"; sourceTree = "<group>"; };
-		0A764F30230EE5CA003A1D9B /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
 		0A771D34218C8FDC00336E0D /* Bookmark+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bookmark+Sync.swift"; sourceTree = "<group>"; };
 		0A7B5D6622689C5D00AADF22 /* AddEditHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditHeaderView.swift; sourceTree = "<group>"; };
 		0A7B5D6F2269E72C00AADF22 /* BookmarkSaveLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkSaveLocation.swift; sourceTree = "<group>"; };
@@ -1331,7 +1096,6 @@
 		0A8C69AA225CFCAF00988715 /* AddEditBookmarkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditBookmarkTableViewController.swift; sourceTree = "<group>"; };
 		0A8C69B4225DE99700988715 /* BookmarkDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDetailsView.swift; sourceTree = "<group>"; };
 		0A8C69BD225E350300988715 /* IndentedImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentedImageTableViewCell.swift; sourceTree = "<group>"; };
-		0A91598822B834CE00CCC119 /* BVC+Rewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BVC+Rewards.swift"; sourceTree = "<group>"; };
 		0A917387231D11960069A08B /* AppReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReview.swift; sourceTree = "<group>"; };
 		0A917390231D173C0069A08B /* AppReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewTests.swift; sourceTree = "<group>"; };
 		0A93F17F2264C2D200A3571B /* FolderDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderDetailsView.swift; sourceTree = "<group>"; };
@@ -1378,7 +1142,6 @@
 		0ADAFD9223571ED700C8669B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Storage.strings; sourceTree = "<group>"; };
 		0ADCD4512319640F0078CC67 /* UserAgentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgentBuilder.swift; sourceTree = "<group>"; };
 		0ADCD45A231973650078CC67 /* UserAgentBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgentBuilderTests.swift; sourceTree = "<group>"; };
-		0AE5C09822CAA01E00DFF3EE /* RewardsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsButton.swift; sourceTree = "<group>"; };
 		0AE885BC23571EE1006951A8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Storage.strings; sourceTree = "<group>"; };
 		0AEF16C523CDE4B800158AD9 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		0AEF99A822E22C5E00294C76 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
@@ -1399,7 +1162,6 @@
 		0AF6845A2191D6470079EC77 /* bookmark_util.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bookmark_util.js; sourceTree = "<group>"; };
 		0AF89E5A23571EE80074E1EF /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/Storage.strings"; sourceTree = "<group>"; };
 		0AFC8F9423D1DF6500941895 /* TranslucentBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslucentBottomSheet.swift; sourceTree = "<group>"; };
-		0AFC8F9D23D3762A00941895 /* NTPNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPNotificationViewController.swift; sourceTree = "<group>"; };
 		0B3E7D931B27A7CE00E2E84D /* AboutHomeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutHomeHandler.swift; sourceTree = "<group>"; };
 		0B3E7DB91B27AB4C00E2E84D /* MockLogins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MockLogins.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0B54BD181B698B7C004C822C /* SuggestedSites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedSites.swift; sourceTree = "<group>"; };
@@ -1417,124 +1179,10 @@
 		0BF0DB931A8545800039F300 /* TopToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopToolbarView.swift; sourceTree = "<group>"; };
 		0BF1B7E21AC60DEA00A7B407 /* InsetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetButton.swift; sourceTree = "<group>"; };
 		0BF42D4E1A7CD09600889E28 /* TestFavicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFavicons.swift; sourceTree = "<group>"; };
-		2713AF042396EA8F00E3ACAA /* VerifyUserWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyUserWalletViewController.swift; sourceTree = "<group>"; };
-		2713AF062398439E00E3ACAA /* ConnectUserWalletButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectUserWalletButton.swift; sourceTree = "<group>"; };
-		2713AF0823984C6B00E3ACAA /* VerifiedUserWalletButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedUserWalletButton.swift; sourceTree = "<group>"; };
 		27187807216526090006036E /* AlertPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPopupView.swift; sourceTree = "<group>"; };
 		27187809216526240006036E /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
-		2718B26D2391BB8E00F378BF /* DisabledSettingGraphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledSettingGraphicView.swift; sourceTree = "<group>"; };
-		271DEC19234CC75F009DAC37 /* BraveRewardsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BraveRewardsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		271DEC1B234CC75F009DAC37 /* BraveRewardsUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BraveRewardsUI.h; sourceTree = "<group>"; };
-		271DEC1C234CC75F009DAC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		271DEC21234CC75F009DAC37 /* BraveRewardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraveRewardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		271DEC2A234CC760009DAC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		271DEC3C234CC7ED009DAC37 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		271DEC3D234CC7ED009DAC37 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		271DEC3F234CC7ED009DAC37 /* PublisherAttentionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherAttentionView.swift; sourceTree = "<group>"; };
-		271DEC40234CC7ED009DAC37 /* PublisherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherView.swift; sourceTree = "<group>"; };
-		271DEC41234CC7ED009DAC37 /* PublisherSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherSummaryView.swift; sourceTree = "<group>"; };
-		271DEC43234CC7ED009DAC37 /* RewardsDisabledView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsDisabledView.swift; sourceTree = "<group>"; };
-		271DEC49234CC7ED009DAC37 /* CreateWalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWalletViewController.swift; sourceTree = "<group>"; };
-		271DEC4A234CC7ED009DAC37 /* CreateWalletView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWalletView.swift; sourceTree = "<group>"; };
-		271DEC4B234CC7ED009DAC37 /* RewardsUIDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsUIDelegate.swift; sourceTree = "<group>"; };
-		271DEC4C234CC7ED009DAC37 /* RewardsUX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsUX.swift; sourceTree = "<group>"; };
-		271DEC4E234CC7EE009DAC37 /* AdsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsViewController.swift; sourceTree = "<group>"; };
-		271DEC4F234CC7EE009DAC37 /* AdSwipeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdSwipeButton.swift; sourceTree = "<group>"; };
-		271DEC50234CC7EE009DAC37 /* AdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdView.swift; sourceTree = "<group>"; };
-		271DEC51234CC7EE009DAC37 /* AdsNotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsNotificationHandler.swift; sourceTree = "<group>"; };
-		271DEC52234CC7EE009DAC37 /* AdContentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdContentButton.swift; sourceTree = "<group>"; };
-		271DEC54234CC7EE009DAC37 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		271DEC55234CC7EE009DAC37 /* RewardsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsDataSource.swift; sourceTree = "<group>"; };
-		271DEC57234CC7EE009DAC37 /* QASettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QASettingsViewController.swift; sourceTree = "<group>"; };
-		271DEC59234CC7EE009DAC37 /* TippingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TippingViewController.swift; sourceTree = "<group>"; };
-		271DEC5A234CC7EE009DAC37 /* TippingConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TippingConfirmationView.swift; sourceTree = "<group>"; };
-		271DEC5B234CC7EE009DAC37 /* InsufficientFundsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsufficientFundsButton.swift; sourceTree = "<group>"; };
-		271DEC5C234CC7EE009DAC37 /* TippingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TippingView.swift; sourceTree = "<group>"; };
-		271DEC5D234CC7EE009DAC37 /* TippingOverviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TippingOverviewView.swift; sourceTree = "<group>"; };
-		271DEC5E234CC7EE009DAC37 /* TippingSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TippingSelectionView.swift; sourceTree = "<group>"; };
-		271DEC5F234CC7EE009DAC37 /* TippingSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TippingSelectionViewController.swift; sourceTree = "<group>"; };
-		271DEC60234CC7EE009DAC37 /* TippingOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TippingOptionView.swift; sourceTree = "<group>"; };
-		271DEC61234CC7EE009DAC37 /* SendTipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendTipButton.swift; sourceTree = "<group>"; };
-		271DEC63234CC7EE009DAC37 /* WalletHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletHeaderView.swift; sourceTree = "<group>"; };
-		271DEC64234CC7EE009DAC37 /* RewardsSummaryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsSummaryProtocol.swift; sourceTree = "<group>"; };
-		271DEC65234CC7EE009DAC37 /* WalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
-		271DEC66234CC7EE009DAC37 /* EmptyWalletSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyWalletSummaryView.swift; sourceTree = "<group>"; };
-		271DEC67234CC7EE009DAC37 /* WalletView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
-		271DEC69234CC7EE009DAC37 /* WalletActionNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletActionNotificationView.swift; sourceTree = "<group>"; };
-		271DEC6A234CC7EE009DAC37 /* WalletAlertNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletAlertNotificationView.swift; sourceTree = "<group>"; };
-		271DEC6B234CC7EE009DAC37 /* WalletNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletNotificationView.swift; sourceTree = "<group>"; };
-		271DEC6C234CC7EE009DAC37 /* RewardsNotificationViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsNotificationViewBuilder.swift; sourceTree = "<group>"; };
-		271DEC6D234CC7EE009DAC37 /* BATValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BATValue.swift; sourceTree = "<group>"; };
-		271DEC6F234CC7EE009DAC37 /* GrantsItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrantsItemView.swift; sourceTree = "<group>"; };
-		271DEC70234CC7EE009DAC37 /* GrantsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrantsListViewController.swift; sourceTree = "<group>"; };
-		271DEC72234CC7EE009DAC37 /* RewardsSummaryRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsSummaryRowView.swift; sourceTree = "<group>"; };
-		271DEC73234CC7EE009DAC37 /* RewardsSummaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsSummaryButton.swift; sourceTree = "<group>"; };
-		271DEC74234CC7EE009DAC37 /* RewardsSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsSummaryView.swift; sourceTree = "<group>"; };
-		271DEC75234CC7EE009DAC37 /* RewardsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsState.swift; sourceTree = "<group>"; };
-		271DEC78234CC7EF009DAC37 /* SettingsAdSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsAdSectionView.swift; sourceTree = "<group>"; };
-		271DEC7A234CC7EF009DAC37 /* AdsDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsDetailsViewController.swift; sourceTree = "<group>"; };
-		271DEC7B234CC7EF009DAC37 /* AdsUnsupportedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsUnsupportedView.swift; sourceTree = "<group>"; };
-		271DEC7D234CC7EF009DAC37 /* OptionsSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsSelectionViewController.swift; sourceTree = "<group>"; };
-		271DEC7E234CC7EF009DAC37 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		271DEC80234CC7EF009DAC37 /* SettingsGrantSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsGrantSectionView.swift; sourceTree = "<group>"; };
-		271DEC81234CC7EF009DAC37 /* GrantClaimedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrantClaimedViewController.swift; sourceTree = "<group>"; };
-		271DEC82234CC7EF009DAC37 /* SettingsViewDetailsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewDetailsButton.swift; sourceTree = "<group>"; };
-		271DEC83234CC7EF009DAC37 /* SettingsSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSectionView.swift; sourceTree = "<group>"; };
-		271DEC86234CC7EF009DAC37 /* TipsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsDetailViewController.swift; sourceTree = "<group>"; };
-		271DEC87234CC7EF009DAC37 /* TipsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsTableCell.swift; sourceTree = "<group>"; };
-		271DEC88234CC7EF009DAC37 /* TipsSummaryTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsSummaryTableCell.swift; sourceTree = "<group>"; };
-		271DEC89234CC7EF009DAC37 /* SettingsTipsSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTipsSectionView.swift; sourceTree = "<group>"; };
-		271DEC8F234CC7EF009DAC37 /* SettingsUX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsUX.swift; sourceTree = "<group>"; };
-		271DEC94234CC7EF009DAC37 /* AutoContributeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoContributeDetailsViewController.swift; sourceTree = "<group>"; };
-		271DEC95234CC7EF009DAC37 /* AutoContributeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoContributeCell.swift; sourceTree = "<group>"; };
-		271DEC96234CC7EF009DAC37 /* SettingsAutoContributeSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsAutoContributeSectionView.swift; sourceTree = "<group>"; };
-		271DEC98234CC7EF009DAC37 /* SettingsRewardsSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRewardsSectionView.swift; sourceTree = "<group>"; };
-		271DEC99234CC7EF009DAC37 /* BraveRewardsToggleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BraveRewardsToggleView.swift; sourceTree = "<group>"; };
-		271DEC9A234CC7EF009DAC37 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		271DEC9B234CC7EF009DAC37 /* RewardsPanelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsPanelController.swift; sourceTree = "<group>"; };
-		271DEC9C234CC7EF009DAC37 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		271DEC9F234CC7EF009DAC37 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		271DECA0234CC7EF009DAC37 /* EmptyTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyTableCell.swift; sourceTree = "<group>"; };
-		271DECA1234CC7EF009DAC37 /* LabelAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelAccessoryView.swift; sourceTree = "<group>"; };
-		271DECA2234CC7EF009DAC37 /* TableHeaderRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderRowView.swift; sourceTree = "<group>"; };
-		271DECA3234CC7EF009DAC37 /* DetailActionableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailActionableRow.swift; sourceTree = "<group>"; };
-		271DECA4234CC7EF009DAC37 /* CurrencyContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyContainerView.swift; sourceTree = "<group>"; };
-		271DECA5234CC7EF009DAC37 /* PopoverNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverNavigationController.swift; sourceTree = "<group>"; };
-		271DECA6234CC7EF009DAC37 /* SeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
-		271DECA7234CC7EF009DAC37 /* LinkLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkLabel.swift; sourceTree = "<group>"; };
-		271DECA8234CC7EF009DAC37 /* CreateWalletButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWalletButton.swift; sourceTree = "<group>"; };
-		271DECA9234CC7EF009DAC37 /* PublisherIconCircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherIconCircleImageView.swift; sourceTree = "<group>"; };
-		271DECAA234CC7EF009DAC37 /* BATUSDPairView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BATUSDPairView.swift; sourceTree = "<group>"; };
-		271DECAB234CC7EF009DAC37 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
-		271DECAC234CC7EF009DAC37 /* GrabberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrabberView.swift; sourceTree = "<group>"; };
-		271DECAD234CC7EF009DAC37 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
-		271DECAE234CC7EF009DAC37 /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
-		271DECAF234CC7EF009DAC37 /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
-		271DECB0234CC7EF009DAC37 /* SwitchRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchRow.swift; sourceTree = "<group>"; };
-		271DECB1234CC7EF009DAC37 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		271DECB2234CC7EF009DAC37 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		271DECB3234CC7EF009DAC37 /* FaviconData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaviconData.swift; sourceTree = "<group>"; };
-		271DECB4234CC7EF009DAC37 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		271DECB5234CC7EF009DAC37 /* BasicAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAnimationController.swift; sourceTree = "<group>"; };
-		271DECB6234CC7EF009DAC37 /* DismissButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
-		271DECB8234CC7EF009DAC37 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
-		271DECB9234CC7EF009DAC37 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
-		271DECBA234CC7EF009DAC37 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
-		271DECBB234CC7EF009DAC37 /* BraveLedgerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BraveLedgerExtensions.swift; sourceTree = "<group>"; };
-		271DECBC234CC7EF009DAC37 /* BraveRewardsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BraveRewardsExtensions.swift; sourceTree = "<group>"; };
-		271DECBD234CC7EF009DAC37 /* POPExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POPExtensions.swift; sourceTree = "<group>"; };
-		271DECBE234CC7EF009DAC37 /* PublisherInfoExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublisherInfoExtensions.swift; sourceTree = "<group>"; };
-		271DECBF234CC7EF009DAC37 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
-		271DECC0234CC7EF009DAC37 /* BundleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
-		271DECC1234CC7EF009DAC37 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		272FCA98225CF8F00091E645 /* OnePasswordExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OnePasswordExtension.framework; path = Carthage/Build/iOS/OnePasswordExtension.framework; sourceTree = "<group>"; };
-		27353FF1235F4E7300E42EBB /* WalletDisclaimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDisclaimerView.swift; sourceTree = "<group>"; };
-		2744D6CA239EDB1A00A89EBB /* DisconnectedUserWalletButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectedUserWalletButton.swift; sourceTree = "<group>"; };
-		2744D6CD239EDCBC00A89EBB /* VerifyUserWalletButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyUserWalletButton.swift; sourceTree = "<group>"; };
-		2744D6CF239EF10B00A89EBB /* UserWalletDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWalletDetailsViewController.swift; sourceTree = "<group>"; };
-		275218FB23E0BB7500E416B4 /* PendingContributionDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingContributionDetailController.swift; sourceTree = "<group>"; };
 		2755AB7C23107BC600F0721F /* AdsReporting.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = AdsReporting.js; sourceTree = "<group>"; };
-		2755AB8523107DBD00F0721F /* AdsMediaReporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsMediaReporting.swift; sourceTree = "<group>"; };
 		2760D2BE215ACCE20068E131 /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
 		2765825C2171263A00754B2F /* UserReferralProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReferralProgram.swift; sourceTree = "<group>"; };
 		276582652171266900754B2F /* ReferralData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralData.swift; sourceTree = "<group>"; };
@@ -1545,7 +1193,6 @@
 		2765826F217130D900754B2F /* GlobalSign_r3.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = GlobalSign_r3.cer; sourceTree = "<group>"; };
 		27658270217130D900754B2F /* DigiCertHighAssurance.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = DigiCertHighAssurance.cer; sourceTree = "<group>"; };
 		276E7A2E22F21A7700939424 /* RewardsReporting.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = RewardsReporting.js; sourceTree = "<group>"; };
-		276E7A3B22F21DBE00939424 /* RewardsReporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsReporting.swift; sourceTree = "<group>"; };
 		2777273622EB43A100F0214C /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		2777273F22EB44B300F0214C /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		2795274921A890EB00921AA1 /* FingerprintingProtectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerprintingProtectionTests.swift; sourceTree = "<group>"; };
@@ -1553,20 +1200,9 @@
 		279C756A219DDE3B001CD1CB /* FingerprintingProtection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerprintingProtection.swift; sourceTree = "<group>"; };
 		279C75C021A5B37D001CD1CB /* FingerprintingProtection.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = FingerprintingProtection.js; sourceTree = "<group>"; };
 		27A586E0214C0DDD000CAE3C /* PreferencesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTest.swift; sourceTree = "<group>"; };
-		27A9068823D65A10005D7609 /* PendingContributionListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingContributionListController.swift; sourceTree = "<group>"; };
-		27A9068A23D65E0E005D7609 /* PendingContributionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingContributionCell.swift; sourceTree = "<group>"; };
-		27AC168F23833A16004BE19C /* MonthlyAdsGrantReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyAdsGrantReminder.swift; sourceTree = "<group>"; };
 		27AC169623834510004BE19C /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		27B0C7B323D24BAA00B9EA3D /* AutoContributeExclusionListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoContributeExclusionListController.swift; sourceTree = "<group>"; };
-		27B0C7B623D2555C00B9EA3D /* ExclusionListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusionListCell.swift; sourceTree = "<group>"; };
-		27B0C7BA23D604C500B9EA3D /* AutoContributeSupportedListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoContributeSupportedListController.swift; sourceTree = "<group>"; };
-		27B1E26C235E58190062E86F /* LocaleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensions.swift; sourceTree = "<group>"; };
 		27C461DD211B76500088A441 /* ShieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldsView.swift; sourceTree = "<group>"; };
-		27D114D32358FBBF00166534 /* BraveRewardsSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveRewardsSettingsViewController.swift; sourceTree = "<group>"; };
 		27D114D52358FCA400166534 /* SettingsRowViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowViews.swift; sourceTree = "<group>"; };
-		27D3155123D7A95C00219462 /* SettingsMonthlyTipsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMonthlyTipsSectionView.swift; sourceTree = "<group>"; };
-		27D3155423D8B0CE00219462 /* MonthlyTipsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyTipsDetailViewController.swift; sourceTree = "<group>"; };
-		27D3155623D8B16200219462 /* SettingsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableView.swift; sourceTree = "<group>"; };
 		27D87C2D2152B50200FB55C6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		27D922B221C9830F00345BF3 /* Model9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model9.xcdatamodel; sourceTree = "<group>"; };
 		27F443952135E11200296C58 /* BraveShareTo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BraveShareTo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1574,10 +1210,6 @@
 		27F443AC2135E25300296C58 /* ShareToBraveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareToBraveViewController.swift; sourceTree = "<group>"; };
 		27F443F32138843400296C58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizations/en.lproj/BraveShareToInfoPlist.strings; sourceTree = "<group>"; };
 		27F94A3921909A5900F4FADF /* SearchSuggestionsPromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSuggestionsPromptView.swift; sourceTree = "<group>"; };
-		27FA2D47234CC959004D5D2D /* BATValueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BATValueTests.swift; sourceTree = "<group>"; };
-		27FA2D48234CC95A004D5D2D /* RewardsNotificationViewBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsNotificationViewBuilderTests.swift; sourceTree = "<group>"; };
-		27FA2D49234CC95A004D5D2D /* DateExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensionsTests.swift; sourceTree = "<group>"; };
-		27FA2D4F234CC9FB004D5D2D /* BraveRewards.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraveRewards.framework; sourceTree = "<group>"; };
 		27FD2CA12146C31C00A5A779 /* RequestDesktopSiteActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestDesktopSiteActivity.swift; sourceTree = "<group>"; };
 		27FD2CA92146C31C00A5A779 /* FindInPageActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindInPageActivity.swift; sourceTree = "<group>"; };
 		27FD2CAA2146C31C00A5A779 /* AddToFavoritesActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToFavoritesActivity.swift; sourceTree = "<group>"; };
@@ -2067,22 +1699,6 @@
 		5D24AF8121BA459000F9506A /* BlocklistName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklistName.swift; sourceTree = "<group>"; };
 		5D24AF8321BA489A00F9506A /* ContentBlocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlocker.swift; sourceTree = "<group>"; };
 		5D24AF8F21BA4D7700F9506A /* ContentBlockerRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRegion.swift; sourceTree = "<group>"; };
-		5D53748D23846FFA00A2B587 /* anton-repponen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "anton-repponen.jpg"; sourceTree = "<group>"; };
-		5D53748E23846FFA00A2B587 /* dc-cavalleri.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dc-cavalleri.jpg"; sourceTree = "<group>"; };
-		5D53748F23846FFA00A2B587 /* louis-kim.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "louis-kim.jpg"; sourceTree = "<group>"; };
-		5D53749023846FFA00A2B587 /* Svalbard_Jerol_Soibam.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Svalbard_Jerol_Soibam.jpeg; sourceTree = "<group>"; };
-		5D53749123846FFB00A2B587 /* joe-gardner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "joe-gardner.jpg"; sourceTree = "<group>"; };
-		5D53749223846FFB00A2B587 /* xavier-balderas-cejudo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "xavier-balderas-cejudo.jpg"; sourceTree = "<group>"; };
-		5D53749323846FFB00A2B587 /* anders-jilden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "anders-jilden.jpg"; sourceTree = "<group>"; };
-		5D53749423846FFB00A2B587 /* will_christiansen_glacier_peak.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = will_christiansen_glacier_peak.jpg; sourceTree = "<group>"; };
-		5D53749523846FFB00A2B587 /* will_christiansen_ice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = will_christiansen_ice.jpg; sourceTree = "<group>"; };
-		5D53749623846FFB00A2B587 /* ben-karpinski.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ben-karpinski.jpg"; sourceTree = "<group>"; };
-		5D53749723846FFB00A2B587 /* oliwier gesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "oliwier gesla.jpg"; sourceTree = "<group>"; };
-		5D53749823846FFC00A2B587 /* andreas-gucklhorn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "andreas-gucklhorn.jpg"; sourceTree = "<group>"; };
-		5D53749923846FFC00A2B587 /* annie-spratt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "annie-spratt.jpg"; sourceTree = "<group>"; };
-		5D53749A23846FFC00A2B587 /* matt-palmer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "matt-palmer.jpg"; sourceTree = "<group>"; };
-		5D53749B23846FFC00A2B587 /* andy-mai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "andy-mai.jpg"; sourceTree = "<group>"; };
-		5D5374BA238895B100A2B587 /* NTPBackgroundDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPBackgroundDataSource.swift; sourceTree = "<group>"; };
 		5D5E2360238C386B00AD6FBD /* NTPTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPTableViewController.swift; sourceTree = "<group>"; };
 		5D6DDEE6214003A6001FF0AE /* DAU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAU.swift; sourceTree = "<group>"; };
 		5D6DDEF62141B6A0001FF0AE /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
@@ -2090,7 +1706,6 @@
 		5D7001BA22249F7A00E576FB /* ShortNameToFileMapping.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ShortNameToFileMapping.json; sourceTree = "<group>"; };
 		5D88BB7D23ED014E001096F3 /* ImpactFeedbackGeneratorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactFeedbackGeneratorExtensions.swift; sourceTree = "<group>"; };
 		5D8AE6AE230C76B60096C845 /* AppearanceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceExtensions.swift; sourceTree = "<group>"; };
-		5DB474F0237F4CC9007B7652 /* ntp-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ntp-data.json"; sourceTree = "<group>"; };
 		5DE52508218CE92B000DFAA6 /* block-ads.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "block-ads.json"; sourceTree = "<group>"; };
 		5DE52509218CE92B000DFAA6 /* block-images.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "block-images.json"; sourceTree = "<group>"; };
 		5DE5250A218CE92B000DFAA6 /* upgrade-http.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "upgrade-http.json"; sourceTree = "<group>"; };
@@ -2109,12 +1724,6 @@
 		5DE768AF20B4601600FF5533 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		5E0FCD22234253DC00AC831E /* CertificatePinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatePinning.swift; sourceTree = "<group>"; };
 		5E0FCD242342544C00AC831E /* URLSession+Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Requests.swift"; sourceTree = "<group>"; };
-		5E11C3FF23314D970003C363 /* onboarding-ads.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "onboarding-ads.json"; sourceTree = "<group>"; };
-		5E1D8C66232BE43100BDE662 /* OnboardingAdsAvailableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAdsAvailableController.swift; sourceTree = "<group>"; };
-		5E1D8C68232BE47A00BDE662 /* OnboardingAdsAvailableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAdsAvailableView.swift; sourceTree = "<group>"; };
-		5E1D8C6A232BF95200BDE662 /* OnboardingRewardsAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRewardsAgreementViewController.swift; sourceTree = "<group>"; };
-		5E1D8C6C232BF9C200BDE662 /* OnboardingRewardsAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRewardsAgreementView.swift; sourceTree = "<group>"; };
-		5E1D8C6E232C0BDB00BDE662 /* onboarding-rewards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "onboarding-rewards.json"; sourceTree = "<group>"; };
 		5E3477E822D7771700B0D5F8 /* ResourceDownloader.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = ResourceDownloader.js; sourceTree = "<group>"; };
 		5E34780F22D7A1D200B0D5F8 /* ResourceDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceDownloadManager.swift; sourceTree = "<group>"; };
 		5E46C36D234FACC600ACA8C1 /* root.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = root.cer; sourceTree = "<group>"; };
@@ -2126,8 +1735,6 @@
 		5E46C37B234FB9A700ACA8C1 /* self-signed.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "self-signed.cer"; sourceTree = "<group>"; };
 		5E4845BF22DE381200372022 /* WindowRenderHelper.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = WindowRenderHelper.js; sourceTree = "<group>"; };
 		5E4845C122DE3DF800372022 /* WindowRenderHelperScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowRenderHelperScript.swift; sourceTree = "<group>"; };
-		5E6683A823D61CF7005B3A6C /* NTPDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPDownloader.swift; sourceTree = "<group>"; };
-		5E77F9DC236BB68700E1649C /* AttestationDebugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestationDebugger.swift; sourceTree = "<group>"; };
 		5E856FE5235E08110094E113 /* Cryptography.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = Cryptography.swift; sourceTree = "<group>"; tabWidth = 2; };
 		5E856FE7235E083B0094E113 /* DeviceCheck.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = DeviceCheck.swift; sourceTree = "<group>"; tabWidth = 2; };
 		5E8CD8E023D5E3D100548FC0 /* libarchive.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libarchive.2.tbd; path = usr/lib/libarchive.2.tbd; sourceTree = SDKROOT; };
@@ -2138,25 +1745,7 @@
 		5EA8438D234F802C00076A91 /* expired.badssl.com-leaf.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "expired.badssl.com-leaf.cer"; sourceTree = "<group>"; };
 		5EAB745B230456F0006055F5 /* BookmarkValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkValidation.swift; sourceTree = "<group>"; };
 		5EB57D0122FDC0CB00A07325 /* FullscreenHelper.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = FullscreenHelper.js; sourceTree = "<group>"; };
-		5EC594EC232C2C8F00922111 /* OnboardingWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWebViewController.swift; sourceTree = "<group>"; };
-		5EC594EE232C68FC00922111 /* OnboardingAdsCountdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAdsCountdownViewController.swift; sourceTree = "<group>"; };
-		5EC594F0232C697200922111 /* OnboardingAdsCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAdsCountdownView.swift; sourceTree = "<group>"; };
 		5EEB25DD234E667700279091 /* CertificatePinningTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatePinningTest.swift; sourceTree = "<group>"; };
-		610967E5236B41C9000F10EA /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
-		6117A72C236B41D000921BFB /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		6129BC4D236B417A004CAD4D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		61357E2C236B4180006A20E9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		61468C8F236B418400C20378 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		6153DBE9236B4189001AA06E /* id-ID */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "id-ID"; path = "id-ID.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		6161A28E236B418D00D72C0D /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
-		617B5508236B41970030C571 /* ko-KR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ko-KR"; path = "ko-KR.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		618760A2236B419C0042BAF3 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
-		6194D055236B41A100FBF9C2 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
-		61A1153B236B41A600F57D76 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		61AE2760236B41AB004DDD63 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		61BDD087236B41B20038F0B1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		61D5C82C236B41BA0032B652 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
-		61FACE34236B41C100E3E55E /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		744ED5601DBFEB8D00A2B5BE /* MailtoLinkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailtoLinkHandler.swift; sourceTree = "<group>"; };
 		7479B4ED1C5306A200DF000B /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		74821FFD1DB6D3AC00EEEA72 /* MailSchemes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MailSchemes.plist; sourceTree = "<group>"; };
@@ -2460,23 +2049,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		271DEC16234CC75F009DAC37 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				27FA2D65234E3222004D5D2D /* BraveShared.framework in Frameworks */,
-				27FA2D69234E3222004D5D2D /* Shared.framework in Frameworks */,
-				27FA2D58234CDCEA004D5D2D /* BraveRewards.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		271DEC1E234CC75F009DAC37 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		27F443922135E11200296C58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2504,7 +2076,6 @@
 				0AD9F87D22F0421B008B4D95 /* libadblock.a in Frameworks */,
 				F98E1EA122B6D70E0018AF29 /* libYubiKit.a in Frameworks */,
 				5E8CD8E123D5E3DA00548FC0 /* libarchive.2.tbd in Frameworks */,
-				271DEC2E234CC760009DAC37 /* BraveRewardsUI.framework in Frameworks */,
 				A1AD4BD120BF3F4D007A6EA1 /* Eureka.framework in Frameworks */,
 				E6231C051B90A472005ABB0D /* libxml2.2.tbd in Frameworks */,
 				E6231C011B90A44F005ABB0D /* libz.tbd in Frameworks */,
@@ -2714,30 +2285,6 @@
 			path = Local.templates;
 			sourceTree = "<group>";
 		};
-		0A3C789423055AC80022F6D8 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				0A6112BC230B4306001BBC45 /* OnboardingViewController.swift */,
-				0A6112AB230B00E7001BBC45 /* OnboardingNavigationController.swift */,
-				0A3C789C23055C4A0022F6D8 /* OnboardingSearchEnginesViewController.swift */,
-				0A3C789E23056C910022F6D8 /* OnboardingSearchEnginesView.swift */,
-				0A3C78A0230597DA0022F6D8 /* OnboardingShieldsViewController.swift */,
-				0A3C78A2230597F10022F6D8 /* OnboardingShieldsView.swift */,
-				5E1D8C66232BE43100BDE662 /* OnboardingAdsAvailableController.swift */,
-				5E1D8C68232BE47A00BDE662 /* OnboardingAdsAvailableView.swift */,
-				5E1D8C6A232BF95200BDE662 /* OnboardingRewardsAgreementViewController.swift */,
-				5E1D8C6C232BF9C200BDE662 /* OnboardingRewardsAgreementView.swift */,
-				5EC594EC232C2C8F00922111 /* OnboardingWebViewController.swift */,
-				5EC594EE232C68FC00922111 /* OnboardingAdsCountdownViewController.swift */,
-				5EC594F0232C697200922111 /* OnboardingAdsCountdownView.swift */,
-				0A764F30230EE5CA003A1D9B /* OnboardingState.swift */,
-				0A6E095E230E05BC00AB3F19 /* onboarding-shields.json */,
-				5E1D8C6E232C0BDB00BDE662 /* onboarding-rewards.json */,
-				5E11C3FF23314D970003C363 /* onboarding-ads.json */,
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
 		0A4319B321B1C4D60041625B /* Adblock */ = {
 			isa = PBXGroup;
 			children = (
@@ -2802,18 +2349,6 @@
 			path = Bookmarks;
 			sourceTree = "<group>";
 		};
-		0A7F238D23D0859B005E39FC /* NTP */ = {
-			isa = PBXGroup;
-			children = (
-				0AFC8F9D23D3762A00941895 /* NTPNotificationViewController.swift */,
-				0A5CBD3323D4677100362CC8 /* NTPLearnMoreViewController.swift */,
-				0A16E2D623D4E1FB00B0BF94 /* ClaimRewardsNTPNotificationViewController.swift */,
-				0A27ABA023D1B9C400194921 /* BrandedImageCalloutState.swift */,
-				0A5CBD3723D4905D00362CC8 /* NTPNotificationView.swift */,
-			);
-			path = NTP;
-			sourceTree = "<group>";
-		};
 		0AA21E4D2302C94800358988 /* Lottie_Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -2830,10 +2365,6 @@
 				0AADC4CD20D2A6A200FDE368 /* favorites */,
 				0AADC4D620D2B03900FDE368 /* BraveShieldStatsView.swift */,
 				0AADC4C720D2A55A00FDE368 /* FavoritesViewController.swift */,
-				5D5374BA238895B100A2B587 /* NTPBackgroundDataSource.swift */,
-				5E6683A823D61CF7005B3A6C /* NTPDownloader.swift */,
-				5DB474F0237F4CC9007B7652 /* ntp-data.json */,
-				5DB474CE237F4BE9007B7652 /* NTP_Images */,
 			);
 			path = HomePanel;
 			sourceTree = "<group>";
@@ -2919,19 +2450,6 @@
 			path = UIImageViewAligned;
 			sourceTree = "<group>";
 		};
-		2713AF022396EA6000E3ACAA /* User Wallet */ = {
-			isa = PBXGroup;
-			children = (
-				2713AF042396EA8F00E3ACAA /* VerifyUserWalletViewController.swift */,
-				2713AF062398439E00E3ACAA /* ConnectUserWalletButton.swift */,
-				2744D6CD239EDCBC00A89EBB /* VerifyUserWalletButton.swift */,
-				2713AF0823984C6B00E3ACAA /* VerifiedUserWalletButton.swift */,
-				2744D6CA239EDB1A00A89EBB /* DisconnectedUserWalletButton.swift */,
-				2744D6CF239EF10B00A89EBB /* UserWalletDetailsViewController.swift */,
-			);
-			path = "User Wallet";
-			sourceTree = "<group>";
-		};
 		271877FF216525FB0006036E /* Popup */ = {
 			isa = PBXGroup;
 			children = (
@@ -2939,349 +2457,6 @@
 				27187807216526090006036E /* AlertPopupView.swift */,
 			);
 			path = Popup;
-			sourceTree = "<group>";
-		};
-		271DEC1A234CC75F009DAC37 /* BraveRewardsUI */ = {
-			isa = PBXGroup;
-			children = (
-				2713AF022396EA6000E3ACAA /* User Wallet */,
-				271DEC4D234CC7EE009DAC37 /* Ads */,
-				271DEC6D234CC7EE009DAC37 /* BATValue.swift */,
-				271DEC9D234CC7EF009DAC37 /* Common */,
-				271DEC48234CC7ED009DAC37 /* Create Wallet */,
-				271DEC42234CC7ED009DAC37 /* Disabled Brave Rewards */,
-				271DECB7234CC7EF009DAC37 /* Extensions */,
-				271DEC6E234CC7EE009DAC37 /* Grants */,
-				271DEC9C234CC7EF009DAC37 /* Images.xcassets */,
-				271DEC53234CC7EE009DAC37 /* Localized Strings */,
-				271DEC3E234CC7ED009DAC37 /* Publisher */,
-				27A9068623D659FE005D7609 /* Pending Contributions */,
-				271DEC56234CC7EE009DAC37 /* QA Settings */,
-				271DEC71234CC7EE009DAC37 /* Rewards Summary */,
-				271DEC55234CC7EE009DAC37 /* RewardsDataSource.swift */,
-				271DEC9B234CC7EF009DAC37 /* RewardsPanelController.swift */,
-				271DEC75234CC7EE009DAC37 /* RewardsState.swift */,
-				271DEC4B234CC7ED009DAC37 /* RewardsUIDelegate.swift */,
-				271DEC4C234CC7ED009DAC37 /* RewardsUX.swift */,
-				271DEC76234CC7EF009DAC37 /* Settings */,
-				271DEC58234CC7EE009DAC37 /* Tipping */,
-				271DEC62234CC7EE009DAC37 /* Wallet */,
-				271DEC3B234CC7ED009DAC37 /* Welcome */,
-				271DEC1B234CC75F009DAC37 /* BraveRewardsUI.h */,
-				271DEC1C234CC75F009DAC37 /* Info.plist */,
-				0A1CBCFB23571EFA004DA73F /* Localizable.strings */,
-			);
-			indentWidth = 2;
-			path = BraveRewardsUI;
-			sourceTree = "<group>";
-			tabWidth = 2;
-			usesTabs = 0;
-		};
-		271DEC27234CC760009DAC37 /* BraveRewardsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				27FA2D47234CC959004D5D2D /* BATValueTests.swift */,
-				27FA2D49234CC95A004D5D2D /* DateExtensionsTests.swift */,
-				27FA2D48234CC95A004D5D2D /* RewardsNotificationViewBuilderTests.swift */,
-				271DEC2A234CC760009DAC37 /* Info.plist */,
-			);
-			indentWidth = 2;
-			path = BraveRewardsUITests;
-			sourceTree = "<group>";
-			tabWidth = 2;
-			usesTabs = 0;
-		};
-		271DEC3B234CC7ED009DAC37 /* Welcome */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC3C234CC7ED009DAC37 /* WelcomeViewController.swift */,
-				271DEC3D234CC7ED009DAC37 /* WelcomeView.swift */,
-			);
-			path = Welcome;
-			sourceTree = "<group>";
-		};
-		271DEC3E234CC7ED009DAC37 /* Publisher */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC3F234CC7ED009DAC37 /* PublisherAttentionView.swift */,
-				271DEC40234CC7ED009DAC37 /* PublisherView.swift */,
-				271DEC41234CC7ED009DAC37 /* PublisherSummaryView.swift */,
-			);
-			path = Publisher;
-			sourceTree = "<group>";
-		};
-		271DEC42234CC7ED009DAC37 /* Disabled Brave Rewards */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC43234CC7ED009DAC37 /* RewardsDisabledView.swift */,
-			);
-			path = "Disabled Brave Rewards";
-			sourceTree = "<group>";
-		};
-		271DEC48234CC7ED009DAC37 /* Create Wallet */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC49234CC7ED009DAC37 /* CreateWalletViewController.swift */,
-				271DEC4A234CC7ED009DAC37 /* CreateWalletView.swift */,
-			);
-			path = "Create Wallet";
-			sourceTree = "<group>";
-		};
-		271DEC4D234CC7EE009DAC37 /* Ads */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC4E234CC7EE009DAC37 /* AdsViewController.swift */,
-				271DEC4F234CC7EE009DAC37 /* AdSwipeButton.swift */,
-				271DEC50234CC7EE009DAC37 /* AdView.swift */,
-				271DEC51234CC7EE009DAC37 /* AdsNotificationHandler.swift */,
-				271DEC52234CC7EE009DAC37 /* AdContentButton.swift */,
-			);
-			path = Ads;
-			sourceTree = "<group>";
-		};
-		271DEC53234CC7EE009DAC37 /* Localized Strings */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC54234CC7EE009DAC37 /* Strings.swift */,
-			);
-			path = "Localized Strings";
-			sourceTree = "<group>";
-		};
-		271DEC56234CC7EE009DAC37 /* QA Settings */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC57234CC7EE009DAC37 /* QASettingsViewController.swift */,
-				5E77F9DC236BB68700E1649C /* AttestationDebugger.swift */,
-			);
-			path = "QA Settings";
-			sourceTree = "<group>";
-		};
-		271DEC58234CC7EE009DAC37 /* Tipping */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC59234CC7EE009DAC37 /* TippingViewController.swift */,
-				271DEC5A234CC7EE009DAC37 /* TippingConfirmationView.swift */,
-				271DEC5B234CC7EE009DAC37 /* InsufficientFundsButton.swift */,
-				271DEC5C234CC7EE009DAC37 /* TippingView.swift */,
-				271DEC5D234CC7EE009DAC37 /* TippingOverviewView.swift */,
-				271DEC5E234CC7EE009DAC37 /* TippingSelectionView.swift */,
-				271DEC5F234CC7EE009DAC37 /* TippingSelectionViewController.swift */,
-				271DEC60234CC7EE009DAC37 /* TippingOptionView.swift */,
-				271DEC61234CC7EE009DAC37 /* SendTipButton.swift */,
-			);
-			path = Tipping;
-			sourceTree = "<group>";
-		};
-		271DEC62234CC7EE009DAC37 /* Wallet */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC63234CC7EE009DAC37 /* WalletHeaderView.swift */,
-				271DEC64234CC7EE009DAC37 /* RewardsSummaryProtocol.swift */,
-				271DEC65234CC7EE009DAC37 /* WalletViewController.swift */,
-				271DEC66234CC7EE009DAC37 /* EmptyWalletSummaryView.swift */,
-				271DEC67234CC7EE009DAC37 /* WalletView.swift */,
-				271DEC68234CC7EE009DAC37 /* Notifications */,
-			);
-			path = Wallet;
-			sourceTree = "<group>";
-		};
-		271DEC68234CC7EE009DAC37 /* Notifications */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC69234CC7EE009DAC37 /* WalletActionNotificationView.swift */,
-				271DEC6A234CC7EE009DAC37 /* WalletAlertNotificationView.swift */,
-				271DEC6B234CC7EE009DAC37 /* WalletNotificationView.swift */,
-				271DEC6C234CC7EE009DAC37 /* RewardsNotificationViewBuilder.swift */,
-			);
-			path = Notifications;
-			sourceTree = "<group>";
-		};
-		271DEC6E234CC7EE009DAC37 /* Grants */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC6F234CC7EE009DAC37 /* GrantsItemView.swift */,
-				271DEC70234CC7EE009DAC37 /* GrantsListViewController.swift */,
-			);
-			path = Grants;
-			sourceTree = "<group>";
-		};
-		271DEC71234CC7EE009DAC37 /* Rewards Summary */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC72234CC7EE009DAC37 /* RewardsSummaryRowView.swift */,
-				271DEC73234CC7EE009DAC37 /* RewardsSummaryButton.swift */,
-				271DEC74234CC7EE009DAC37 /* RewardsSummaryView.swift */,
-			);
-			path = "Rewards Summary";
-			sourceTree = "<group>";
-		};
-		271DEC76234CC7EF009DAC37 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC77234CC7EF009DAC37 /* Ads */,
-				271DEC7C234CC7EF009DAC37 /* Options */,
-				271DEC7E234CC7EF009DAC37 /* SettingsView.swift */,
-				271DEC7F234CC7EF009DAC37 /* Grants */,
-				271DEC82234CC7EF009DAC37 /* SettingsViewDetailsButton.swift */,
-				271DEC83234CC7EF009DAC37 /* SettingsSectionView.swift */,
-				27D3155623D8B16200219462 /* SettingsTableView.swift */,
-				271DEC84234CC7EF009DAC37 /* Tips */,
-				27D3154F23D7A94100219462 /* Monthly Tips */,
-				271DEC8A234CC7EF009DAC37 /* Wallet */,
-				271DEC8F234CC7EF009DAC37 /* SettingsUX.swift */,
-				271DEC90234CC7EF009DAC37 /* Auto-Contribute */,
-				271DEC97234CC7EF009DAC37 /* Rewards Toggle */,
-				271DEC9A234CC7EF009DAC37 /* SettingsViewController.swift */,
-				2718B26D2391BB8E00F378BF /* DisabledSettingGraphicView.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		271DEC77234CC7EF009DAC37 /* Ads */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC78234CC7EF009DAC37 /* SettingsAdSectionView.swift */,
-				271DEC79234CC7EF009DAC37 /* Details */,
-				271DEC7B234CC7EF009DAC37 /* AdsUnsupportedView.swift */,
-			);
-			path = Ads;
-			sourceTree = "<group>";
-		};
-		271DEC79234CC7EF009DAC37 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC7A234CC7EF009DAC37 /* AdsDetailsViewController.swift */,
-			);
-			path = Details;
-			sourceTree = "<group>";
-		};
-		271DEC7C234CC7EF009DAC37 /* Options */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC7D234CC7EF009DAC37 /* OptionsSelectionViewController.swift */,
-			);
-			path = Options;
-			sourceTree = "<group>";
-		};
-		271DEC7F234CC7EF009DAC37 /* Grants */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC80234CC7EF009DAC37 /* SettingsGrantSectionView.swift */,
-				271DEC81234CC7EF009DAC37 /* GrantClaimedViewController.swift */,
-			);
-			path = Grants;
-			sourceTree = "<group>";
-		};
-		271DEC84234CC7EF009DAC37 /* Tips */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC85234CC7EF009DAC37 /* Details */,
-				271DEC89234CC7EF009DAC37 /* SettingsTipsSectionView.swift */,
-			);
-			path = Tips;
-			sourceTree = "<group>";
-		};
-		271DEC85234CC7EF009DAC37 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC86234CC7EF009DAC37 /* TipsDetailViewController.swift */,
-				271DEC87234CC7EF009DAC37 /* TipsTableCell.swift */,
-				271DEC88234CC7EF009DAC37 /* TipsSummaryTableCell.swift */,
-			);
-			path = Details;
-			sourceTree = "<group>";
-		};
-		271DEC8A234CC7EF009DAC37 /* Wallet */ = {
-			isa = PBXGroup;
-			children = (
-				27353FF1235F4E7300E42EBB /* WalletDisclaimerView.swift */,
-			);
-			path = Wallet;
-			sourceTree = "<group>";
-		};
-		271DEC90234CC7EF009DAC37 /* Auto-Contribute */ = {
-			isa = PBXGroup;
-			children = (
-				27B0C7B923D604B600B9EA3D /* Supported List */,
-				27B0C7B123D24B9400B9EA3D /* Exclusion List */,
-				271DEC93234CC7EF009DAC37 /* Details */,
-				271DEC96234CC7EF009DAC37 /* SettingsAutoContributeSectionView.swift */,
-			);
-			path = "Auto-Contribute";
-			sourceTree = "<group>";
-		};
-		271DEC93234CC7EF009DAC37 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC94234CC7EF009DAC37 /* AutoContributeDetailsViewController.swift */,
-			);
-			path = Details;
-			sourceTree = "<group>";
-		};
-		271DEC97234CC7EF009DAC37 /* Rewards Toggle */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC98234CC7EF009DAC37 /* SettingsRewardsSectionView.swift */,
-				271DEC99234CC7EF009DAC37 /* BraveRewardsToggleView.swift */,
-			);
-			path = "Rewards Toggle";
-			sourceTree = "<group>";
-		};
-		271DEC9D234CC7EF009DAC37 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC9E234CC7EF009DAC37 /* Tables */,
-				271DECA3234CC7EF009DAC37 /* DetailActionableRow.swift */,
-				271DECA4234CC7EF009DAC37 /* CurrencyContainerView.swift */,
-				271DECA5234CC7EF009DAC37 /* PopoverNavigationController.swift */,
-				271DECA6234CC7EF009DAC37 /* SeparatorView.swift */,
-				271DECA7234CC7EF009DAC37 /* LinkLabel.swift */,
-				271DECA8234CC7EF009DAC37 /* CreateWalletButton.swift */,
-				271DECA9234CC7EF009DAC37 /* PublisherIconCircleImageView.swift */,
-				271DECAA234CC7EF009DAC37 /* BATUSDPairView.swift */,
-				271DECAB234CC7EF009DAC37 /* Then.swift */,
-				271DECAC234CC7EF009DAC37 /* GrabberView.swift */,
-				271DECAD234CC7EF009DAC37 /* LoaderView.swift */,
-				271DECAE234CC7EF009DAC37 /* ActionButton.swift */,
-				271DECAF234CC7EF009DAC37 /* QRCode.swift */,
-				271DECB0234CC7EF009DAC37 /* SwitchRow.swift */,
-				271DECB1234CC7EF009DAC37 /* Colors.swift */,
-				271DECB2234CC7EF009DAC37 /* GradientView.swift */,
-				271DECB3234CC7EF009DAC37 /* FaviconData.swift */,
-				271DECB4234CC7EF009DAC37 /* Button.swift */,
-				271DECB5234CC7EF009DAC37 /* BasicAnimationController.swift */,
-				271DECB6234CC7EF009DAC37 /* DismissButton.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		271DEC9E234CC7EF009DAC37 /* Tables */ = {
-			isa = PBXGroup;
-			children = (
-				271DEC9F234CC7EF009DAC37 /* TableViewCell.swift */,
-				271DECA0234CC7EF009DAC37 /* EmptyTableCell.swift */,
-				271DECA1234CC7EF009DAC37 /* LabelAccessoryView.swift */,
-				271DECA2234CC7EF009DAC37 /* TableHeaderRowView.swift */,
-			);
-			path = Tables;
-			sourceTree = "<group>";
-		};
-		271DECB7234CC7EF009DAC37 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				271DECB8234CC7EF009DAC37 /* UITableViewExtensions.swift */,
-				271DECB9234CC7EF009DAC37 /* ArrayExtensions.swift */,
-				271DECBA234CC7EF009DAC37 /* UIStackViewExtensions.swift */,
-				271DECBB234CC7EF009DAC37 /* BraveLedgerExtensions.swift */,
-				271DECBC234CC7EF009DAC37 /* BraveRewardsExtensions.swift */,
-				271DECBD234CC7EF009DAC37 /* POPExtensions.swift */,
-				271DECBE234CC7EF009DAC37 /* PublisherInfoExtensions.swift */,
-				271DECBF234CC7EF009DAC37 /* UIImageExtensions.swift */,
-				271DECC0234CC7EF009DAC37 /* BundleExtensions.swift */,
-				271DECC1234CC7EF009DAC37 /* DateExtensions.swift */,
-				27B1E26C235E58190062E86F /* LocaleExtensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2765826D217130B700754B2F /* Certificates */ = {
@@ -3292,68 +2467,6 @@
 				2765826F217130D900754B2F /* GlobalSign_r3.cer */,
 			);
 			path = Certificates;
-			sourceTree = "<group>";
-		};
-		276E7A3A22F21DAB00939424 /* Rewards */ = {
-			isa = PBXGroup;
-			children = (
-				2755AB8523107DBD00F0721F /* AdsMediaReporting.swift */,
-				276E7A3B22F21DBE00939424 /* RewardsReporting.swift */,
-			);
-			path = Rewards;
-			sourceTree = "<group>";
-		};
-		27A9068623D659FE005D7609 /* Pending Contributions */ = {
-			isa = PBXGroup;
-			children = (
-				27A9068823D65A10005D7609 /* PendingContributionListController.swift */,
-				27A9068A23D65E0E005D7609 /* PendingContributionCell.swift */,
-				275218FB23E0BB7500E416B4 /* PendingContributionDetailController.swift */,
-			);
-			path = "Pending Contributions";
-			sourceTree = "<group>";
-		};
-		27AC169223834134004BE19C /* Rewards */ = {
-			isa = PBXGroup;
-			children = (
-				27AC168F23833A16004BE19C /* MonthlyAdsGrantReminder.swift */,
-			);
-			path = Rewards;
-			sourceTree = "<group>";
-		};
-		27B0C7B123D24B9400B9EA3D /* Exclusion List */ = {
-			isa = PBXGroup;
-			children = (
-				27B0C7B323D24BAA00B9EA3D /* AutoContributeExclusionListController.swift */,
-				27B0C7B623D2555C00B9EA3D /* ExclusionListCell.swift */,
-			);
-			path = "Exclusion List";
-			sourceTree = "<group>";
-		};
-		27B0C7B923D604B600B9EA3D /* Supported List */ = {
-			isa = PBXGroup;
-			children = (
-				27B0C7BA23D604C500B9EA3D /* AutoContributeSupportedListController.swift */,
-				271DEC95234CC7EF009DAC37 /* AutoContributeCell.swift */,
-			);
-			path = "Supported List";
-			sourceTree = "<group>";
-		};
-		27D3154F23D7A94100219462 /* Monthly Tips */ = {
-			isa = PBXGroup;
-			children = (
-				27D3155323D8B0C000219462 /* Details */,
-				27D3155123D7A95C00219462 /* SettingsMonthlyTipsSectionView.swift */,
-			);
-			path = "Monthly Tips";
-			sourceTree = "<group>";
-		};
-		27D3155323D8B0C000219462 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				27D3155423D8B0CE00219462 /* MonthlyTipsDetailViewController.swift */,
-			);
-			path = Details;
 			sourceTree = "<group>";
 		};
 		27F443962135E11200296C58 /* BraveShareTo */ = {
@@ -3449,7 +2562,6 @@
 				A1CA29C320E1746A00CB9126 /* OptionSelectionViewController.swift */,
 				A16DC67E20E585D90069C8E1 /* PasscodeSettingsViewController.swift */,
 				0AEFB84822244135007AF600 /* AdblockDebugMenuTableViewController.swift */,
-				27D114D32358FBBF00166534 /* BraveRewardsSettingsViewController.swift */,
 				27D114D52358FCA400166534 /* SettingsRowViews.swift */,
 			);
 			path = Settings;
@@ -3899,7 +3011,6 @@
 				44331DD922552313007E3E93 /* LocationContainerView.swift */,
 				E4CD9F2C1A6DC91200318571 /* TabLocationView.swift */,
 				0AB2442B22AA789B00B4D9DD /* ReaderModeButton.swift */,
-				0AE5C09822CAA01E00DFF3EE /* RewardsButton.swift */,
 			);
 			path = UrlBar;
 			sourceTree = "<group>";
@@ -4006,32 +3117,9 @@
 			path = Analytics;
 			sourceTree = "<group>";
 		};
-		5DB474CE237F4BE9007B7652 /* NTP_Images */ = {
-			isa = PBXGroup;
-			children = (
-				5D53749323846FFB00A2B587 /* anders-jilden.jpg */,
-				5D53749823846FFC00A2B587 /* andreas-gucklhorn.jpg */,
-				5D53749B23846FFC00A2B587 /* andy-mai.jpg */,
-				5D53749923846FFC00A2B587 /* annie-spratt.jpg */,
-				5D53748D23846FFA00A2B587 /* anton-repponen.jpg */,
-				5D53749623846FFB00A2B587 /* ben-karpinski.jpg */,
-				5D53748E23846FFA00A2B587 /* dc-cavalleri.jpg */,
-				5D53749123846FFB00A2B587 /* joe-gardner.jpg */,
-				5D53748F23846FFA00A2B587 /* louis-kim.jpg */,
-				5D53749A23846FFC00A2B587 /* matt-palmer.jpg */,
-				5D53749723846FFB00A2B587 /* oliwier gesla.jpg */,
-				5D53749023846FFA00A2B587 /* Svalbard_Jerol_Soibam.jpeg */,
-				5D53749423846FFB00A2B587 /* will_christiansen_glacier_peak.jpg */,
-				5D53749523846FFB00A2B587 /* will_christiansen_ice.jpg */,
-				5D53749223846FFB00A2B587 /* xavier-balderas-cejudo.jpg */,
-			);
-			path = NTP_Images;
-			sourceTree = "<group>";
-		};
 		5DE7688520B3456D00FF5533 /* BraveShared */ = {
 			isa = PBXGroup;
 			children = (
-				27AC169223834134004BE19C /* Rewards */,
 				0AD4FEE8223A998700E00C05 /* Javascript */,
 				0AD4FED9223A8AF800E00C05 /* Extensions */,
 				0AD5E9BB2200590C00D0D91B /* Shields */,
@@ -4107,7 +3195,6 @@
 			children = (
 				5E8CD8E023D5E3D100548FC0 /* libarchive.2.tbd */,
 				27AC169623834510004BE19C /* UserNotifications.framework */,
-				27FA2D4F234CC9FB004D5D2D /* BraveRewards.framework */,
 				F926647A234D4EF400359492 /* CoreNFC.framework */,
 				0AC8E23A22A6C56D0064F3FA /* libYubiKit.a */,
 				272FCA98225CF8F00091E645 /* OnePasswordExtension.framework */,
@@ -4194,7 +3281,6 @@
 				C8F457A91F1FDD9B000CB895 /* BrowserViewController+KeyCommands.swift */,
 				D0C95EF5201A55A800E4E51C /* BrowserViewController+UIDropInteractionDelegate.swift */,
 				C8F457A71F1FD75A000CB895 /* BrowserViewController+WKNavigationDelegate.swift */,
-				0A91598822B834CE00CCC119 /* BVC+Rewards.swift */,
 			);
 			path = BrowserViewController;
 			sourceTree = "<group>";
@@ -4334,7 +3420,6 @@
 		D3A994941A368691008AD1AC /* Browser */ = {
 			isa = PBXGroup;
 			children = (
-				0A3C789423055AC80022F6D8 /* Onboarding */,
 				C6D267612137E45D00465DFA /* PrivacyProtection */,
 				C6D267592137E39A00465DFA /* ImageCache */,
 				0AADC4BB20D2A4F700FDE368 /* HomePanel */,
@@ -4633,8 +3718,6 @@
 				5D1DC52120AC9AFB00905E5A /* DataTests */,
 				5DE7688520B3456D00FF5533 /* BraveShared */,
 				27F443962135E11200296C58 /* BraveShareTo */,
-				271DEC1A234CC75F009DAC37 /* BraveRewardsUI */,
-				271DEC27234CC760009DAC37 /* BraveRewardsUITests */,
 				7B604FC11C496005006EEEC3 /* Frameworks */,
 				F84B21BF1A090F8100AAB793 /* Products */,
 				D34DC84C1A16C40C00D49B7B /* Providers */,
@@ -4664,8 +3747,6 @@
 				5DE7688420B3456C00FF5533 /* BraveShared.framework */,
 				5DE7688C20B3456E00FF5533 /* BraveSharedTests.xctest */,
 				27F443952135E11200296C58 /* BraveShareTo.appex */,
-				271DEC19234CC75F009DAC37 /* BraveRewardsUI.framework */,
-				271DEC21234CC75F009DAC37 /* BraveRewardsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4683,7 +3764,6 @@
 				E689C6FF1E0C716F008BAADB /* Entitlements */,
 				28EADE5C1AFC3A6D007FB2FB /* Extensions */,
 				F84B21F11A0910F600AAB793 /* Frontend */,
-				276E7A3A22F21DAB00939424 /* Rewards */,
 				39A359BD1BFCCE7B006B9E87 /* Helpers */,
 				0A4BEFCD221E11440005551A /* Networking */,
 				0A0D3D2F21A4BC1F00BEE65B /* WebFilters */,
@@ -4796,7 +3876,6 @@
 				D3A994941A368691008AD1AC /* Browser */,
 				A104E190210A380E00D2323E /* Shields */,
 				E63ED8DF1BFD254E0097D08E /* Login Management */,
-				0A7F238D23D0859B005E39FC /* NTP */,
 				F84B21F51A0910F600AAB793 /* Reader */,
 				2F44FC551A9E83E200FD20CC /* Settings */,
 				D3972BF01C22412B00035B87 /* Share */,
@@ -4952,14 +4031,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		271DEC14234CC75F009DAC37 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				271DEC2B234CC760009DAC37 /* BraveRewardsUI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		288A2D831AB8B3260023ABC3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -4996,46 +4067,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		271DEC18234CC75F009DAC37 /* BraveRewardsUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 271DEC39234CC760009DAC37 /* Build configuration list for PBXNativeTarget "BraveRewardsUI" */;
-			buildPhases = (
-				271DEC14234CC75F009DAC37 /* Headers */,
-				271DEC15234CC75F009DAC37 /* Sources */,
-				271DEC16234CC75F009DAC37 /* Frameworks */,
-				271DEC17234CC75F009DAC37 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				27FA2D68234E3222004D5D2D /* PBXTargetDependency */,
-				27FA2D6C234E3222004D5D2D /* PBXTargetDependency */,
-			);
-			name = BraveRewardsUI;
-			productName = BraveRewardsUI;
-			productReference = 271DEC19234CC75F009DAC37 /* BraveRewardsUI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		271DEC20234CC75F009DAC37 /* BraveRewardsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 271DEC3A234CC760009DAC37 /* Build configuration list for PBXNativeTarget "BraveRewardsUITests" */;
-			buildPhases = (
-				271DEC1D234CC75F009DAC37 /* Sources */,
-				271DEC1E234CC75F009DAC37 /* Frameworks */,
-				271DEC1F234CC75F009DAC37 /* Resources */,
-				27FA2D4E234CC9E9004D5D2D /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				271DEC24234CC760009DAC37 /* PBXTargetDependency */,
-				271DEC26234CC760009DAC37 /* PBXTargetDependency */,
-			);
-			name = BraveRewardsUITests;
-			productName = BraveRewardsUITests;
-			productReference = 271DEC21234CC75F009DAC37 /* BraveRewardsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		27F443942135E11200296C58 /* BraveShareTo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27F443AB2135E11200296C58 /* Build configuration list for PBXNativeTarget "BraveShareTo" */;
@@ -5229,7 +4260,6 @@
 				5D1DC52720AC9AFB00905E5A /* PBXTargetDependency */,
 				5DE7689820B3456E00FF5533 /* PBXTargetDependency */,
 				27F4439E2135E11200296C58 /* PBXTargetDependency */,
-				271DEC2D234CC760009DAC37 /* PBXTargetDependency */,
 			);
 			name = Client;
 			productName = Client;
@@ -5268,14 +4298,6 @@
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = Mozilla;
 				TargetAttributes = {
-					271DEC18234CC75F009DAC37 = {
-						CreatedOnToolsVersion = 11.1;
-						LastSwiftMigration = 1110;
-					};
-					271DEC20234CC75F009DAC37 = {
-						CreatedOnToolsVersion = 11.1;
-						TestTargetID = F84B21BD1A090F8100AAB793;
-					};
 					27F443942135E11200296C58 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1010;
@@ -5385,13 +4407,11 @@
 				288A2D851AB8B3260023ABC3 /* Shared */,
 				2FCAE2191ABB51F800877008 /* Storage */,
 				5D1DC51220AC9AF900905E5A /* Data */,
-				271DEC18234CC75F009DAC37 /* BraveRewardsUI */,
 				F84B21D21A090F8100AAB793 /* ClientTests */,
 				2FCAE2231ABB51F800877008 /* StorageTests */,
 				E6F9650B1B2F1CF20034B023 /* SharedTests */,
 				5D1DC51A20AC9AFA00905E5A /* DataTests */,
 				5DE7688B20B3456E00FF5533 /* BraveSharedTests */,
-				271DEC20234CC75F009DAC37 /* BraveRewardsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -5407,22 +4427,6 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		271DEC17234CC75F009DAC37 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				271DED0A234CC7EF009DAC37 /* Images.xcassets in Resources */,
-				0A1CBCFD23571EFA004DA73F /* Localizable.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		271DEC1F234CC75F009DAC37 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		27F443932135E11200296C58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5523,14 +4527,12 @@
 			files = (
 				5E0FCD212342526700AC831E /* FullscreenHelper.js in Resources */,
 				D38A1EE01CB458EC0080C842 /* CertError.html in Resources */,
-				5D5374A523846FFC00A2B587 /* ben-karpinski.jpg in Resources */,
 				0BA1E0301B051A07007675AF /* NetError.css in Resources */,
 				59871C1921E4D83900316590 /* block-cookies.json in Resources */,
 				3BC659491E5BA4AE006D560F /* TopSites in Resources */,
 				E4B7B77E1A793CF20022C5E0 /* FiraSans-SemiBold.ttf in Resources */,
 				F84B220B1A0910F600AAB793 /* Images.xcassets in Resources */,
 				2755AB7D23107BC600F0721F /* AdsReporting.js in Resources */,
-				5DB474F1237F4CC9007B7652 /* ntp-data.json in Resources */,
 				595E0EDB21CAD97C00813D49 /* CookieControl.js in Resources */,
 				0A0D3D3C21A4BE6400BEE65B /* adblock-list.txt in Resources */,
 				27658272217130D900754B2F /* GlobalSign_r3.cer in Resources */,
@@ -5549,15 +4551,12 @@
 				4422D55921BFFB7F00BF1855 /* unicode.py in Resources */,
 				7B2142FE1E5E055000CDD3FC /* InfoPlist.strings in Resources */,
 				E69922171B94E3EF007C480D /* Licenses.html in Resources */,
-				5D5374A223846FFC00A2B587 /* anders-jilden.jpg in Resources */,
 				E4CD9F5B1A71506C00318571 /* Reader.css in Resources */,
 				D0FCF8061FE4772D004A7995 /* AllFramesAtDocumentEnd.js in Resources */,
 				27658273217130D900754B2F /* DigiCertHighAssurance.cer in Resources */,
 				E4B7B7611A793CF20022C5E0 /* CharisSILB.ttf in Resources */,
 				4422D56E21BFFB7F00BF1855 /* make_perl_groups.pl in Resources */,
 				E4B7B7621A793CF20022C5E0 /* CharisSILBI.ttf in Resources */,
-				5D5374A723846FFC00A2B587 /* andreas-gucklhorn.jpg in Resources */,
-				5D53749E23846FFC00A2B587 /* louis-kim.jpg in Resources */,
 				27658271217130D900754B2F /* GlobalSign_r1.cer in Resources */,
 				39F4C0FA2045D87400746155 /* FocusHelper.js in Resources */,
 				E4B7B7861A793CF20022C5E0 /* FiraSans-UltraLight.ttf in Resources */,
@@ -5569,38 +4568,24 @@
 				59D4161B232681080087A6E1 /* Localizable.strings in Resources */,
 				D0FCF8081FE4772D004A7995 /* MainFrameAtDocumentStart.js in Resources */,
 				0A0D3D5021A5609600BEE65B /* SafeBrowsingError.html in Resources */,
-				5D5374A623846FFC00A2B587 /* oliwier gesla.jpg in Resources */,
 				74821FFE1DB6D3AC00EEEA72 /* MailSchemes.plist in Resources */,
-				5EC1DDBC2356883800CA4028 /* onboarding-shields.json in Resources */,
-				5D53749C23846FFC00A2B587 /* anton-repponen.jpg in Resources */,
 				0AA4AA99231849450009AAEF /* ABPFilterParserData.dat in Resources */,
-				5EC1DDBE2356892900CA4028 /* onboarding-ads.json in Resources */,
 				4422D57621C05DE600BF1855 /* httpse.leveldb.tgz in Resources */,
 				FA9294011D6584A200AC8D33 /* QRCode.xcassets in Resources */,
 				D308EE561CBF0BF5006843F2 /* CertError.css in Resources */,
 				4422D4AD21BFFB7600BF1855 /* LICENSE in Resources */,
-				5D5374AA23846FFC00A2B587 /* andy-mai.jpg in Resources */,
 				E4B7B7641A793CF20022C5E0 /* CharisSILR.ttf in Resources */,
 				5D21AE082303B70E00B30D97 /* Themes in Resources */,
 				4422D56D21BFFB7F00BF1855 /* make_unicode_groups.py in Resources */,
 				E4B7B7681A793CF20022C5E0 /* FiraSans-Bold.ttf in Resources */,
 				E4B7B7781A793CF20022C5E0 /* FiraSans-Italic.ttf in Resources */,
-				5D53749D23846FFC00A2B587 /* dc-cavalleri.jpg in Resources */,
-				5EC1DDBD2356888000CA4028 /* onboarding-rewards.json in Resources */,
 				0BA1E00E1B03FB0B007675AF /* NetError.html in Resources */,
 				5DE5250E218CE92C000DFAA6 /* block-images.json in Resources */,
-				5D5374A823846FFC00A2B587 /* annie-spratt.jpg in Resources */,
 				E4A961381AC06FA50069AD6F /* ReaderViewLoading.html in Resources */,
 				59C8119922D754D4005D5BBC /* BraveShared.strings in Resources */,
 				E4ECCDAE1AB131770005E717 /* FiraSans-Medium.ttf in Resources */,
 				E4424B3C1AC71FB400F44C38 /* FiraSans-Book.ttf in Resources */,
-				5D5374A423846FFC00A2B587 /* will_christiansen_ice.jpg in Resources */,
-				5D53749F23846FFC00A2B587 /* Svalbard_Jerol_Soibam.jpeg in Resources */,
 				0AA21E4C2302C4CC00358988 /* webauth_touch_key.json in Resources */,
-				5D5374A023846FFC00A2B587 /* joe-gardner.jpg in Resources */,
-				5D5374A123846FFC00A2B587 /* xavier-balderas-cejudo.jpg in Resources */,
-				5D5374A923846FFC00A2B587 /* matt-palmer.jpg in Resources */,
-				5D5374A323846FFC00A2B587 /* will_christiansen_glacier_peak.jpg in Resources */,
 				5DE52511218CE92C000DFAA6 /* block-trackers.json in Resources */,
 				39A35AED1C0662A3006B9E87 /* SpotlightHelper.js in Resources */,
 				D0FCF8071FE4772D004A7995 /* MainFrameAtDocumentEnd.js in Resources */,
@@ -5689,142 +4674,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		271DEC15234CC75F009DAC37 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				271DECC2234CC7EF009DAC37 /* WelcomeViewController.swift in Sources */,
-				271DECCE234CC7EF009DAC37 /* RewardsUX.swift in Sources */,
-				5E77F9DD236BB68700E1649C /* AttestationDebugger.swift in Sources */,
-				271DED13234CC7EF009DAC37 /* LinkLabel.swift in Sources */,
-				271DED21234CC7EF009DAC37 /* BasicAnimationController.swift in Sources */,
-				271DED26234CC7EF009DAC37 /* BraveLedgerExtensions.swift in Sources */,
-				27B0C7BC23D604C500B9EA3D /* AutoContributeSupportedListController.swift in Sources */,
-				271DECD8234CC7EF009DAC37 /* TippingConfirmationView.swift in Sources */,
-				271DED22234CC7EF009DAC37 /* DismissButton.swift in Sources */,
-				271DED29234CC7EF009DAC37 /* PublisherInfoExtensions.swift in Sources */,
-				271DED27234CC7EF009DAC37 /* BraveRewardsExtensions.swift in Sources */,
-				271DED07234CC7EF009DAC37 /* BraveRewardsToggleView.swift in Sources */,
-				271DECF8234CC7EF009DAC37 /* SettingsSectionView.swift in Sources */,
-				2713AF0923984C6B00E3ACAA /* VerifiedUserWalletButton.swift in Sources */,
-				271DECE3234CC7EF009DAC37 /* EmptyWalletSummaryView.swift in Sources */,
-				271DED0E234CC7EF009DAC37 /* TableHeaderRowView.swift in Sources */,
-				271DECFA234CC7EF009DAC37 /* TipsTableCell.swift in Sources */,
-				271DECC6234CC7EF009DAC37 /* PublisherSummaryView.swift in Sources */,
-				271DECE5234CC7EF009DAC37 /* WalletActionNotificationView.swift in Sources */,
-				271DED09234CC7EF009DAC37 /* RewardsPanelController.swift in Sources */,
-				271DECDE234CC7EF009DAC37 /* TippingOptionView.swift in Sources */,
-				271DED20234CC7EF009DAC37 /* Button.swift in Sources */,
-				271DECD0234CC7EF009DAC37 /* AdSwipeButton.swift in Sources */,
-				271DECD4234CC7EF009DAC37 /* Strings.swift in Sources */,
-				271DECEF234CC7EF009DAC37 /* RewardsState.swift in Sources */,
-				271DED05234CC7EF009DAC37 /* SettingsAutoContributeSectionView.swift in Sources */,
-				2713AF052396EA8F00E3ACAA /* VerifyUserWalletViewController.swift in Sources */,
-				271DED04234CC7EF009DAC37 /* AutoContributeCell.swift in Sources */,
-				2744D6D0239EF10B00A89EBB /* UserWalletDetailsViewController.swift in Sources */,
-				271DECCC234CC7EF009DAC37 /* CreateWalletView.swift in Sources */,
-				271DED0D234CC7EF009DAC37 /* LabelAccessoryView.swift in Sources */,
-				271DED2B234CC7EF009DAC37 /* BundleExtensions.swift in Sources */,
-				271DED08234CC7EF009DAC37 /* SettingsViewController.swift in Sources */,
-				271DECC4234CC7EF009DAC37 /* PublisherAttentionView.swift in Sources */,
-				27253973236CE6B100D06EF1 /* GrantClaimedViewController.swift in Sources */,
-				271DED23234CC7EF009DAC37 /* UITableViewExtensions.swift in Sources */,
-				271DECD1234CC7EF009DAC37 /* AdView.swift in Sources */,
-				271DECE9234CC7EF009DAC37 /* BATValue.swift in Sources */,
-				271DECCB234CC7EF009DAC37 /* CreateWalletViewController.swift in Sources */,
-				271DECD9234CC7EF009DAC37 /* InsufficientFundsButton.swift in Sources */,
-				271DECEC234CC7EF009DAC37 /* RewardsSummaryRowView.swift in Sources */,
-				271DECF9234CC7EF009DAC37 /* TipsDetailViewController.swift in Sources */,
-				271DECC3234CC7EF009DAC37 /* WelcomeView.swift in Sources */,
-				271DED2C234CC7EF009DAC37 /* DateExtensions.swift in Sources */,
-				271DED0F234CC7EF009DAC37 /* DetailActionableRow.swift in Sources */,
-				271DED0B234CC7EF009DAC37 /* TableViewCell.swift in Sources */,
-				2713AF072398439E00E3ACAA /* ConnectUserWalletButton.swift in Sources */,
-				271DECEA234CC7EF009DAC37 /* GrantsItemView.swift in Sources */,
-				271DECED234CC7EF009DAC37 /* RewardsSummaryButton.swift in Sources */,
-				271DECF2234CC7EF009DAC37 /* AdsUnsupportedView.swift in Sources */,
-				271DECDA234CC7EF009DAC37 /* TippingView.swift in Sources */,
-				271DECF1234CC7EF009DAC37 /* AdsDetailsViewController.swift in Sources */,
-				27D3155723D8B16200219462 /* SettingsTableView.swift in Sources */,
-				5E77F9AA236B362E00E1649C /* Cryptography.swift in Sources */,
-				271DED0C234CC7EF009DAC37 /* EmptyTableCell.swift in Sources */,
-				2744D6CE239EDCBC00A89EBB /* VerifyUserWalletButton.swift in Sources */,
-				27B1E26D235E58190062E86F /* LocaleExtensions.swift in Sources */,
-				271DECF3234CC7EF009DAC37 /* OptionsSelectionViewController.swift in Sources */,
-				271DED10234CC7EF009DAC37 /* CurrencyContainerView.swift in Sources */,
-				2744D6CB239EDB1A00A89EBB /* DisconnectedUserWalletButton.swift in Sources */,
-				271DED12234CC7EF009DAC37 /* SeparatorView.swift in Sources */,
-				271DECE1234CC7EF009DAC37 /* RewardsSummaryProtocol.swift in Sources */,
-				271DECF0234CC7EF009DAC37 /* SettingsAdSectionView.swift in Sources */,
-				271DECD3234CC7EF009DAC37 /* AdContentButton.swift in Sources */,
-				5E77F9A8236B362800E1649C /* DeviceCheck.swift in Sources */,
-				271DED1A234CC7EF009DAC37 /* ActionButton.swift in Sources */,
-				27A9068B23D65E0E005D7609 /* PendingContributionCell.swift in Sources */,
-				27353FF2235F4E7300E42EBB /* WalletDisclaimerView.swift in Sources */,
-				275218FC23E0BB7500E416B4 /* PendingContributionDetailController.swift in Sources */,
-				271DECC5234CC7EF009DAC37 /* PublisherView.swift in Sources */,
-				271DED03234CC7EF009DAC37 /* AutoContributeDetailsViewController.swift in Sources */,
-				271DED16234CC7EF009DAC37 /* BATUSDPairView.swift in Sources */,
-				271DECD5234CC7EF009DAC37 /* RewardsDataSource.swift in Sources */,
-				271DECE6234CC7EF009DAC37 /* WalletAlertNotificationView.swift in Sources */,
-				27D3155223D7A95C00219462 /* SettingsMonthlyTipsSectionView.swift in Sources */,
-				271DECD6234CC7EF009DAC37 /* QASettingsViewController.swift in Sources */,
-				271DED17234CC7EF009DAC37 /* Then.swift in Sources */,
-				271DED14234CC7EF009DAC37 /* CreateWalletButton.swift in Sources */,
-				271DECCF234CC7EF009DAC37 /* AdsViewController.swift in Sources */,
-				271DED25234CC7EF009DAC37 /* UIStackViewExtensions.swift in Sources */,
-				271DECFC234CC7EF009DAC37 /* SettingsTipsSectionView.swift in Sources */,
-				27D3155523D8B0CE00219462 /* MonthlyTipsDetailViewController.swift in Sources */,
-				271DECDD234CC7EF009DAC37 /* TippingSelectionViewController.swift in Sources */,
-				271DED1C234CC7EF009DAC37 /* SwitchRow.swift in Sources */,
-				271DED06234CC7EF009DAC37 /* SettingsRewardsSectionView.swift in Sources */,
-				271DED01234CC7EF009DAC37 /* SettingsUX.swift in Sources */,
-				271DECD2234CC7EF009DAC37 /* AdsNotificationHandler.swift in Sources */,
-				271DED28234CC7EF009DAC37 /* POPExtensions.swift in Sources */,
-				271DED19234CC7EF009DAC37 /* LoaderView.swift in Sources */,
-				271DED1B234CC7EF009DAC37 /* QRCode.swift in Sources */,
-				271DED11234CC7EF009DAC37 /* PopoverNavigationController.swift in Sources */,
-				2718B26E2391BB8E00F378BF /* DisabledSettingGraphicView.swift in Sources */,
-				271DECFB234CC7EF009DAC37 /* TipsSummaryTableCell.swift in Sources */,
-				271DED1E234CC7EF009DAC37 /* GradientView.swift in Sources */,
-				271DECDF234CC7EF009DAC37 /* SendTipButton.swift in Sources */,
-				271DECF7234CC7EF009DAC37 /* SettingsViewDetailsButton.swift in Sources */,
-				271DED18234CC7EF009DAC37 /* GrabberView.swift in Sources */,
-				271DED2A234CC7EF009DAC37 /* UIImageExtensions.swift in Sources */,
-				271DED1D234CC7EF009DAC37 /* Colors.swift in Sources */,
-				271DED24234CC7EF009DAC37 /* ArrayExtensions.swift in Sources */,
-				271DECD7234CC7EF009DAC37 /* TippingViewController.swift in Sources */,
-				27B0C7B823D2555C00B9EA3D /* ExclusionListCell.swift in Sources */,
-				271DECF5234CC7EF009DAC37 /* SettingsGrantSectionView.swift in Sources */,
-				271DECE2234CC7EF009DAC37 /* WalletViewController.swift in Sources */,
-				271DED1F234CC7EF009DAC37 /* FaviconData.swift in Sources */,
-				271DECF4234CC7EF009DAC37 /* SettingsView.swift in Sources */,
-				271DECE7234CC7EF009DAC37 /* WalletNotificationView.swift in Sources */,
-				271DECE0234CC7EF009DAC37 /* WalletHeaderView.swift in Sources */,
-				271DECEE234CC7EF009DAC37 /* RewardsSummaryView.swift in Sources */,
-				271DECC7234CC7EF009DAC37 /* RewardsDisabledView.swift in Sources */,
-				27B0C7B523D24BAA00B9EA3D /* AutoContributeExclusionListController.swift in Sources */,
-				271DECE8234CC7EF009DAC37 /* RewardsNotificationViewBuilder.swift in Sources */,
-				271DECEB234CC7EF009DAC37 /* GrantsListViewController.swift in Sources */,
-				271DECE4234CC7EF009DAC37 /* WalletView.swift in Sources */,
-				271DECCD234CC7EF009DAC37 /* RewardsUIDelegate.swift in Sources */,
-				271DECDB234CC7EF009DAC37 /* TippingOverviewView.swift in Sources */,
-				271DECDC234CC7EF009DAC37 /* TippingSelectionView.swift in Sources */,
-				271DED15234CC7EF009DAC37 /* PublisherIconCircleImageView.swift in Sources */,
-				27A9068923D65A10005D7609 /* PendingContributionListController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		271DEC1D234CC75F009DAC37 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				27FA2D4C234CC95A004D5D2D /* DateExtensionsTests.swift in Sources */,
-				27FA2D4B234CC95A004D5D2D /* RewardsNotificationViewBuilderTests.swift in Sources */,
-				27FA2D4A234CC95A004D5D2D /* BATValueTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		27F443912135E11200296C58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -6017,7 +4866,6 @@
 				5DE768A720B345C600FF5533 /* BraveStrings.swift in Sources */,
 				0AD4FEF2223AA6CA00E00C05 /* JSContextExtensions.swift in Sources */,
 				0AD4FEF4223AC32200E00C05 /* JSValueExtensions.swift in Sources */,
-				27AC169323834175004BE19C /* MonthlyAdsGrantReminder.swift in Sources */,
 				0AD4FEEE223AA09D00E00C05 /* BrowserifyExposable.swift in Sources */,
 				0A917388231D11960069A08B /* AppReview.swift in Sources */,
 				5D6DDEF3214003A6001FF0AE /* DAU.swift in Sources */,
@@ -6095,7 +4943,6 @@
 				5E4845C222DE3DF800372022 /* WindowRenderHelperScript.swift in Sources */,
 				27F94A3A21909A5900F4FADF /* SearchSuggestionsPromptView.swift in Sources */,
 				C690C208212FF35100E6EEE9 /* WebImageCacheWithNoPrivacyProtectionManager.swift in Sources */,
-				27D114D42358FBBF00166534 /* BraveRewardsSettingsViewController.swift in Sources */,
 				0A4BEFDA221EF3360005551A /* NetworkResourceType.swift in Sources */,
 				4422D4B921BFFB7600BF1855 /* crc32c.cc in Sources */,
 				592F521E2217327C0078395E /* HttpCookieExtension.swift in Sources */,
@@ -6107,7 +4954,6 @@
 				E4A960061ABB9C450069AD6F /* ReaderModeUtils.swift in Sources */,
 				0A1E843E2190A57F0042F782 /* SyncCodewordsView.swift in Sources */,
 				E68F36981EA694000048CF44 /* PanelDataObservers.swift in Sources */,
-				0A3C789F23056C910022F6D8 /* OnboardingSearchEnginesView.swift in Sources */,
 				31ADB5DA1E58CEC300E87909 /* ClipboardBarDisplayHandler.swift in Sources */,
 				0A4B012020D02EC4004D4011 /* TabsBarViewController.swift in Sources */,
 				4422D4D921BFFB7600BF1855 /* merger.cc in Sources */,
@@ -6146,7 +4992,6 @@
 				C615FAD9212A1E2600A8168C /* WebImageCache.swift in Sources */,
 				C615FAED212ACAD200A8168C /* BraveWebView.swift in Sources */,
 				C817B34D1FC609500086018E /* UIScrollViewSwizzled.swift in Sources */,
-				0A3C78A3230597F10022F6D8 /* OnboardingShieldsView.swift in Sources */,
 				4422D4E221BFFB7600BF1855 /* format.cc in Sources */,
 				39F819C61FD70F5D009E31E4 /* TabEventHandlers.swift in Sources */,
 				4422D50B21BFFB7600BF1855 /* memenv.cc in Sources */,
@@ -6163,7 +5008,6 @@
 				4422D4C021BFFB7600BF1855 /* options.cc in Sources */,
 				A198E75120C701ED00334C11 /* HistoryViewController.swift in Sources */,
 				D3BE7B461B054F8600641031 /* TestAppDelegate.swift in Sources */,
-				0A91598922B834CE00CCC119 /* BVC+Rewards.swift in Sources */,
 				A1F66A7320DD71C400303328 /* SettingsViewController.swift in Sources */,
 				0A4BEFD3221E115B0005551A /* NetworkManager.swift in Sources */,
 				0B62EFD21AD63CD100ACB9CD /* Clearables.swift in Sources */,
@@ -6183,7 +5027,6 @@
 				4422D55321BFFB7E00BF1855 /* parse.cc in Sources */,
 				4422D4F421BFFB7600BF1855 /* version_edit.cc in Sources */,
 				EB11A1062044A90E0018F749 /* ContentBlockerHelper+TabContentScript.swift in Sources */,
-				2755AB8623107DBD00F0721F /* AdsMediaReporting.swift in Sources */,
 				FA9293D41D6580E100AC8D33 /* QRCodeViewController.swift in Sources */,
 				E6108FF91C84E91C005D25E8 /* BasePasscodeViewController.swift in Sources */,
 				39F4C10A2045DB2E00746155 /* FocusHelper.swift in Sources */,
@@ -6191,10 +5034,8 @@
 				0BB5B2881AC0A2B90052877D /* SnackBar.swift in Sources */,
 				7BEFC6801BFF68C30059C952 /* QuickActions.swift in Sources */,
 				0A0D3D5221A565C300BEE65B /* SafeBrowsingHandler.swift in Sources */,
-				0AFC8F9E23D3762B00941895 /* NTPNotificationViewController.swift in Sources */,
 				D0C95E36200FDC5500E4E51C /* MetadataParserHelper.swift in Sources */,
 				4422D55B21BFFB7F00BF1855 /* onepass.cc in Sources */,
-				0A3C78A1230597DA0022F6D8 /* OnboardingShieldsViewController.swift in Sources */,
 				A1CDF22D20BDDB66005C6E58 /* BasicAnimationController.swift in Sources */,
 				0BF1B7E31AC60DEA00A7B407 /* InsetButton.swift in Sources */,
 				D0C95EF6201A55A800E4E51C /* BrowserViewController+UIDropInteractionDelegate.swift in Sources */,
@@ -6203,7 +5044,6 @@
 				44331DDC22561F34007E3E93 /* ToolbarUrlActionsDelegate.swift in Sources */,
 				4422D43721BFD29E00BF1855 /* NSData+GZIP.m in Sources */,
 				D31CF65C1CC1959A001D0BD0 /* PrivilegedRequest.swift in Sources */,
-				0A764F31230EE5CA003A1D9B /* OnboardingState.swift in Sources */,
 				D8D33A7D1FBD080300A20A28 /* SnapKitExtensions.swift in Sources */,
 				E650755C1E37F747006961AC /* Swizzling.m in Sources */,
 				D3B6923D1B9F9444004B87A4 /* FindInPageBar.swift in Sources */,
@@ -6217,7 +5057,6 @@
 				0BB5B30B1AC0AD1F0052877D /* LoginsHelper.swift in Sources */,
 				392ED7E61D0AEFEF009D9B62 /* HomePageAccessors.swift in Sources */,
 				7BA8D1C71BA037F500C8AE9E /* OpenInHelper.swift in Sources */,
-				0A27ABA123D1B9C400194921 /* BrandedImageCalloutState.swift in Sources */,
 				A1AD4BCF20BF3E8C007A6EA1 /* BookmarksViewController.swift in Sources */,
 				5D24AF9021BA4D7700F9506A /* ContentBlockerRegion.swift in Sources */,
 				E4B423BE1AB9FE6A007E66C8 /* ReaderModeCache.swift in Sources */,
@@ -6226,7 +5065,6 @@
 				C4EFEECF1CEBB6F2009762A4 /* BackForwardTableViewCell.swift in Sources */,
 				2C49854E206173C800893DAE /* photon-colors.swift in Sources */,
 				E689C7301E0C7617008BAADB /* NSAttributedStringExtensions.swift in Sources */,
-				0A16E2D723D4E1FB00B0BF94 /* ClaimRewardsNTPNotificationViewController.swift in Sources */,
 				D0C95E0E200FD3B200E4E51C /* PrintHelper.swift in Sources */,
 				4422D55821BFFB7F00BF1855 /* unicode_casefold.cc in Sources */,
 				C6620BBB213BCEC6009FE75A /* TabType.swift in Sources */,
@@ -6238,8 +5076,6 @@
 				4422D56221BFFB7F00BF1855 /* dfa.cc in Sources */,
 				A1AD4BE120C082EF007A6EA1 /* UIGestureRecognizerExtensions.swift in Sources */,
 				282DA4731A68C1E700A406E2 /* OpenSearch.swift in Sources */,
-				0A5CBD3423D4677100362CC8 /* NTPLearnMoreViewController.swift in Sources */,
-				5E612A8C234B7FC1007D12B5 /* OnboardingAdsAvailableController.swift in Sources */,
 				F35B8D2F1D638408008E3D61 /* SessionRestoreHandler.swift in Sources */,
 				4422D4C621BFFB7600BF1855 /* env_posix.cc in Sources */,
 				E63ED8E11BFD25580097D08E /* LoginListViewController.swift in Sources */,
@@ -6251,7 +5087,6 @@
 				D34510881ACF415700EC27F0 /* SearchLoader.swift in Sources */,
 				E65075521E37F6D1006961AC /* UIViewExtensions.swift in Sources */,
 				C8F457A81F1FD75A000CB895 /* BrowserViewController+WKNavigationDelegate.swift in Sources */,
-				5E612A8F234B7FCA007D12B5 /* OnboardingRewardsAgreementViewController.swift in Sources */,
 				E6927EC01C7B6FB800D03F75 /* ErrorToast.swift in Sources */,
 				4422D4B821BFFB7600BF1855 /* histogram.cc in Sources */,
 				0A0D3D3921A4BD0600BEE65B /* SafeBrowsing.swift in Sources */,
@@ -6266,7 +5101,6 @@
 				C4F3B29A1CFCF93A00966259 /* ButtonToast.swift in Sources */,
 				D31A0FC71A65D6D000DC8C7E /* SearchSuggestClient.swift in Sources */,
 				4422D4AE21BFFB7600BF1855 /* testutil.cc in Sources */,
-				0AE5C09922CAA01E00DFF3EE /* RewardsButton.swift in Sources */,
 				0A4BEFD2221E115B0005551A /* NetworkSession.swift in Sources */,
 				0A8C69B5225DE99700988715 /* BookmarkDetailsView.swift in Sources */,
 				4422D4F121BFFB7600BF1855 /* c.cc in Sources */,
@@ -6301,7 +5135,6 @@
 				D03F8EB22004014E003C2224 /* FaviconHandler.swift in Sources */,
 				0AB2442C22AA789B00B4D9DD /* ReaderModeButton.swift in Sources */,
 				4422D55E21BFFB7F00BF1855 /* mimics_pcre.cc in Sources */,
-				0A6112AC230B00E7001BBC45 /* OnboardingNavigationController.swift in Sources */,
 				4422D57321BFFB7F00BF1855 /* stringpiece.cc in Sources */,
 				27187808216526090006036E /* AlertPopupView.swift in Sources */,
 				4422D56421BFFB7F00BF1855 /* re2.cc in Sources */,
@@ -6319,13 +5152,11 @@
 				4422D50121BFFB7600BF1855 /* repair.cc in Sources */,
 				E660BDD91BB06521009AC090 /* TabsButton.swift in Sources */,
 				4422D55721BFFB7F00BF1855 /* unicode_groups.cc in Sources */,
-				5D5374BB238895B100A2B587 /* NTPBackgroundDataSource.swift in Sources */,
 				4422D55421BFFB7E00BF1855 /* re2_fuzzer.cc in Sources */,
 				2F44FCCB1A9E972E00FD20CC /* SearchEnginePicker.swift in Sources */,
 				C6B81B8C212D989200996084 /* ImageCacheOptions.swift in Sources */,
 				0AEFB84922244135007AF600 /* AdblockDebugMenuTableViewController.swift in Sources */,
 				E68E7ACB1CAC1D4500FDCA76 /* PagingPasscodeViewController.swift in Sources */,
-				0A6112BD230B4306001BBC45 /* OnboardingViewController.swift in Sources */,
 				D04D1B92209790B60074B35F /* Toast.swift in Sources */,
 				D34DC8531A16C40C00D49B7B /* Profile.swift in Sources */,
 				0A93F1892264C72000A3571B /* BookmarkFormFieldsProtocol.swift in Sources */,
@@ -6345,17 +5176,13 @@
 				D31F95E91AC226CB005C9F3B /* ScreenshotHelper.swift in Sources */,
 				28EADE5D1AFC3A78007FB2FB /* UIImageViewExtensions.swift in Sources */,
 				D3968F251A38FE8500CEFD3B /* TabManager.swift in Sources */,
-				5E6683A923D61CF7005B3A6C /* NTPDownloader.swift in Sources */,
 				2816F0001B33E05400522243 /* UIConstants.swift in Sources */,
 				4422D56521BFFB7F00BF1855 /* filtered_re2.cc in Sources */,
-				5EC594EF232C68FC00922111 /* OnboardingAdsCountdownViewController.swift in Sources */,
 				279C756B219DDE3B001CD1CB /* FingerprintingProtection.swift in Sources */,
 				E650755F1E37F756006961AC /* Try.m in Sources */,
-				0A3C789D23055C4A0022F6D8 /* OnboardingSearchEnginesViewController.swift in Sources */,
 				3B6889C51D66950E002AC85E /* UIImageColors.swift in Sources */,
 				0A1E84402190A57F0042F782 /* SyncSelectDeviceTypeViewController.swift in Sources */,
 				392ED7E41D0AEF56009D9B62 /* NewTabAccessors.swift in Sources */,
-				276E7A3C22F21DBE00939424 /* RewardsReporting.swift in Sources */,
 				F9C6B7D623886EF8003F7D16 /* SceneObserver.swift in Sources */,
 				4422D50421BFFB7600BF1855 /* memtable.cc in Sources */,
 				D3A9949D1A3686BD008AD1AC /* Tab.swift in Sources */,
@@ -6369,9 +5196,7 @@
 				D863C8F21F68BFC20058D95F /* GradientProgressBar.swift in Sources */,
 				D3C744CD1A687D6C004CE85D /* URIFixup.swift in Sources */,
 				E4A961181AC041C40069AD6F /* ReadabilityService.swift in Sources */,
-				5E612A90234B7FCD007D12B5 /* OnboardingRewardsAgreementView.swift in Sources */,
 				4422D56A21BFFB7F00BF1855 /* simplify.cc in Sources */,
-				5EC594F1232C697200922111 /* OnboardingAdsCountdownView.swift in Sources */,
 				A134B88A20DA98BB00A581D0 /* ClientPreferences.swift in Sources */,
 				D3BE7B261B054D4400641031 /* main.swift in Sources */,
 				0A4BEF5D221AF1910005551A /* AdblockResourceDownloader.swift in Sources */,
@@ -6410,15 +5235,12 @@
 				A1FEEE2020BF28D900298DA2 /* Then.swift in Sources */,
 				0A1E84442190A57F0042F782 /* SyncCameraView.swift in Sources */,
 				A1CA29C420E1746A00CB9126 /* OptionSelectionViewController.swift in Sources */,
-				5EC594ED232C2C8F00922111 /* OnboardingWebViewController.swift in Sources */,
 				0A4B012420D0321A004D4011 /* UX.swift in Sources */,
 				4422D55521BFFB7E00BF1855 /* nfa.cc in Sources */,
 				E663D5781BB341C4001EF30E /* ToggleButton.swift in Sources */,
 				0AD9F88122F049E5008B4D95 /* AdblockRustEngine.swift in Sources */,
 				D3E8EF101B97BE69001900FB /* ClearPrivateDataTableViewController.swift in Sources */,
 				4422D4B421BFFB7600BF1855 /* hash.cc in Sources */,
-				0A5CBD3823D4905D00362CC8 /* NTPNotificationView.swift in Sources */,
-				5E612A8E234B7FC8007D12B5 /* OnboardingAdsAvailableView.swift in Sources */,
 				27D114D62358FCA400166534 /* SettingsRowViews.swift in Sources */,
 				4422D56621BFFB7F00BF1855 /* tostring.cc in Sources */,
 				4422D54821BFFB7E00BF1855 /* pcre.cc in Sources */,
@@ -6479,35 +5301,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		271DEC24234CC760009DAC37 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 271DEC18234CC75F009DAC37 /* BraveRewardsUI */;
-			targetProxy = 271DEC23234CC760009DAC37 /* PBXContainerItemProxy */;
-		};
-		271DEC26234CC760009DAC37 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F84B21BD1A090F8100AAB793 /* Client */;
-			targetProxy = 271DEC25234CC760009DAC37 /* PBXContainerItemProxy */;
-		};
-		271DEC2D234CC760009DAC37 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 271DEC18234CC75F009DAC37 /* BraveRewardsUI */;
-			targetProxy = 271DEC2C234CC760009DAC37 /* PBXContainerItemProxy */;
-		};
 		27F4439E2135E11200296C58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 27F443942135E11200296C58 /* BraveShareTo */;
 			targetProxy = 27F4439D2135E11200296C58 /* PBXContainerItemProxy */;
-		};
-		27FA2D68234E3222004D5D2D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5DE7688320B3456C00FF5533 /* BraveShared */;
-			targetProxy = 27FA2D67234E3222004D5D2D /* PBXContainerItemProxy */;
-		};
-		27FA2D6C234E3222004D5D2D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 288A2D851AB8B3260023ABC3 /* Shared */;
-			targetProxy = 27FA2D6B234E3222004D5D2D /* PBXContainerItemProxy */;
 		};
 		288A2D9C1AB8B3260023ABC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -6602,30 +5399,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0A1CBCFB23571EFA004DA73F /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A1CBCFC23571EFA004DA73F /* ja */,
-				0A5922F32357863000959DD1 /* en */,
-				6129BC4D236B417A004CAD4D /* de */,
-				61357E2C236B4180006A20E9 /* es */,
-				61468C8F236B418400C20378 /* fr */,
-				6153DBE9236B4189001AA06E /* id-ID */,
-				6161A28E236B418D00D72C0D /* it */,
-				617B5508236B41970030C571 /* ko-KR */,
-				618760A2236B419C0042BAF3 /* ms */,
-				6194D055236B41A100FBF9C2 /* nb */,
-				61A1153B236B41A600F57D76 /* pl */,
-				61AE2760236B41AB004DDD63 /* pt-BR */,
-				61BDD087236B41B20038F0B1 /* ru */,
-				61D5C82C236B41BA0032B652 /* sv */,
-				61FACE34236B41C100E3E55E /* uk */,
-				610967E5236B41C9000F10EA /* zh */,
-				6117A72C236B41D000921BFB /* zh-TW */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
 		0AC0D3BE233E889D0091EFA5 /* Storage.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -6946,625 +5719,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		271DEC30234CC760009DAC37 /* Fennec */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BraveRewards",
-					"$(PROJECT_DIR)",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = BraveRewardsUI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brave.BraveRewardsUI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Fennec;
-		};
-		271DEC31234CC760009DAC37 /* Fennec_Enterprise */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BraveRewards",
-					"$(PROJECT_DIR)",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = BraveRewardsUI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brave.BraveRewardsUI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Fennec_Enterprise;
-		};
-		271DEC32234CC760009DAC37 /* Firefox */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BraveRewards",
-					"$(PROJECT_DIR)",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = BraveRewardsUI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brave.BraveRewardsUI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Firefox;
-		};
-		271DEC33234CC760009DAC37 /* FirefoxBeta */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BraveRewards",
-					"$(PROJECT_DIR)",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = BraveRewardsUI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brave.BraveRewardsUI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = FirefoxBeta;
-		};
-		271DEC34234CC760009DAC37 /* Fennec */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BraveRewards",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = BraveRewardsUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kylehickinson.BraveRewardsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Client.app/Client";
-			};
-			name = Fennec;
-		};
-		271DEC35234CC760009DAC37 /* Fennec_Enterprise */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BraveRewards",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = BraveRewardsUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kylehickinson.BraveRewardsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Client.app/Client";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Fennec_Enterprise;
-		};
-		271DEC36234CC760009DAC37 /* Firefox */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BraveRewards",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = BraveRewardsUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kylehickinson.BraveRewardsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Client.app/Client";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Firefox;
-		};
-		271DEC37234CC760009DAC37 /* FirefoxBeta */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BraveRewards",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = BraveRewardsUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kylehickinson.BraveRewardsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Client.app/Client";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = FirefoxBeta;
-		};
 		27F443A02135E11200296C58 /* Fennec */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9970,28 +8124,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		271DEC39234CC760009DAC37 /* Build configuration list for PBXNativeTarget "BraveRewardsUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				271DEC30234CC760009DAC37 /* Fennec */,
-				271DEC31234CC760009DAC37 /* Fennec_Enterprise */,
-				271DEC32234CC760009DAC37 /* Firefox */,
-				271DEC33234CC760009DAC37 /* FirefoxBeta */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Fennec;
-		};
-		271DEC3A234CC760009DAC37 /* Build configuration list for PBXNativeTarget "BraveRewardsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				271DEC34234CC760009DAC37 /* Fennec */,
-				271DEC35234CC760009DAC37 /* Fennec_Enterprise */,
-				271DEC36234CC760009DAC37 /* Firefox */,
-				271DEC37234CC760009DAC37 /* FirefoxBeta */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Fennec;
-		};
 		27F443AB2135E11200296C58 /* Build configuration list for PBXNativeTarget "BraveShareTo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
