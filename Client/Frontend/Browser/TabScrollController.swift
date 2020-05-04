@@ -39,7 +39,6 @@ class TabScrollingController: NSObject {
     weak var header: UIView?
     weak var footer: UIView?
     weak var topToolbar: TopToolbarView?
-    weak var tabsBar: TabsBarViewController?
     weak var snackBars: UIView?
 
     var footerBottomConstraint: Constraint?
@@ -55,12 +54,6 @@ class TabScrollingController: NSObject {
             headerTopConstraint?.update(offset: headerTopOffset)
             header?.superview?.setNeedsLayout()
         }
-    }
-    
-    fileprivate var tabsBarOffset: CGFloat {
-        guard let tabsBar = tabsBar else { return 0 }
-        
-        return (scrollDirection == .down && !tabsBar.view.isHidden) ? UX.TabsBar.height : 0
     }
 
     fileprivate var footerBottomOffset: CGFloat = 0 {
@@ -226,8 +219,6 @@ private extension TabScrollingController {
 
         let alpha = 1 - abs(headerTopOffset / topScrollHeight)
         topToolbar?.updateAlphaForSubviews(alpha)
-        let tabsAlpha = 1 - abs((headerTopOffset - tabsBarOffset) / topScrollHeight)
-        tabsBar?.view.alpha = tabsAlpha
     }
 
     func isHeaderDisplayedForGivenOffset(_ offset: CGFloat) -> Bool {
@@ -248,7 +239,6 @@ private extension TabScrollingController {
         self.footerBottomOffset = footerOffset
         let animation: () -> Void = {
             self.topToolbar?.updateAlphaForSubviews(alpha)
-            self.tabsBar?.view.alpha = alpha
             self.header?.superview?.layoutIfNeeded()
         }
 

@@ -157,28 +157,6 @@ class SettingsViewController: TableViewController {
             cellClass: MultilineValue1Cell.self
         ))
         
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            display.rows.append(
-                Row(text: Strings.showTabsBar, accessory: .switchToggle(value: Preferences.General.tabBarVisibility.value == TabBarVisibility.always.rawValue, { Preferences.General.tabBarVisibility.value = $0 ? TabBarVisibility.always.rawValue : TabBarVisibility.never.rawValue }), cellClass: MultilineValue1Cell.self)
-            )
-        } else {
-            var row = Row(text: Strings.showTabsBar, detailText: TabBarVisibility(rawValue: Preferences.General.tabBarVisibility.value)?.displayString, accessory: .disclosureIndicator, cellClass: MultilineSubtitleCell.self)
-            row.selection = { [unowned self] in
-                // Show options for tab bar visibility
-                let optionsViewController = OptionSelectionViewController<TabBarVisibility>(
-                    options: TabBarVisibility.allCases,
-                    selectedOption: TabBarVisibility(rawValue: Preferences.General.tabBarVisibility.value),
-                    optionChanged: { _, option in
-                        Preferences.General.tabBarVisibility.value = option.rawValue
-                        reloadCell(row, option.displayString)
-                    }
-                )
-                optionsViewController.headerText = Strings.showTabsBar
-                self.navigationController?.pushViewController(optionsViewController, animated: true)
-            }
-            display.rows.append(row)
-        }
-        
         display.rows.append(
             .boolRow(title: Strings.showBookmarkButtonInTopToolbar,
                      option: Preferences.General.showBookmarkToolbarShortcut)

@@ -96,7 +96,6 @@ private extension TrayToBrowserAnimator {
             bvc.webViewContainerBackdrop.isHidden = false
             bvc.favoritesViewController?.view.isHidden = false
             bvc.topToolbar.isTransitioning = false
-            bvc.updateTabsBarVisibility()
             transitionContext.completeTransition(true)
             
             self.WKWebViewPDFNotRenderingBugFix(for: bvc)

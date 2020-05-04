@@ -39,8 +39,6 @@ extension Preferences {
         static let saveLogins = Option<Bool>(key: "general.save-logins", default: true)
         /// Whether or not to block popups from websites automaticaly
         static let blockPopups = Option<Bool>(key: "general.block-popups", default: true)
-        /// Controls how the tab bar should be shown (or not shown)
-        static let tabBarVisibility = Option<Int>(key: "general.tab-bar-visiblity", default: TabBarVisibility.always.rawValue)
         /// Defines the user's normal browsing theme
         /// `system`, follows the current OS display mode
         static let themeNormalMode = Option<String>(key: "general.normal-mode-theme", default: Theme.DefaultTheme.system.rawValue)

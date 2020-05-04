@@ -38,8 +38,6 @@
 		0A42150121AC0E8E006B8E39 /* TimeExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42150021AC0E8E006B8E39 /* TimeExtensionTests.swift */; };
 		0A43293021B1C7F50041625B /* AdBlockStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A43292F21B1C7F50041625B /* AdBlockStats.swift */; };
 		0A43293B21B1C8D10041625B /* FifoDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A43293A21B1C8D10041625B /* FifoDict.swift */; };
-		0A4B012020D02EC4004D4011 /* TabsBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B011F20D02EC4004D4011 /* TabsBarViewController.swift */; };
-		0A4B012220D02F26004D4011 /* TabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B012120D02F26004D4011 /* TabBarCell.swift */; };
 		0A4B012420D0321A004D4011 /* UX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B012320D0321A004D4011 /* UX.swift */; };
 		0A4BEF5D221AF1910005551A /* AdblockResourceDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BEF5C221AF1910005551A /* AdblockResourceDownloader.swift */; };
 		0A4BEF62221B26610005551A /* LocalAdblockResourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BEF61221B26610005551A /* LocalAdblockResourceProtocol.swift */; };
@@ -1066,8 +1064,6 @@
 		0A42150021AC0E8E006B8E39 /* TimeExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeExtensionTests.swift; sourceTree = "<group>"; };
 		0A43292F21B1C7F50041625B /* AdBlockStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBlockStats.swift; sourceTree = "<group>"; };
 		0A43293A21B1C8D10041625B /* FifoDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifoDict.swift; sourceTree = "<group>"; };
-		0A4B011F20D02EC4004D4011 /* TabsBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsBarViewController.swift; sourceTree = "<group>"; };
-		0A4B012120D02F26004D4011 /* TabBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCell.swift; sourceTree = "<group>"; };
 		0A4B012320D0321A004D4011 /* UX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UX.swift; sourceTree = "<group>"; };
 		0A4BEF5C221AF1910005551A /* AdblockResourceDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdblockResourceDownloader.swift; sourceTree = "<group>"; };
 		0A4BEF61221B26610005551A /* LocalAdblockResourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAdblockResourceProtocol.swift; sourceTree = "<group>"; };
@@ -2294,15 +2290,6 @@
 			path = Adblock;
 			sourceTree = "<group>";
 		};
-		0A4B011620D02DAC004D4011 /* TabsBar */ = {
-			isa = PBXGroup;
-			children = (
-				0A4B011F20D02EC4004D4011 /* TabsBarViewController.swift */,
-				0A4B012120D02F26004D4011 /* TabBarCell.swift */,
-			);
-			path = TabsBar;
-			sourceTree = "<group>";
-		};
 		0A4BEFCD221E11440005551A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -3412,7 +3399,6 @@
 				C6D267612137E45D00465DFA /* PrivacyProtection */,
 				C6D267592137E39A00465DFA /* ImageCache */,
 				0AADC4BB20D2A4F700FDE368 /* HomePanel */,
-				0A4B011620D02DAC004D4011 /* TabsBar */,
 				44331DC722551871007E3E93 /* Toolbars */,
 				0A583F752142BC9B0086B3E7 /* Search */,
 				0B3E7D931B27A7CE00E2E84D /* AboutHomeHandler.swift */,
@@ -4943,7 +4929,6 @@
 				0A1E843E2190A57F0042F782 /* SyncCodewordsView.swift in Sources */,
 				E68F36981EA694000048CF44 /* PanelDataObservers.swift in Sources */,
 				31ADB5DA1E58CEC300E87909 /* ClipboardBarDisplayHandler.swift in Sources */,
-				0A4B012020D02EC4004D4011 /* TabsBarViewController.swift in Sources */,
 				4422D4D921BFFB7600BF1855 /* merger.cc in Sources */,
 				4422D4EF21BFFB7600BF1855 /* log_reader.cc in Sources */,
 				A1D8420420BC44F800BDAFF7 /* PopoverContentComponent.swift in Sources */,
@@ -5239,7 +5224,6 @@
 				A1AD4BE320C0861D007A6EA1 /* UIBarButtonItemExtensions.swift in Sources */,
 				C6D267522136800100465DFA /* PrivateBrowsingManager.swift in Sources */,
 				27D87C2E2152B50200FB55C6 /* GradientView.swift in Sources */,
-				0A4B012220D02F26004D4011 /* TabBarCell.swift in Sources */,
 				27FD2CAC2146C31C00A5A779 /* FindInPageActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

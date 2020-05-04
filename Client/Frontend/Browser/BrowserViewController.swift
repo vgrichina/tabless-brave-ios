@@ -42,7 +42,6 @@ class BrowserViewController: UIViewController {
     var favoritesViewController: FavoritesViewController?
     var webViewContainer: UIView!
     var topToolbar: TopToolbarView!
-    var tabsBar: TabsBarViewController!
     var clipboardBarDisplayHandler: ClipboardBarDisplayHandler?
     var readerModeBar: ReaderModeBarView?
     var readerModeCache: ReaderModeCache
@@ -189,7 +188,6 @@ class BrowserViewController: UIViewController {
         
         // Observe some user preferences
         Preferences.Privacy.privateBrowsingOnly.observe(from: self)
-        Preferences.General.tabBarVisibility.observe(from: self)
         Preferences.General.themeNormalMode.observe(from: self)
         Preferences.General.alwaysRequestDesktopSite.observe(from: self)
         Preferences.Shields.allShields.forEach { $0.observe(from: self) }
@@ -257,8 +255,6 @@ class BrowserViewController: UIViewController {
             navigationToolbar.updateForwardStatus(webView.canGoForward)
             topToolbar.locationView.loading = tab.loading
         }
-        
-        updateTabsBarVisibility()
     }
 
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -387,14 +383,7 @@ class BrowserViewController: UIViewController {
         }
         header.addArrangedSubview(topToolbar)
         
-        tabsBar = TabsBarViewController(tabManager: tabManager)
-        tabsBar.delegate = self
-        header.addArrangedSubview(tabsBar.view)
-        
         view.addSubview(header)
-        
-        addChild(tabsBar)
-        tabsBar.didMove(toParent: self)
 
         // UIAccessibilityCustomAction subclass holding an AccessibleAction instance does not work, thus unable to generate AccessibleActions and UIAccessibilityCustomActions "on-demand" and need to make them "persistent" e.g. by being stored in BVC
         pasteGoAction = AccessibleAction(name: Strings.pasteAndGoTitle, handler: { () -> Bool in
@@ -432,7 +421,6 @@ class BrowserViewController: UIViewController {
         
         scrollController.topToolbar = topToolbar
         scrollController.header = header
-        scrollController.tabsBar = tabsBar
         scrollController.footer = footer
         scrollController.snackBars = alertStackView
 
@@ -514,10 +502,6 @@ class BrowserViewController: UIViewController {
         
         topToolbar.snp.makeConstraints { make in
             make.height.equalTo(UIConstants.topToolbarHeight)
-        }
-        
-        tabsBar.view.snp.makeConstraints { make in
-            make.height.equalTo(UX.TabsBar.height)
         }
 
         webViewContainerBackdrop.snp.makeConstraints { make in
@@ -799,41 +783,6 @@ class BrowserViewController: UIViewController {
         favoritesViewController?.view?.isHidden = true
 
         searchController!.didMove(toParent: self)
-    }
-    
-    func updateTabsBarVisibility() {
-        if tabManager.selectedTab == nil {
-            tabsBar.view.isHidden = true
-            return
-        }
-        
-        func shouldShowTabBar() -> Bool {
-            let tabCount = tabManager.tabsForCurrentMode.count
-            guard let tabBarVisibility = TabBarVisibility(rawValue: Preferences.General.tabBarVisibility.value) else {
-                // This should never happen
-                assertionFailure("Invalid tab bar visibility preference: \(Preferences.General.tabBarVisibility.value).")
-                return tabCount > 1
-            }
-            switch tabBarVisibility {
-            case .always:
-                return tabCount > 1 || UIDevice.current.userInterfaceIdiom == .pad
-            case .landscapeOnly:
-                return tabCount > 1 && UIDevice.current.orientation.isLandscape
-            case .never:
-                return false
-            }
-        }
-        
-        let isShowing = !tabsBar.view.isHidden
-        let shouldShow = shouldShowTabBar()
-        
-        if isShowing != shouldShow && presentedViewController == nil {
-            UIView.animate(withDuration: 0.1) {
-                self.tabsBar.view.isHidden = !shouldShow
-            }
-        } else {
-            tabsBar.view.isHidden = !shouldShow
-        }
     }
     
     private func updateApplicationShortcuts() {
@@ -1736,7 +1685,7 @@ extension BrowserViewController: ToolbarDelegate {
         }
         let controller = AlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
-        if (UIDevice.current.userInterfaceIdiom == .pad && tabsBar.view.isHidden) ||
+        if (UIDevice.current.userInterfaceIdiom == .pad) ||
             (UIDevice.current.userInterfaceIdiom == .phone && toolbar == nil) {
             addTabAlertActions().forEach(controller.addAction)
         }
@@ -1776,18 +1725,6 @@ extension BrowserViewController: ToolbarDelegate {
         if newTabIndex >= 0 && newTabIndex < tabs.count {
             tabManager.selectTab(tabs[newTabIndex])
         }
-    }
-}
-
-extension BrowserViewController: TabsBarViewControllerDelegate {
-    func tabsBarDidSelectTab(_ tabsBarController: TabsBarViewController, _ tab: Tab) {
-        if tab == tabManager.selectedTab { return }
-        topToolbar.leaveOverlayMode(didCancel: true)
-        tabManager.selectTab(tab)
-    }
-    
-    func tabsBarDidLongPressAddTab(_ tabsBarController: TabsBarViewController, button: UIButton) {
-        showAddTabContextMenu(sourceView: tabsBarController.view, button: button)
     }
 }
 
@@ -2005,7 +1942,6 @@ extension BrowserViewController: TabManagerDelegate {
         }
 
         updateFindInPageVisibility(visible: false, tab: previous)
-        updateTabsBarVisibility()
 
         topToolbar.locationView.loading = selected?.loading ?? false
         navigationToolbar.updateBackStatus(selected?.canGoBack ?? false)
@@ -2048,7 +1984,6 @@ extension BrowserViewController: TabManagerDelegate {
             updateTabCountUsingTabManager(tabManager)
         }
         tab.tabDelegate = self
-        updateTabsBarVisibility()
     }
 
     func tabManager(_ tabManager: TabManager, willRemoveTab tab: Tab) {
@@ -2062,7 +1997,6 @@ extension BrowserViewController: TabManagerDelegate {
         if let url = tab.url, !url.isAboutURL && !tab.isPrivate {
             profile.recentlyClosedTabs.addTab(url as URL, title: tab.title, faviconURL: tab.displayFavicon?.url)
         }
-        updateTabsBarVisibility()
     }
 
     func tabManagerDidAddTabs(_ tabManager: TabManager) {
@@ -2936,7 +2870,7 @@ extension BrowserViewController: TabTrayDelegate {
 extension BrowserViewController: Themeable {
     
     var themeableChildren: [Themeable?]? {
-        return [topToolbar, toolbar, readerModeBar, tabsBar, favoritesViewController]
+        return [topToolbar, toolbar, readerModeBar, favoritesViewController]
     }
     
     func applyTheme(_ theme: Theme) {
@@ -3073,8 +3007,6 @@ extension BrowserViewController: FavoritesDelegate {
 extension BrowserViewController: PreferencesObserver {
     func preferencesDidChange(for key: String) {
         switch key {
-        case Preferences.General.tabBarVisibility.key:
-            updateTabsBarVisibility()
         case Preferences.General.themeNormalMode.key:
             applyTheme(Theme.of(tabManager.selectedTab))
         case Preferences.Privacy.privateBrowsingOnly.key:
@@ -3082,7 +3014,6 @@ extension BrowserViewController: PreferencesObserver {
             switchToPrivacyMode(isPrivate: isPrivate)
             PrivateBrowsingManager.shared.isPrivateBrowsing = isPrivate
             setupTabs()
-            updateTabsBarVisibility()
             updateApplicationShortcuts()
             if isPrivate { //When PBO is turned ON, we remove all tabs and configurations.
                 tabManager.removeAll()

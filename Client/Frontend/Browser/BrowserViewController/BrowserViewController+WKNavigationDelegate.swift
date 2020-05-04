@@ -423,7 +423,6 @@ extension BrowserViewController: WKNavigationDelegate {
             if tab === tabManager.selectedTab {
                 topToolbar.updateProgressBar(1.0)
             }
-            tabsBar.reloadDataAndRestoreSelectedTab()
         }
     }
 }
