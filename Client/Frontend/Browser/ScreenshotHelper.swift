@@ -21,9 +21,7 @@ class ScreenshotHelper {
 
         if let url = tab.url {
             if url.isAboutHomeURL {
-                if let homePanel = controller?.favoritesViewController {
-                    screenshot = homePanel.view.screenshot(quality: UIConstants.activeScreenshotQuality)
-                }
+                // TODO(tabless): should this throw?
             } else {
                 let offset = CGPoint(x: 0, y: -(tab.webView?.scrollView.contentInset.top ?? 0))
                 screenshot = tab.webView?.screenshot(offset: offset, quality: UIConstants.activeScreenshotQuality)
